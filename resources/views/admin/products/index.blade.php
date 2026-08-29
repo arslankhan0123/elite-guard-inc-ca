@@ -1,0 +1,11 @@
+@extends('layouts.backend.main')
+@section('title','Manage Products')
+@section('breadcrumbTitle','Product Directory')
+@section('breadcrumbs')<li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li><li class="breadcrumb-item active">Products</li>@endsection
+@section('content')
+<div class="card border-0 rounded-4 shadow-sm"><div class="card-body p-4">
+<div class="d-flex justify-content-between align-items-center mb-4"><div><h4 class="fw-bold mb-1">Products</h4><p class="text-muted mb-0">Total {{ $products->count() }} products.</p></div><a href="{{ route('products.create') }}" class="btn btn-primary rounded-pill px-4"><i data-feather="plus" class="me-1"></i> Add Product</a></div>
+<div class="table-responsive"><table id="custom-table" class="table table-hover align-middle"><thead><tr><th>#</th><th>Image</th><th>Product</th><th>Category</th><th>Purchase</th><th>Sale</th><th>Stock</th><th>Status</th><th>Actions</th></tr></thead><tbody>
+@forelse($products as $product)<tr><td>{{ $loop->iteration }}</td><td>@if($product->feature_image)<img src="{{ $product->feature_image_url }}" class="rounded" style="width:60px;height:60px;object-fit:cover">@else<i class="fas fa-image text-muted fa-2x"></i>@endif</td><td><strong>{{ $product->name }}</strong><div class="small text-muted">{{ $product->sku ?: $product->slug }}</div></td><td>{{ $product->category?->name }}</td><td>{{ number_format($product->purchase_price,2) }}</td><td><strong>{{ number_format($product->sale_price,2) }}</strong></td><td>{{ $product->stock_quantity }}</td><td><span class="badge {{ $product->status === 'active' ? 'bg-success' : 'bg-danger' }}">{{ ucfirst($product->status) }}</span></td><td><div class="d-flex gap-2"><a href="{{ route('products.edit',$product) }}" class="btn btn-sm btn-outline-primary"><i class="fas fa-edit"></i></a><form action="{{ route('products.destroy',$product) }}" method="POST" onsubmit="return confirm('Delete this product and its images?')">@csrf @method('DELETE')<button class="btn btn-sm btn-outline-danger"><i class="fas fa-trash"></i></button></form></div></td></tr>@empty<tr><td colspan="9" class="text-center py-5 text-muted">No products found. Add your first product.</td></tr>@endforelse
+</tbody></table></div></div></div>
+@endsection
