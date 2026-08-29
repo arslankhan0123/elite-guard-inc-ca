@@ -3,15 +3,15 @@
   <div class="container footer-top">
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 footer-about">
-        <a href="index.html" class="logo d-flex align-items-center">
-          <span class="sitename">Clarity</span>
+        <a href="{{ route('home') }}" class="logo d-flex align-items-center">
+          <img src="{{ asset('frontend/assets/img/logo.png') }}" alt="">
+          <span class="sitename">Elite Guard Inc.</span>
         </a>
         <div class="footer-contact pt-3">
           <p>A108 Adam Street</p>
           <p>New York, NY 535022</p>
-          <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                data-cfemail="84edeae2ebc4e1fce5e9f4e8e1aae7ebe9">[email&#160;protected]</a></span></p>
+          <p class="mt-3"><strong>Phone:</strong> <span>(403) 830-7772</span></p>
+          <p><strong>Email:</strong> <span><a href="mailto:info@eliteguardinc.ca">info@eliteguardinc.ca</a></span></p>
         </div>
         <div class="social-links d-flex mt-4">
           <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -68,13 +68,9 @@
   </div>
 
   <div class="container copyright text-center mt-4">
-    <p>© <span>Copyright</span> <strong class="px-1 sitename">Clarity</strong> <span>All Rights Reserved</span></p>
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">Elite Guard Inc.</strong> <span>All Rights Reserved</span></p>
     <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you've purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      Designed by <a href="{{ route('home') }}">Elite Guard Inc.</a>
     </div>
   </div>
 

@@ -5,7 +5,7 @@
     <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-xl-0">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <img src="{{ asset('frontend/assets/img/logo.png') }}" alt="">
-      <!-- <h1 class="sitename">Clarity</h1> -->
+      <h1 class="sitename">Elite Guard Inc.</h1>
     </a>
 
     <nav id="navmenu" class="navmenu">

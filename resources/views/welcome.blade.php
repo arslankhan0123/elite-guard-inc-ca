@@ -68,54 +68,60 @@
 </section><!-- /Hero Section -->
 
 <!-- About Section -->
+<!-- About Section -->
 <section id="about" class="about section">
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="row gy-5 align-items-center">
+    <div class="row gy-5 align-items-center mb-5">
 
-      <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
         <div class="content">
-          <h6 class="subtitle">Discover Our Story</h6>
-          <h2>Innovative Solutions for a Digital-First World</h2>
+          <h6 class="subtitle">About Us</h6>
+          <h2>Your Trusted Security Partner in Alberta</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat.
+            At Elite Guard Inc., we are committed to providing professional security services across Alberta. Our reputation is built on trust, experience, and a relentless dedication to safeguarding our clients' interests. We offer tailored security solutions designed to meet the unique needs of each client.
           </p>
 
-          <ul class="features-list">
-            <li><i class="bi bi-check-circle-fill"></i><span>Excepteur sint occaecat cupidatat non proident.</span>
-            </li>
-            <li><i class="bi bi-check-circle-fill"></i><span>Nemo enim ipsam voluptatem quia voluptas sit.</span>
-            </li>
-            <li><i class="bi bi-check-circle-fill"></i><span>Duis aute irure dolor in reprehenderit in voluptate
-                velit.</span></li>
-          </ul>
+          <div class="row gy-3 mb-4 mt-2">
+            <div class="col-sm-6">
+              <div class="mission-box" style="background: #f8fafc; padding: 20px; border-radius: 12px; height: 100%; border-left: 4px solid #34A853; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+                <h5 style="font-weight: 700; color: #002524; margin-bottom: 8px; font-size: 16px;">Our Mission</h5>
+                <p style="color: #475569; font-size: 13px; line-height: 1.5; margin: 0;">
+                  To deliver reliable, comprehensive, and proactive security services that ensure the safety and peace of mind of our clients.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="values-box" style="background: #f8fafc; padding: 20px; border-radius: 12px; height: 100%; border-left: 4px solid #34A853; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+                <h5 style="font-weight: 700; color: #002524; margin-bottom: 12px; font-size: 16px;">Our Values</h5>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                  <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; font-size: 12px;">
+                    <i class="bi bi-shield-fill-check" style="color: #34A853; font-size: 14px; margin-top: 1px;"></i>
+                    <span style="color: #475569;"><strong style="color: #002524;">Integrity:</strong> We act with honesty and uphold the highest ethical standards.</span>
+                  </li>
+                  <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; font-size: 12px;">
+                    <i class="bi bi-eye-fill" style="color: #34A853; font-size: 14px; margin-top: 1px;"></i>
+                    <span style="color: #475569;"><strong style="color: #002524;">Vigilance:</strong> We remain alert and responsive to potential threats.</span>
+                  </li>
+                  <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 12px;">
+                    <i class="bi bi-person-fill-check" style="color: #34A853; font-size: 14px; margin-top: 1px;"></i>
+                    <span style="color: #475569;"><strong style="color: #002524;">Professionalism:</strong> We conduct ourselves with discipline and respect at all times.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <a href="#" class="btn btn-primary">Discover More</a>
+          <a href="{{ route('home') }}#contact" class="btn btn-primary" style="border-radius: 30px; padding: 12px 35px;">Contact</a>
         </div>
       </div>
 
-      <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-        <div class="image-composition">
-          <div class="image-main">
-            <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/about/about-9.webp"
-              alt="Modern office with a team working" class="img-fluid" loading="lazy">
-          </div>
-          <div class="image-secondary">
-            <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/about/about-square-8.webp"
-              alt="Collaborative discussion" class="img-fluid" loading="lazy">
-          </div>
-          <div class="stats-card">
-            <div class="stats-item">
-              <h3>20+</h3>
-              <p>Years of Expertise</p>
-            </div>
-            <div class="stats-item">
-              <h3>500+</h3>
-              <p>Happy Clients</p>
-            </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+        <div class="image-composition position-relative">
+          <div class="image-main" style="border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
+            <img src="{{ asset('frontend/assets/img/about/about-1.png') }}"
+              alt="Elite Guard Team" class="img-fluid" loading="lazy" style="width: 100%; object-fit: cover;">
           </div>
         </div>
       </div>
@@ -132,7 +138,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Services</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <p>At Elite Guard Inc., we offer a wide range of security services to protect your property, people, and assets. Our team comprises highly trained, licensed security officers who bring extensive experience in security management and risk mitigation. We utilize advanced technologies and proven industry practices to offer superior protection.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -179,9 +185,9 @@
     <div class="row mt-5">
       <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
         <div class="services-cta">
-          <h3>Ready to Transform Your Digital Presence?</h3>
-          <p>Let's discuss your project and create something amazing together</p>
-          <a href="{{ route('quote') }}" class="btn btn-primary">Get Started Today</a>
+          <h3>Need Expert Security Solutions?</h3>
+          <p>Contact us today to learn more about our security services and how we can help protect your property, people, and assets.</p>
+          <a href="{{ route('quote') }}" class="btn btn-primary">Request a Free Quote</a>
         </div>
       </div>
     </div>
@@ -196,7 +202,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Services Gallery</h2>
-    <p>Explore our premium range of professional services designed for your business</p>
+    <p>At Elite Guard Inc., we offer a wide range of security services to protect your property, people, and assets. Our team comprises highly trained, licensed security officers who bring extensive experience in security management and risk mitigation. We utilize advanced technologies and proven industry practices to offer superior protection.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -873,11 +879,10 @@
           </div>
           <div class="cta-content">
             <h4>Ready to Join Our Mission?</h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-              deleniti atque corrupti quos dolores.</p>
+            <p>We are always looking for talented and motivated individuals to join our team. If you are interested in a rewarding career in the security industry, we would love to hear from you.</p>
             <div class="cta-actions">
-              <a href="#" class="btn btn-primary">View Open Roles</a>
-              <a href="#" class="btn btn-outline">Learn Our Culture</a>
+              <a href="{{ route('home') }}#contact" class="btn btn-primary">Contact Us</a>
+              <a href="{{ route('home') }}#services" class="btn btn-outline">Our Services</a>
             </div>
           </div>
         </div>
@@ -893,7 +898,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <p>Reach out for reliable security solutions tailored to your needs in Alberta. We are here to assist you with any inquiries.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -905,8 +910,7 @@
               <i class="bi bi-chat-dots-fill"></i>
             </div>
             <h3>Let's Start a Conversation</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-              excepteur sint.</p>
+            <p>Contact us today to learn more about our security services and how we can help protect your property, people, and assets.</p>
           </div>
 
           <form action="forms/contact.php" method="post" class="php-email-form">
@@ -946,8 +950,7 @@
         <div class="contact-info-area">
           <div class="info-header">
             <h3>Ready to Transform Your Ideas?</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-              totam rem aperiam eaque ipsa quae ab illo inventore.</p>
+            <p>Contact us today to learn more about our security services and how we can help protect your property, people, and assets.</p>
           </div>
 
           <div class="contact-methods">
