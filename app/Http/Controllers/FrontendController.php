@@ -12,7 +12,9 @@ class FrontendController extends Controller
     public function index()
     {
         $products = Product::where('status', 'active')->latest()->take(15)->get();
-        return view('welcome', compact('products'));
+        $services = Service::where('status', 'active')->with(['category', 'highlights'])->latest()->get();
+        $categories = \App\Models\Category::where('status', 'active')->get();
+        return view('welcome', compact('products', 'services', 'categories'));
     }
 
     public function careers()
