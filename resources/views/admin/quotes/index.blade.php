@@ -20,8 +20,8 @@
                                 <th>S.No</th>
                                 <th>Name</th>
                                 <th>Company</th>
-                                <th>Product</th>
-                                <th>Business Line</th>
+                                <th>Service / Product</th>
+                                <th>Type / Line</th>
                                 <th>Country</th>
                                 <th>Date</th>
                                 <th>Action</th>
@@ -33,8 +33,24 @@
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $quote->name }}</td>
                                 <td>{{ $quote->company_name ?: 'Individual' }}</td>
-                                <td>{{ $quote->product?->name ?: 'Other / Not Listed' }}</td>
-                                <td>{{ $quote->business_line ? ucwords(str_replace('_', ' ', $quote->business_line)) : 'Legacy Request' }}</td>
+                                <td>
+                                    @if($quote->service)
+                                        <span class="badge bg-success" style="font-size: 13px;">{{ $quote->service->name }}</span>
+                                    @elseif($quote->product)
+                                        <span class="badge bg-secondary" style="font-size: 13px;">{{ $quote->product->name }} (Product)</span>
+                                    @else
+                                        <span class="text-muted">Other / Not Listed</span>
+                                    @endif
+                                </td>
+                                <td>
+                                    @if($quote->property_type)
+                                        {{ ucwords(str_replace('_', ' ', $quote->property_type)) }}
+                                    @elseif($quote->business_line)
+                                        {{ ucwords(str_replace('_', ' ', $quote->business_line)) }}
+                                    @else
+                                        Legacy Request
+                                    @endif
+                                </td>
                                 <td>{{ $quote->country ?: '-' }}</td>
                                 <td>{{ $quote->created_at->format('M d, Y') }}</td>
                                 <td>

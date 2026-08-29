@@ -28,6 +28,8 @@
   <link href="{{asset('frontend/assets/css/swiper-bundle.min.css')}}" rel="stylesheet">
   <link href="{{asset('frontend/assets/css/glightbox.min.css')}}" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
   <!-- Main CSS File -->
   <link href="{{asset('frontend/assets/css/main.css')}}" rel="stylesheet">
 
@@ -58,6 +60,10 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
+
+  <!-- jQuery and SweetAlert2 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- Vendor JS Files -->
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>

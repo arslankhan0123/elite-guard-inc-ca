@@ -19,9 +19,11 @@ class QuoteController extends Controller
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:255',
             'country' => 'required|string|max:255',
+            'service_id' => 'nullable|exists:services,id',
+            'property_type' => 'nullable|string|max:255',
             'product_id' => 'nullable|exists:products,id',
-            'business_line' => ['required', Rule::in(['industrial_equipment', 'construction_equipment', 'construction_materials', 'food_beverage_equipment'])],
-            'equipment_condition' => ['nullable', Rule::in(['new', 'used', 'either'])],
+            'business_line' => 'nullable|string|max:255',
+            'equipment_condition' => 'nullable|string|max:255',
             'quantity' => 'nullable|string|max:100',
             'required_by' => 'nullable|date|after_or_equal:today',
             'message' => 'required|string',
@@ -30,10 +32,11 @@ class QuoteController extends Controller
         try {
             $data = $request->only([
                 'name', 'company_name', 'email', 'phone', 'country', 'product_id',
-                'business_line', 'equipment_condition', 'quantity', 'required_by', 'message',
+                'service_id', 'property_type', 'business_line', 'equipment_condition', 'quantity', 'required_by', 'message',
             ]);
-            // Keep the legacy required column populated for existing database compatibility.
-            $data['property_type'] = $data['business_line'];
+            if (empty($data['property_type'])) {
+                $data['property_type'] = $data['business_line'] ?? 'service_request';
+            }
             Quote::create($data);
             return response()->json([
                 'status' => 'success',
@@ -47,12 +50,9 @@ class QuoteController extends Controller
         }
     }
 
-    /**
-     * Display a listing of the quote requests (Backend).
-     */
     public function index()
     {
-        $quotes = Quote::with('product')->latest()->get();
+        $quotes = Quote::with(['product', 'service'])->latest()->get();
         return view('admin.quotes.index', compact('quotes'));
     }
 
@@ -61,7 +61,7 @@ class QuoteController extends Controller
      */
     public function show($id)
     {
-        $quote = Quote::with('product')->findOrFail($id);
+        $quote = Quote::with(['product', 'service'])->findOrFail($id);
         return view('admin.quotes.show', compact('quote'));
     }
 
