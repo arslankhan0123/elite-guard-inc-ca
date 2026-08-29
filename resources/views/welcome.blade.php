@@ -23,12 +23,11 @@
     <div class="row align-items-center">
       <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
         <div class="hero-content">
-          <h1>Transform Your Digital Presence</h1>
-          <p>We create innovative digital solutions that drive growth and elevate your brand. From web development
-            to digital marketing, we're your partners in digital transformation.</p>
+          <h1>Trusted Security Solutions Across Alberta</h1>
+          <p>Reliable protection with advanced technology and trained personnel.</p>
           <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Get Started</a>
-            <a href="#" class="btn btn-outline">Our Work</a>
+            <a href="{{ route('home') }}#contact" class="btn btn-primary">Get Started</a>
+            <a href="{{ route('home') }}#services" class="btn btn-outline">Our Services</a>
           </div>
           <div class="hero-stats">
             <div class="stat-item">
@@ -958,8 +957,7 @@
               </div>
               <div class="card-content">
                 <h5>Email Us</h5>
-                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                    data-cfemail="39515c55555679494b565d4c5a4d5d5c5456175a5654">[email&#160;protected]</a></p>
+                <p><a href="mailto:info@eliteguardinc.ca">info@eliteguardinc.ca</a></p>
                 <span class="response-time">Response in 2-4 hours</span>
               </div>
             </div>
@@ -970,7 +968,7 @@
               </div>
               <div class="card-content">
                 <h5>Call Us</h5>
-                <p>+1 (555) 987-6543</p>
+                <p>(403) 830-7772</p>
                 <span class="response-time">Available 9AM - 6PM EST</span>
               </div>
             </div>
