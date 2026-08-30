@@ -283,7 +283,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Why Us</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <p>Providing unmatched security, absolute reliability, and professional vigilance across Alberta.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -293,15 +293,14 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
         <div class="feature-card">
           <div class="icon-wrapper">
-            <i class="bi bi-palette-fill"></i>
+            <i class="bi bi-shield-fill-check" style="color: #34A853;"></i>
           </div>
-          <h4>Creative Excellence</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua ut enim ad minim veniam.</p>
+          <h4>Professional Vigilance</h4>
+          <p>Our officers undergo rigorous training, comprehensive background checks, and regular performance audits to ensure the highest standards of vigilance on your premises.</p>
           <div class="feature-stats">
-            <span class="stat-number" data-purecounter-start="0" data-purecounter-end="95"
-              data-purecounter-duration="2">95</span>
-            <span class="stat-label">% Client Satisfaction</span>
+            <span class="stat-number" data-purecounter-start="0" data-purecounter-end="99"
+              data-purecounter-duration="2">99</span>
+            <span class="stat-label">% On-Time Attendance</span>
           </div>
         </div>
       </div><!-- End Feature Card -->
@@ -309,15 +308,14 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="feature-card">
           <div class="icon-wrapper">
-            <i class="bi bi-graph-up-arrow"></i>
+            <i class="bi bi-speedometer2" style="color: #34A853;"></i>
           </div>
-          <h4>Proven Results</h4>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat duis aute irure dolor in reprehenderit.</p>
+          <h4>Proactive Mobile Patrols</h4>
+          <p>Equipped with GPS tracking and instant dispatch support, our mobile response units ensure prompt incident response and unpredictable patrol coverage to secure your property.</p>
           <div class="feature-stats">
-            <span class="stat-number" data-purecounter-start="0" data-purecounter-end="200"
-              data-purecounter-duration="2">200</span>
-            <span class="stat-label">% ROI Increase</span>
+            <span class="stat-number" data-purecounter-start="0" data-purecounter-end="100"
+              data-purecounter-duration="2">100</span>
+            <span class="stat-label">% Response Reliability</span>
           </div>
         </div>
       </div><!-- End Feature Card -->
@@ -325,70 +323,68 @@
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
         <div class="feature-card">
           <div class="icon-wrapper">
-            <i class="bi bi-award-fill"></i>
+            <i class="bi bi-people-fill" style="color: #34A853;"></i>
           </div>
-          <h4>Expert Team</h4>
-          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum sed ut perspiciatis unde omnis.</p>
+          <h4>Expert Leadership</h4>
+          <p>Managed by security industry veterans, we design custom threat assessment and risk mitigation plans tailored specifically to your facility's unique operational needs.</p>
           <div class="feature-stats">
-            <span class="stat-number" data-purecounter-start="0" data-purecounter-end="50"
-              data-purecounter-duration="2">50</span>
-            <span class="stat-label">+ Awards Won</span>
+            <span class="stat-number" data-purecounter-start="0" data-purecounter-end="15"
+              data-purecounter-duration="2">15</span>
+            <span class="stat-label">+ Years Industry Experience</span>
           </div>
         </div>
       </div><!-- End Feature Card -->
 
     </div>
 
-    <div class="row mt-5">
+    <div class="row mt-5 align-items-center">
       <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-        <div class="feature-showcase">
-          <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/illustration/illustration-14.webp"
-            alt="Creative Process" class="img-fluid">
+        <div class="feature-showcase" style="border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
+          <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80"
+            alt="Elite Guard Patrol Security" class="img-fluid" style="width: 100%; object-fit: cover; max-height: 480px;">
         </div>
       </div>
 
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
         <div class="feature-content">
-          <h3>Why Leading Brands Choose Us</h3>
-          <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur excepteur sint occaecat.</p>
+          <h3>Why Leading Businesses Trust Elite Guard</h3>
+          <p class="lead">We combine highly trained licensed guards, advanced digital reporting tools, and dedicated account managers to provide a secure environment.</p>
 
           <div class="feature-list">
             <div class="feature-item">
               <div class="feature-icon">
-                <i class="bi bi-check-circle-fill"></i>
+                <i class="bi bi-check-circle-fill" style="color: #34A853;"></i>
               </div>
               <div class="feature-text">
-                <h5>Strategic Thinking</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
+                <h5>Licensed & Insured Officers</h5>
+                <p>All security guards are fully licensed under Alberta's SSIA, background-checked, and regularly trained.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <div class="feature-icon">
-                <i class="bi bi-check-circle-fill"></i>
+                <i class="bi bi-check-circle-fill" style="color: #34A853;"></i>
               </div>
               <div class="feature-text">
-                <h5>Data-Driven Approach</h5>
-                <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                <h5>Real-Time Digital Guard Tracking</h5>
+                <p>We use GPS tracking and digital patrol logging to provide transparent, real-time security reports.</p>
               </div>
             </div>
 
             <div class="feature-item">
               <div class="feature-icon">
-                <i class="bi bi-check-circle-fill"></i>
+                <i class="bi bi-check-circle-fill" style="color: #34A853;"></i>
               </div>
               <div class="feature-text">
-                <h5>24/7 Support</h5>
-                <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
+                <h5>24/7 Dispatch & Support</h5>
+                <p>Our round-the-clock dispatch center stands ready to respond immediately to any on-site alerts or emergencies.</p>
               </div>
             </div>
           </div>
 
-          <div class="cta-wrapper">
-            <a href="#" class="btn btn-primary">Start Your Project</a>
-            <a href="#" class="btn btn-outline">View Portfolio</a>
+          <div class="cta-wrapper mt-4">
+            <a href="{{ route('quote') }}" class="btn btn-primary" style="border-radius: 30px; padding: 12px 35px; margin-right: 15px;">Request a Quote</a>
+            <a href="#services" class="btn btn-outline" style="border-radius: 30px; padding: 12px 35px;">Our Services</a>
           </div>
         </div>
       </div>
