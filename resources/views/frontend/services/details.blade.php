@@ -12,9 +12,7 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
         padding: 100px 0 !important;
         text-align: center;
         border-radius: 20px;
@@ -26,7 +24,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+        background: transparent !important;
         z-index: 1;
     }
     .rts__breadcrumb__content .list {
@@ -464,7 +462,7 @@
 <!-- rts service details area end -->
 
 <!-- rts faq area start -->
-<section class="rts__faq__area rts-section-gap inner-bg ">
+<!-- <section class="rts__faq__area rts-section-gap inner-bg ">
     <div class="container">
         <div class="section-title text-center position-static">
             <span class="sub-title"> FAQ</span>
@@ -519,6 +517,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- rts faq area end -->
 @endsection

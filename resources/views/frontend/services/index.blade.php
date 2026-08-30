@@ -7,18 +7,22 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+        padding: 100px 0 !important;
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     }
-
     .rts__breadcrumb__content::before {
         content: "";
         position: absolute;
         inset: 0;
-        background: rgba(0, 0, 0, 0.45);
-        /* black overlay */
+        background: transparent !important;
         z-index: -1;
         border-radius: inherit;
     }
-
     .rts__breadcrumb__content .list,
     .rts__breadcrumb__content .title {
         position: relative;

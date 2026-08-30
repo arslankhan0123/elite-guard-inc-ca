@@ -13,9 +13,7 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
         padding: 100px 0 !important;
         text-align: center;
         border-radius: 20px;
@@ -27,7 +25,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%) !important;
+        background: transparent !important;
         z-index: 1;
     }
     .rts__breadcrumb__content .list {
