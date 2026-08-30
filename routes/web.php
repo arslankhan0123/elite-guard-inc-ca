@@ -25,6 +25,9 @@ Route::get('/gallery', [FrontendController::class, 'gallery'])->name('gallery');
 Route::get('/reviews', [FrontendController::class, 'reviews'])->name('reviews');
 Route::get('/request-quote', [FrontendController::class, 'quote'])->name('quote');
 Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
+Route::get('/privacy-policy', [FrontendController::class, 'privacyPolicy'])->name('privacy.policy');
+Route::get('/refund-policy', [FrontendController::class, 'refundPolicy'])->name('refund.policy');
+Route::get('/terms-conditions', [FrontendController::class, 'termsConditions'])->name('terms.conditions');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
 Route::post('/quote/store', [QuoteController::class, 'store'])->name('quote.store');
 Route::group(['prefix' => '/services'], function () {

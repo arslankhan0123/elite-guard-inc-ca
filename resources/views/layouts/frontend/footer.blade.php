@@ -49,9 +49,9 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Legal</h4>
         <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Refund Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="{{ route('privacy.policy') }}">Privacy Policy</a></li>
+          <li><a href="{{ route('refund.policy') }}">Refund Policy</a></li>
+          <li><a href="{{ route('terms.conditions') }}">Terms & Conditions</a></li>
         </ul>
       </div>
 

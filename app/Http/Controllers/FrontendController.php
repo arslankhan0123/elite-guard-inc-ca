@@ -124,4 +124,19 @@ class FrontendController extends Controller
 
         return view('frontend.products.details', compact('product', 'relatedProducts'));
     }
+
+    public function privacyPolicy()
+    {
+        return view('frontend.legal.privacy');
+    }
+
+    public function refundPolicy()
+    {
+        return view('frontend.legal.refund');
+    }
+
+    public function termsConditions()
+    {
+        return view('frontend.legal.terms');
+    }
 }
