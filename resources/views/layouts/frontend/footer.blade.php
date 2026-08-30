@@ -34,34 +34,32 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Our Services</h4>
         <ul>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Product Management</a></li>
-          <li><a href="#">Marketing</a></li>
-          <li><a href="#">Graphic Design</a></li>
+          @php
+            $latestServices = \App\Models\Service::where('status', 'active')->latest()->take(5)->get();
+          @endphp
+          @forelse($latestServices as $latestService)
+            <li><a href="{{ route('services.details', $latestService->id) }}">{{ $latestService->name }}</a></li>
+          @empty
+            <li><a href="#">Security Guards</a></li>
+            <li><a href="#">Patrol Services</a></li>
+          @endforelse
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Hic solutasetp</h4>
+        <h4>Legal</h4>
         <ul>
-          <li><a href="#">Molestiae accusamus iure</a></li>
-          <li><a href="#">Excepturi dignissimos</a></li>
-          <li><a href="#">Suscipit distinctio</a></li>
-          <li><a href="#">Dilecta</a></li>
-          <li><a href="#">Sit quas consectetur</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Nobis illum</h4>
-        <ul>
-          <li><a href="#">Ipsam</a></li>
-          <li><a href="#">Laudantium dolorum</a></li>
-          <li><a href="#">Dinera</a></li>
-          <li><a href="#">Trodelas</a></li>
-          <li><a href="#">Flexo</a></li>
-        </ul>
+        <h4>About Company</h4>
+        <p style="font-size: 14px; line-height: 1.6; color: rgba(255, 255, 255, 0.6); margin: 0;">
+          Elite Guard Inc. is Alberta's premier security provider, delivering professional, licensed, and reliable safety solutions for all properties.
+        </p>
       </div>
 
     </div>
