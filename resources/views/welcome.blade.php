@@ -913,7 +913,8 @@
             <p>Contact us today to learn more about our security services and how we can help protect your property, people, and assets.</p>
           </div>
 
-          <form action="forms/contact.php" method="post" class="php-email-form">
+          <form id="contactForm" action="{{ route('contact.store') }}" method="post" class="php-email-form">
+            @csrf
             <div class="row">
               <div class="col-md-6 mb-3">
                 <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
@@ -930,12 +931,6 @@
             <div class="mb-4">
               <textarea class="form-control" name="message" rows="4"
                 placeholder="Tell us more about your project..." required=""></textarea>
-            </div>
-
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
 
             <button type="submit" class="submit-btn">
@@ -1019,4 +1014,63 @@
     </div>
   </div>
 </section><!-- /Contact Section -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        $('#contactForm').on('submit', function(e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+
+            let form = $(this);
+            let submitBtn = form.find('.submit-btn');
+            let submitBtnText = submitBtn.find('span');
+            let submitIcon = submitBtn.find('i');
+            let formData = form.serialize();
+
+            submitBtn.prop('disabled', true);
+            submitBtnText.text('Sending...');
+            if (submitIcon.length) {
+                submitIcon.attr('class', 'fa-solid fa-spinner fa-spin ms-2');
+            }
+
+            $.ajax({
+                url: form.attr('action'),
+                type: 'POST',
+                data: formData,
+                success: function(response) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Success!',
+                        text: response.message,
+                        confirmButtonColor: '#34A853'
+                    });
+                    form[0].reset();
+                    submitBtn.prop('disabled', false);
+                    submitBtnText.text('Send Message');
+                    if (submitIcon.length) {
+                        submitIcon.attr('class', 'bi bi-send-fill');
+                    }
+                },
+                error: function(xhr) {
+                    let errorMessage = 'Something went wrong. Please try again.';
+                    if (xhr.responseJSON && xhr.responseJSON.message) {
+                        errorMessage = xhr.responseJSON.message;
+                    }
+
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: errorMessage,
+                        confirmButtonColor: '#d33'
+                    });
+                    submitBtn.prop('disabled', false);
+                    submitBtnText.text('Send Message');
+                    if (submitIcon.length) {
+                        submitIcon.attr('class', 'bi bi-send-fill');
+                    }
+                }
+            });
+        });
+    });
+</script>
 @endsection

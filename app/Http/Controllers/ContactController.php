@@ -12,16 +12,24 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'fname' => 'required|string|max:125',
-            'lname' => 'required|string|max:125',
+            'fname' => 'required_without:name|string|max:125',
+            'lname' => 'nullable|string|max:125',
+            'name' => 'required_without:fname|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'nullable|string|max:20',
             'subject' => 'nullable|string|max:255',
             'message' => 'required|string',
         ]);
 
+        $name = '';
+        if ($request->filled('name')) {
+            $name = $validated['name'];
+        } else {
+            $name = $validated['fname'] . ($request->filled('lname') ? ' ' . $validated['lname'] : '');
+        }
+
         $contact = Contact::create([
-            'name' => $validated['fname'] . ' ' . $validated['lname'],
+            'name' => $name,
             'email' => $validated['email'],
             'phone' => $validated['phone'] ?? null,
             'subject' => $validated['subject'] ?? 'New Contact Inquiry',
@@ -34,6 +42,13 @@ class ContactController extends Controller
         } catch (\Exception $e) {
             // Log the error or handle it as needed
             \Log::error('Mail sending failed: ' . $e->getMessage());
+        }
+
+        if ($request->expectsJson() || $request->ajax()) {
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Your message has been sent successfully!'
+            ]);
         }
 
         return redirect()->back()->with('success', 'Your message has been sent successfully!');
