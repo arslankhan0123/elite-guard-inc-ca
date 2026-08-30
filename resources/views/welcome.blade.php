@@ -143,43 +143,74 @@
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="row gy-4">
-      @php
-        $icons = [
-          'bi bi-palette',
-          'bi bi-layout-text-window-reverse',
-          'bi bi-code-slash',
-          'bi bi-phone',
-          'bi bi-megaphone',
-          'bi bi-search',
-        ];
-      @endphp
-      @forelse($services as $service)
+    <div class="services-slider swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 4000
+          },
+          "slidesPerView": 1,
+          "spaceBetween": 20,
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "768": {
+              "slidesPerView": 2,
+              "spaceBetween": 30
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 40
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
         @php
-          $iconClass = $icons[$loop->index % count($icons)];
+          $icons = [
+            'bi bi-shield-fill-check',
+            'bi bi-eye-fill',
+            'bi bi-truck',
+            'bi bi-calendar-event-fill',
+            'bi bi-phone',
+            'bi bi-search',
+          ];
         @endphp
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="{{ 200 + ($loop->index % 3) * 100 }}">
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="{{ $iconClass }}"></i>
+        @forelse($services as $service)
+          @php
+            $imagePath = $service->feature_image ? asset($service->feature_image) : 'https://bootstrapmade.com/content/demo/Clarity/assets/img/portfolio/portfolio-7.webp';
+          @endphp
+          <div class="swiper-slide">
+            <div class="leader-card" style="height: 100%; display: flex; flex-direction: column;">
+              <div class="leader-image" style="height: 240px; overflow: hidden; border-radius: 12px 12px 0 0;">
+                <img src="{{ $imagePath }}" alt="{{ $service->name }}" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              <div class="leader-info" style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <h5 style="font-weight: 700; font-size: 18px; margin-bottom: 5px;">{{ $service->name }}</h5>
+                  <span class="position" style="color: #34A853; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 12px;">Security Service</span>
+                  <p style="font-size: 14px; color: #94a3b8; line-height: 1.6; margin-bottom: 15px;">{{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}</p>
+                </div>
+                <div style="margin-top: auto; text-align: center;">
+                  <a href="{{ route('services.details', $service->id) }}" class="btn btn-primary" style="border-radius: 30px; padding: 8px 25px; font-weight: 600; font-size: 13px; background: #34A853; border-color: #34A853; width: 100%;">
+                    Learn More <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-            <h4><a href="{{ route('services.details', $service->id) }}">{{ $service->name }}</a></h4>
-            <p>{{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}</p>
-            @if($loop->first)
-              <div class="service-badge">Most Popular</div>
-            @endif
-            <a href="{{ route('services.details', $service->id) }}" class="service-link">
-              <span>Learn More</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
           </div>
-        </div>
-      @empty
-        <div class="col-12 text-center">
-          <p>No services found.</p>
-        </div>
-      @endforelse
-
+        @empty
+          <div class="swiper-slide text-center">
+            <p>No services found.</p>
+          </div>
+        @endforelse
+      </div>
+      <div class="swiper-pagination" style="position: relative; margin-top: 40px;"></div>
     </div>
 
     <div class="row mt-5">
@@ -197,13 +228,12 @@
 </section><!-- /Services Section -->
 
 <!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section">
+<!-- <section id="portfolio" class="portfolio section">
 
-  <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Services Gallery</h2>
     <p>At Elite Guard Inc., we offer a wide range of security services to protect your property, people, and assets. Our team comprises highly trained, licensed security officers who bring extensive experience in security management and risk mitigation. We utilize advanced technologies and proven industry practices to offer superior protection.</p>
-  </div><!-- End Section Title -->
+  </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -213,7 +243,7 @@
         @foreach($categories as $category)
           <li data-filter=".filter-{{ $category->slug }}">{{ $category->name }}</li>
         @endforeach
-      </ul><!-- End Portfolio Filters -->
+      </ul>
 
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
         @forelse($services as $service)
@@ -260,7 +290,7 @@
             <p>No services found.</p>
           </div>
         @endforelse
-      </div><!-- End Portfolio Items Container -->
+      </div>
 
     </div>
 
@@ -272,19 +302,17 @@
         <a href="{{ route('services') }}" class="btn btn-outline">View All Services</a>
       </div>
     </div>
-
   </div>
 
-</section><!-- /Portfolio Section -->
+</section> -->
 
 <!-- Why Us Section -->
 <section id="why-us" class="why-us section">
 
-  <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
-    <h2>Why Us</h2>
+    <h2>Why Choose Us</h2>
     <p>Providing unmatched security, absolute reliability, and professional vigilance across Alberta.</p>
-  </div><!-- End Section Title -->
+  </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -303,7 +331,7 @@
             <span class="stat-label">% On-Time Attendance</span>
           </div>
         </div>
-      </div><!-- End Feature Card -->
+      </div>
 
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
         <div class="feature-card">
@@ -318,7 +346,7 @@
             <span class="stat-label">% Response Reliability</span>
           </div>
         </div>
-      </div><!-- End Feature Card -->
+      </div>
 
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
         <div class="feature-card">
@@ -333,7 +361,7 @@
             <span class="stat-label">+ Years Industry Experience</span>
           </div>
         </div>
-      </div><!-- End Feature Card -->
+      </div>
 
     </div>
 
@@ -392,16 +420,15 @@
 
   </div>
 
-</section><!-- /Why Us Section -->
+</section>
 
 <!-- Testimonials Section -->
 <section id="testimonials" class="testimonials section">
 
-  <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Testimonials</h2>
     <p>See how Elite Guard Inc. protects and serves businesses, properties, and events across Alberta.</p>
-  </div><!-- End Section Title -->
+  </div>
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -641,33 +668,32 @@
 <section id="team" class="team section">
 
   <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
+  <!-- <div class="container section-title" data-aos="fade-up">
     <h2>Team</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-  </div><!-- End Section Title -->
+    <p>Meet the dedicated security professionals guiding our training, patrol, and response operations across Alberta.</p>
+  </div> -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="row g-4">
+    <!-- <div class="row g-4">
 
       <div class="col-lg-6">
         <div class="team-intro" data-aos="fade-right" data-aos-delay="150">
           <div class="intro-content">
-            <h3>Meet Our Exceptional Team</h3>
-            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
-              voluptates repudiandae sint et molestiae non recusandae.</p>
+            <h3>Meet Our Security Leadership</h3>
+            <p>Elite Guard is managed by experienced law enforcement veterans and corporate security specialists committed to your protection.</p>
             <div class="stats-row">
               <div class="stat-item">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Team Members</span>
+                <span class="stat-number">120+</span>
+                <span class="stat-label">Licensed Guards</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number">8</span>
-                <span class="stat-label">Departments</span>
+                <span class="stat-number">4</span>
+                <span class="stat-label">Core Services</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number">15+</span>
-                <span class="stat-label">Countries</span>
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Dispatch Support</span>
               </div>
             </div>
           </div>
@@ -682,7 +708,7 @@
                 alt="Team member">
               <div class="member-overlay">
                 <h5>Sarah Chen</h5>
-                <span>Creative Director</span>
+                <span>Operations Coordinator</span>
                 <div class="social-icons">
                   <a href="#"><i class="bi bi-linkedin"></i></a>
                   <a href="#"><i class="bi bi-twitter"></i></a>
@@ -697,7 +723,7 @@
                 alt="Team member">
               <div class="member-overlay">
                 <h5>Marcus Johnson</h5>
-                <span>Tech Lead</span>
+                <span>Patrol Supervisor</span>
                 <div class="social-icons">
                   <a href="#"><i class="bi bi-github"></i></a>
                   <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -712,7 +738,7 @@
                 alt="Team member">
               <div class="member-overlay">
                 <h5>Emma Rodriguez</h5>
-                <span>Product Manager</span>
+                <span>HR & Compliance</span>
                 <div class="social-icons">
                   <a href="#"><i class="bi bi-instagram"></i></a>
                   <a href="#"><i class="bi bi-dribbble"></i></a>
@@ -727,7 +753,7 @@
                 alt="Team member">
               <div class="member-overlay">
                 <h5>David Kim</h5>
-                <span>UX Architect</span>
+                <span>Tactical Advisor</span>
                 <div class="social-icons">
                   <a href="#"><i class="bi bi-behance"></i></a>
                   <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -738,12 +764,13 @@
         </div>
       </div>
 
-    </div>
+    </div> -->
 
     <div class="row mt-5">
       <div class="col-12">
         <div class="team-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
           <h4 class="carousel-title">Leadership Team</h4>
+          <p style="text-align: center;">Meet the dedicated security professionals guiding our training, patrol, and response operations across Alberta.</p>
 
           <div class="leadership-slider swiper init-swiper">
             <script type="application/json" class="swiper-config">
@@ -778,9 +805,8 @@
                   </div>
                   <div class="leader-info">
                     <h5>Jennifer Walsh</h5>
-                    <span class="position">Chief Executive Officer</span>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim
-                      id.</p>
+                    <span class="position">Chief Executive Officer & Founder</span>
+                    <p>With over 20 years in law enforcement and private security management, Jennifer leads Elite Guard Inc. with a mission to deliver elite protection services across Alberta.</p>
                     <div class="leader-contact">
                       <a href="#" class="contact-btn">
                         <i class="bi bi-envelope"></i>
@@ -801,9 +827,8 @@
                   </div>
                   <div class="leader-info">
                     <h5>Robert Martinez</h5>
-                    <span class="position">Chief Technology Officer</span>
-                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam
-                      quis.</p>
+                    <span class="position">Director of Operations & Tactical Lead</span>
+                    <p>Robert oversees our field guard operations, quality compliance, and tactical response strategies, ensuring all deployed officers meet strict SSIA regulations.</p>
                     <div class="leader-contact">
                       <a href="#" class="contact-btn">
                         <i class="bi bi-envelope"></i>
@@ -824,9 +849,8 @@
                   </div>
                   <div class="leader-info">
                     <h5>Lisa Thompson</h5>
-                    <span class="position">Head of Operations</span>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                      pariatur.</p>
+                    <span class="position">Head of Client Relations & Risk Assessment</span>
+                    <p>Lisa acts as the primary contact for our corporate and industrial clients, conducting thorough security audits and tailoring customized guard schedules.</p>
                     <div class="leader-contact">
                       <a href="#" class="contact-btn">
                         <i class="bi bi-envelope"></i>
@@ -847,9 +871,8 @@
                   </div>
                   <div class="leader-info">
                     <h5>Alex Garcia</h5>
-                    <span class="position">VP of Marketing</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
-                      labore.</p>
+                    <span class="position">Field Supervisor & Guard Training Coordinator</span>
+                    <p>Alex directs our recruit background checks, field officer inspections, and continuous emergency response drills to keep our teams fully prepared.</p>
                     <div class="leader-contact">
                       <a href="#" class="contact-btn">
                         <i class="bi bi-envelope"></i>

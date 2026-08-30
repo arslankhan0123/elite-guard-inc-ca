@@ -2262,7 +2262,7 @@ section,
 .team .team-carousel-wrapper .carousel-title {
     text-align: center;
     font-size: 1.8rem;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     color: var(--heading-color);
 }
 
