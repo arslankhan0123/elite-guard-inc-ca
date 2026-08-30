@@ -404,7 +404,7 @@
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
     <h2>Testimonials</h2>
-    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    <p>See how Elite Guard Inc. protects and serves businesses, properties, and events across Alberta.</p>
   </div><!-- End Section Title -->
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -438,172 +438,17 @@
         }
       </script>
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="testimonial-header">
-              <div class="user-avatar">
-                <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-12.webp"
-                  alt="Profile Image">
-              </div>
-              <div class="user-info">
-                <h3>Jennifer Martinez</h3>
-                <span class="user-role">Product Designer</span>
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <div class="quote-mark">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum consectetur adipiscing elit.</p>
-            </div>
-            <div class="testimonial-footer">
-              <div class="company-badge">
-                <i class="bi bi-building"></i>
-                <span>TechCorp</span>
-              </div>
-              <div class="verified-badge">
-                <i class="bi bi-patch-check-fill"></i>
-                <span>Verified</span>
-              </div>
-            </div>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
-            <div class="testimonial-header">
-              <div class="user-avatar">
-                <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-11.webp"
-                  alt="Profile Image">
-              </div>
-              <div class="user-info">
-                <h3>Alexander Chen</h3>
-                <span class="user-role">Frontend Engineer</span>
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <div class="quote-mark">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            </div>
-            <div class="testimonial-footer">
-              <div class="company-badge">
-                <i class="bi bi-building"></i>
-                <span>InnovateLab</span>
-              </div>
-              <div class="verified-badge">
-                <i class="bi bi-patch-check-fill"></i>
-                <span>Verified</span>
-              </div>
-            </div>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
-            <div class="testimonial-header">
-              <div class="user-avatar">
-                <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-8.webp"
-                  alt="Profile Image">
-              </div>
-              <div class="user-info">
-                <h3>Rachel Taylor</h3>
-                <span class="user-role">Marketing Lead</span>
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <div class="quote-mark">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur excepteur sint occaecat cupidatat non proident.</p>
-            </div>
-            <div class="testimonial-footer">
-              <div class="company-badge">
-                <i class="bi bi-building"></i>
-                <span>GrowthCo</span>
-              </div>
-              <div class="verified-badge">
-                <i class="bi bi-patch-check-fill"></i>
-                <span>Verified</span>
-              </div>
-            </div>
-          </div>
-        </div><!-- End testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="testimonial-header">
-              <div class="user-avatar">
-                <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-14.webp"
-                  alt="Profile Image">
-              </div>
-              <div class="user-info">
-                <h3>Christopher Lee</h3>
-                <span class="user-role">VP Engineering</span>
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                </div>
-              </div>
-            </div>
-            <div class="testimonial-content">
-              <div class="quote-mark">
-                <i class="bi bi-quote"></i>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                et dolore magna aliqua enim ad minim veniam.</p>
-            </div>
-            <div class="testimonial-footer">
-              <div class="company-badge">
-                <i class="bi bi-building"></i>
-                <span>DevStream</span>
-              </div>
-              <div class="verified-badge">
-                <i class="bi bi-patch-check-fill"></i>
-                <span>Verified</span>
-              </div>
-            </div>
-          </div>
-        </div><!-- End testimonial item -->
-
+        <!-- Testimonial 5: Access Control & Monitoring -->
         <div class="swiper-slide">
           <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
             <div class="testimonial-header">
               <div class="user-avatar">
                 <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-5.webp"
-                  alt="Profile Image">
+                  alt="Chloe Tremblay">
               </div>
               <div class="user-info">
-                <h3>Amanda Rodriguez</h3>
-                <span class="user-role">UX Researcher</span>
+                <h3>Chloe Tremblay</h3>
+                <span class="user-role">Logistics Facilities Director</span>
                 <div class="rating">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -617,13 +462,12 @@
               <div class="quote-mark">
                 <i class="bi bi-quote"></i>
               </div>
-              <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure
-                dolor in reprehenderit in voluptate velit esse.</p>
+              <p>Elite Guard provides outstanding gate-level <strong>Access Control & Monitoring</strong> for our logistics facility. Their guards are punctual, thorough with digital check-ins, and their entry logs keep us secure.</p>
             </div>
             <div class="testimonial-footer">
               <div class="company-badge">
                 <i class="bi bi-building"></i>
-                <span>UserFirst</span>
+                <span>Alberta Logistics Hub</span>
               </div>
               <div class="verified-badge">
                 <i class="bi bi-patch-check-fill"></i>
@@ -632,6 +476,163 @@
             </div>
           </div>
         </div><!-- End testimonial item -->
+
+        <!-- Testimonial 7: Uniformed Security Personnel -->
+        <div class="swiper-slide">
+          <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="testimonial-header">
+              <div class="user-avatar">
+                <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-8.webp"
+                  alt="Lisa Wong">
+              </div>
+              <div class="user-info">
+                <h3>Lisa Wong</h3>
+                <span class="user-role">Condo Board President</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-mark">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Our condominium board highly praises their <strong>Uniformed Security Personnel</strong>. Their concierge security officers are incredibly reliable, always responsive, and handle resident inquiries with ultimate care.</p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="company-badge">
+                <i class="bi bi-building"></i>
+                <span>Riverview Condominiums</span>
+              </div>
+              <div class="verified-badge">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>Verified</span>
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <!-- Testimonial 8: Access Control & Monitoring -->
+        <div class="swiper-slide">
+          <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="testimonial-header">
+              <div class="user-avatar">
+                <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-11.webp"
+                  alt="Thomas McGregor">
+              </div>
+              <div class="user-info">
+                <h3>Thomas McGregor</h3>
+                <span class="user-role">Industrial Safety Director</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-mark">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>For our industrial plant sites, strict <strong>Access Control & Monitoring</strong> is vital. Elite Guard officers handle credentials verification, guest badges, and video feed surveillance with unmatched accuracy.</p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="company-badge">
+                <i class="bi bi-building"></i>
+                <span>McGregor Energy</span>
+              </div>
+              <div class="verified-badge">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>Verified</span>
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <!-- Testimonial 9: Event Security Management -->
+        <div class="swiper-slide">
+          <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="testimonial-header">
+              <div class="user-avatar">
+                <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-12.webp"
+                  alt="Elena Rostova">
+              </div>
+              <div class="user-info">
+                <h3>Elena Rostova</h3>
+                <span class="user-role">Festival Coordinator</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-mark">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>We hired Elite Guard for our outdoor festival crowd control and <strong>Event Security Management</strong>. Their staff managed entry points, VIP areas, and emergency lanes with superb coordination and patience.</p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="company-badge">
+                <i class="bi bi-building"></i>
+                <span>Calgary Summer Festivals</span>
+              </div>
+              <div class="verified-badge">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>Verified</span>
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <!-- Testimonial 10: Mobile Patrol Services -->
+        <div class="swiper-slide">
+          <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="testimonial-header">
+              <div class="user-avatar">
+                <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-14.webp"
+                  alt="Brian O'Connor">
+              </div>
+              <div class="user-info">
+                <h3>Brian O'Connor</h3>
+                <span class="user-role">Operations Manager</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-mark">
+                <i class="bi bi-quote"></i>
+              </div>
+              <p>Their <strong>Mobile Patrol Services</strong> units are incredibly reliable. Knowing that they check our perimeter fences and warehouse dock doors at irregular intervals throughout the night gives us total peace of mind.</p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="company-badge">
+                <i class="bi bi-building"></i>
+                <span>Edmonton Logistics Park</span>
+              </div>
+              <div class="verified-badge">
+                <i class="bi bi-patch-check-fill"></i>
+                <span>Verified</span>
+              </div>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
       </div>
       <div class="swiper-pagination"></div>
     </div>
