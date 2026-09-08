@@ -28,6 +28,13 @@
         position: relative;
         z-index: 2;
     }
+    .rts__service__details__content,
+    .rts__service__details__content .tt,
+    .rts__service__details__content .tt *,
+    .rts__service__details__content p,
+    .rts__service__details__content span {
+        color: #111827 !important;
+    }
 </style>
 <!-- rts breadcrumb area start -->
 <section class="rts__breadcrumb__area">

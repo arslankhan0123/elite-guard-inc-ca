@@ -75,11 +75,12 @@
         padding: 45px !important;
         border: 1px solid rgba(0, 0, 0, 0.04);
         margin-bottom: 30px;
+        color: #111827 !important;
     }
     .rts__service__details__content .title {
         font-size: 28px;
         font-weight: 700;
-        color: #002524;
+        color: #002524 !important;
         margin-bottom: 25px;
         position: relative;
         display: inline-block;
@@ -95,10 +96,21 @@
         background-color: #34A853;
         border-radius: 2px;
     }
-    .rts__service__details__content .tt {
+    .rts__service__details__content .tt,
+    .rts__service__details__content .tt *,
+    .rts__service__details__content p,
+    .rts__service__details__content span,
+    .rts__service__details__content div:not(.title),
+    .rts__service__details__content li,
+    .rts__service__details__content ul,
+    .rts__service__details__content ol,
+    .rts__service__details__content strong,
+    .rts__service__details__content b,
+    .rts__service__details__content em,
+    .rts__service__details__content a:not(.btn) {
+        color: #111827 !important;
         font-size: 16px;
         line-height: 1.8;
-        color: #4a5568;
     }
 
     /* Sidebar widget styling */
@@ -317,7 +329,7 @@
                     <div class="rts__service__details__content top-sticky">
                         <div class="single__item">
                             <h2 class="title">What We Offer / Key Features</h2>
-                            <p class="tt">{!! $service->long_description !!}</p>
+                            <div class="tt">{!! $service->long_description !!}</div>
                         </div>
 
                     </div>
