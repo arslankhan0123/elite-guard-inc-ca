@@ -12,7 +12,9 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%) !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
         padding: 100px 0 !important;
         text-align: center;
         border-radius: 20px;
@@ -24,8 +26,9 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: transparent !important;
+        background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(11, 15, 25, 0.85) 100%) !important;
         z-index: 1;
+        border-radius: inherit;
     }
     .rts__breadcrumb__content .list {
         display: flex;
@@ -299,7 +302,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="rts__breadcrumb__content"
-                    data-bg-src="{{ asset($service->feature_image) }}">
+                    style="background-image: url('{{ $service && $service->feature_image ? asset($service->feature_image) : asset('services_page_bg.jpeg') }}');">
                     <ul class="list">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><i class="fa-solid fa-chevron-right"></i></li>
