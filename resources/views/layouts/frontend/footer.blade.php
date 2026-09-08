@@ -4,7 +4,9 @@
     <div class="row gy-4">
       <div class="col-lg-4 col-md-6 footer-about">
         <a href="{{ route('home') }}" class="logo d-flex align-items-center">
-          <img src="{{ asset('frontend/assets/img/logo.png') }}" alt="">
+          <span class="logo-badge" style="background: #ffffff; border-radius: 50%; width: 44px; height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 5px; margin-right: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); flex-shrink: 0;">
+            <img src="{{ asset('frontend/assets/img/logo.png') }}" alt="Logo" style="max-height: 100%; max-width: 100%; object-fit: contain; margin-right: 0;">
+          </span>
           <span class="sitename">Elite Guard Inc.</span>
         </a>
         <div class="footer-contact pt-3">
