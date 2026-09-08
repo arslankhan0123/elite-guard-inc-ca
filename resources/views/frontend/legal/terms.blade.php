@@ -3,9 +3,12 @@
 
 @section('content')
 <div class="container mt-4">
-    <section class="rts__breadcrumb__area" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); padding: 80px 0; text-align: center; border-radius: 20px; margin-bottom: 30px;">
-        <h1 style="color: white; font-weight: 800; font-size: 40px; margin-bottom: 10px;">Terms & Conditions</h1>
-        <p style="color: rgba(255, 255, 255, 0.7); font-size: 16px; margin: 0;">Standard service terms, client liabilities, and operational regulations.</p>
+    <section class="rts__breadcrumb__area" style="position: relative; overflow: hidden; background-image: url('{{ asset('frontend/assets/img/terms_banner_bg.png') }}'); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 95px 20px; text-align: center; border-radius: 20px; margin-bottom: 40px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);">
+        <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(11, 15, 25, 0.85) 100%); z-index: 1; border-radius: inherit;"></div>
+        <div style="position: relative; z-index: 2;">
+            <h1 style="color: white; font-weight: 800; font-size: 40px; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Terms & Conditions</h1>
+            <p style="color: rgba(255, 255, 255, 0.85); font-size: 16px; margin: 0;">Standard service terms, client liabilities, and operational regulations.</p>
+        </div>
     </section>
 </div>
 
