@@ -23,8 +23,8 @@
       <div class="row align-items-center">
         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
           <div class="hero-content">
-            <h1>Trusted Security Solutions Across Alberta</h1>
-            <p>Reliable protection with advanced technology and trained personnel.</p>
+            <h1>SECURITY YOU CAN TRUST</h1>
+            <p>Elite Guard Inc. provides professional, technology-supported security for businesses, properties and communities. We combine trained personnel, mobile patrols, responsive supervision and digital reporting to deliver dependable protection and greater accountability.</p>
             <div class="hero-buttons">
               <a href="{{ route('home') }}#contact" class="btn btn-primary">Get Started</a>
               <a href="{{ route('home') }}#services" class="btn btn-outline">Our Services</a>
@@ -78,46 +78,47 @@
 
         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
           <div class="content">
-            <h6 class="subtitle">About Us</h6>
-            <h2>Your Trusted Security Partner in Alberta</h2>
+            <h6 class="subtitle">Protection Built Around You</h6>
+            <h2>Dependable Protection & Greater Accountability</h2>
             <p>
-              At Elite Guard Inc., we are committed to providing professional security services across Alberta. Our
-              reputation is built on trust, experience, and a relentless dedication to safeguarding our clients'
-              interests. We offer tailored security solutions designed to meet the unique needs of each client.
+              Elite Guard Inc. provides professional, technology-supported security for businesses, properties and communities. We combine trained personnel, mobile patrols, responsive supervision and digital reporting to deliver dependable protection and greater accountability.
             </p>
 
             <div class="row gy-3 mb-4 mt-2">
               <div class="col-sm-6">
                 <div class="mission-box"
                   style="background: #f8fafc; padding: 20px; border-radius: 12px; height: 100%; border-left: 4px solid #34A853; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
-                  <h5 style="font-weight: 700; color: #002524; margin-bottom: 8px; font-size: 16px;">Our Mission</h5>
-                  <p style="color: #475569; font-size: 13px; line-height: 1.5; margin: 0;">
-                    To deliver reliable, comprehensive, and proactive security services that ensure the safety and peace
-                    of mind of our clients.
+                  <h5 style="font-weight: 700; color: #002524; margin-bottom: 8px; font-size: 14px;">24/7 SECURITY</h5>
+                  <p style="color: #475569; font-size: 12px; line-height: 1.5; margin: 0;">
+                    Around-the-clock coverage and response
                   </p>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="values-box"
                   style="background: #f8fafc; padding: 20px; border-radius: 12px; height: 100%; border-left: 4px solid #34A853; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
-                  <h5 style="font-weight: 700; color: #002524; margin-bottom: 12px; font-size: 16px;">Our Values</h5>
-                  <ul style="list-style: none; padding: 0; margin: 0;">
-                    <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; font-size: 12px;">
-                      <i class="bi bi-shield-fill-check" style="color: #34A853; font-size: 14px; margin-top: 1px;"></i>
-                      <span style="color: #475569;"><strong style="color: #002524;">Integrity:</strong> We act with
-                        honesty and uphold the highest ethical standards.</span>
-                    </li>
-                    <li style="margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; font-size: 12px;">
-                      <i class="bi bi-eye-fill" style="color: #34A853; font-size: 14px; margin-top: 1px;"></i>
-                      <span style="color: #475569;"><strong style="color: #002524;">Vigilance:</strong> We remain alert
-                        and responsive to potential threats.</span>
-                    </li>
-                    <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 12px;">
-                      <i class="bi bi-person-fill-check" style="color: #34A853; font-size: 14px; margin-top: 1px;"></i>
-                      <span style="color: #475569;"><strong style="color: #002524;">Professionalism:</strong> We conduct
-                        ourselves with discipline and respect at all times.</span>
-                    </li>
-                  </ul>
+                  <h5 style="font-weight: 700; color: #002524; margin-bottom: 8px; font-size: 14px;">PROFESSIONAL GUARDS</h5>
+                  <p style="color: #475569; font-size: 12px; line-height: 1.5; margin: 0;">
+                    Trained, uniformed and site-focused
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="mission-box"
+                  style="background: #f8fafc; padding: 20px; border-radius: 12px; height: 100%; border-left: 4px solid #34A853; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+                  <h5 style="font-weight: 700; color: #002524; margin-bottom: 8px; font-size: 14px;">MOBILE PATROL</h5>
+                  <p style="color: #475569; font-size: 12px; line-height: 1.5; margin: 0;">
+                    Visible deterrence and mobile response
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="values-box"
+                  style="background: #f8fafc; padding: 20px; border-radius: 12px; height: 100%; border-left: 4px solid #34A853; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+                  <h5 style="font-weight: 700; color: #002524; margin-bottom: 8px; font-size: 14px;">SMART REPORTING</h5>
+                  <p style="color: #475569; font-size: 12px; line-height: 1.5; margin: 0;">
+                    Digital patrol verification and reporting
+                  </p>
                 </div>
               </div>
             </div>
@@ -147,100 +148,82 @@
   <section id="services" class="services section">
 
     <!-- Section Title -->
+    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Services</h2>
-      <p>At Elite Guard Inc., we offer a wide range of security services to protect your property, people, and assets. Our
-        team comprises highly trained, licensed security officers who bring extensive experience in security management
-        and risk mitigation. We utilize advanced technologies and proven industry practices to offer superior protection.
-      </p>
+      <h2>SECURITY FOR EVERY SITE</h2>
+      <p>Professional security services shaped around your property, people and daily operations.</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="services-slider swiper init-swiper">
-        <script type="application/json" class="swiper-config">
-                            {
-                              "loop": true,
-                              "speed": 600,
-                              "autoplay": {
-                                "delay": 4000
-                              },
-                              "slidesPerView": 1,
-                              "spaceBetween": 20,
-                              "pagination": {
-                                "el": ".swiper-pagination",
-                                "type": "bullets",
-                                "clickable": true
-                              },
-                              "breakpoints": {
-                                "768": {
-                                  "slidesPerView": 2,
-                                  "spaceBetween": 30
-                                },
-                                "1200": {
-                                  "slidesPerView": 3,
-                                  "spaceBetween": 40
-                                }
-                              }
-                            }
-                          </script>
-        <div class="swiper-wrapper">
-          @php
-            $icons = [
-              'bi bi-shield-fill-check',
-              'bi bi-eye-fill',
-              'bi bi-truck',
-              'bi bi-calendar-event-fill',
-              'bi bi-phone',
-              'bi bi-search',
-            ];
-          @endphp
-          @forelse($services as $service)
-            @php
-              $imagePath = $service->feature_image ? asset($service->feature_image) : 'https://bootstrapmade.com/content/demo/Clarity/assets/img/portfolio/portfolio-7.webp';
-            @endphp
-            <div class="swiper-slide">
-              <div class="leader-card" style="height: 100%; display: flex; flex-direction: column;">
-                <div class="leader-image" style="height: 240px; overflow: hidden; border-radius: 12px 12px 0 0;">
-                  <img src="{{ $imagePath }}" alt="{{ $service->name }}"
-                    style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="leader-info"
-                  style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                  <div>
-                    <h5 style="font-weight: 700; font-size: 18px; margin-bottom: 5px;">{{ $service->name }}</h5>
-                    <span class="position"
-                      style="color: #34A853; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 12px;">Security
-                      Service</span>
-                    <p style="font-size: 14px; color: #94a3b8; line-height: 1.6; margin-bottom: 15px;">
-                      {{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}
-                    </p>
-                  </div>
-                  <div style="margin-top: auto; text-align: center;">
-                    <a href="{{ route('services.details', $service->id) }}" class="btn btn-primary"
-                      style="border-radius: 30px; padding: 8px 25px; font-weight: 600; font-size: 13px; background: #34A853; border-color: #34A853; width: 100%;">
-                      Learn More <i class="bi bi-arrow-right ms-1"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          @empty
-            <div class="swiper-slide text-center">
-              <p>No services found.</p>
-            </div>
-          @endforelse
+      <div class="row gy-4 mb-5">
+        @forelse($services as $service)
+        <div class="col-md-6">
+          <div style="border-left: 3px solid #d4af37; padding-left: 15px; height: 100%;">
+            <a href="{{ route('services.details', $service->id) }}" style="text-decoration: none;">
+              <h5 style="font-weight: 700; color: #fff; font-size: 16px; margin-bottom: 5px; transition: color 0.3s;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'">{{ $service->name }}</h5>
+            </a>
+            <p style="color: #94a3b8; font-size: 14px; margin-bottom: 0;">{{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}</p>
+          </div>
         </div>
-        <div class="swiper-pagination" style="position: relative; margin-top: 40px;"></div>
+        @empty
+        <div class="col-12 text-center">
+          <p class="text-white">No services found.</p>
+        </div>
+        @endforelse
       </div>
 
-      <div class="row mt-5">
-        <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
-          <div class="services-cta">
-            <h3>Need Expert Security Solutions?</h3>
-            <p>Contact us today to learn more about our security services and how we can help protect your property,
-              people, and assets.</p>
-            <a href="{{ route('quote') }}" class="btn btn-primary">Request a Free Quote</a>
+      <hr style="border-color: #ddd; margin: 40px 0;">
+
+      <!-- PROPERTIES WE PROTECT -->
+      <div class="row mb-5" data-aos="fade-up">
+        <div class="col-12">
+          <h4 style="color: #d4af37; font-weight: 700; font-size: 16px; text-transform: uppercase; margin-bottom: 15px;">PROPERTIES WE PROTECT</h4>
+          <p style="font-size: 16px; color: #e2e8f0; font-weight: 500;">
+            Construction sites • Commercial plazas • Condos & apartments • Office buildings<br>
+            Warehouses • Retail stores • Parking facilities • Event venues
+          </p>
+        </div>
+      </div>
+
+      <hr style="border-color: rgba(255,255,255,0.1); margin: 40px 0;">
+
+      <!-- FROM PLANNING TO REPORTING -->
+      <div class="row mb-5" data-aos="fade-up">
+        <div class="col-12">
+          <h4 style="color: #d4af37; font-weight: 700; font-size: 16px; text-transform: uppercase; margin-bottom: 25px;">FROM PLANNING TO REPORTING</h4>
+          <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+            <div style="flex: 1; min-width: 200px;">
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <span style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">1</span>
+                <strong style="font-size: 16px; color: #fff;">PLAN</strong>
+              </div>
+              <p style="color: #94a3b8; font-size: 14px;">Site needs and<br>coverage priorities</p>
+            </div>
+            
+            <div style="flex: 1; min-width: 200px;">
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <span style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">2</span>
+                <strong style="font-size: 16px; color: #fff;">PATROL</strong>
+              </div>
+              <p style="color: #94a3b8; font-size: 14px;">Assigned checks<br>and site tours</p>
+            </div>
+
+            <div style="flex: 1; min-width: 200px;">
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <span style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">3</span>
+                <strong style="font-size: 16px; color: #fff;">RECORD</strong>
+              </div>
+              <p style="color: #94a3b8; font-size: 14px;">Checkpoint scans<br>and observations</p>
+            </div>
+
+            <div style="flex: 1; min-width: 200px;">
+              <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                <span style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">4</span>
+                <strong style="font-size: 16px; color: #fff;">REPORT</strong>
+              </div>
+              <p style="color: #94a3b8; font-size: 14px;">Activity and<br>incident reports</p>
+            </div>
           </div>
         </div>
       </div>
@@ -328,130 +311,125 @@
 
                     </section> -->
 
+  <!-- Selected Clients Section -->
+  <section class="clients section" style="padding: 60px 0;">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title text-center mb-5">
+        <h2 style="font-size: 24px; text-transform: uppercase; letter-spacing: 1px; color: #fff; margin-bottom: 30px; position: relative;">
+          EXPERIENCE & ACCOUNTABILITY
+          <span style="display: block; width: 50px; height: 3px; background-color: #d4af37; margin: 15px auto 0;"></span>
+        </h2>
+        <p style="font-weight: 700; color: #d4af37; letter-spacing: 1px;">SELECTED CLIENTS</p>
+      </div>
+      <div class="row justify-content-center align-items-center gy-4 text-center">
+        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Killam Apartment REIT</h5></div>
+        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Avenue Living</h5></div>
+        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Bloom Investment Group</h5></div>
+        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Mini Mall Storage</h5></div>
+        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Emerald Hotel & Suites</h5></div>
+        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Strategic Group</h5></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Security App Section -->
+  <section class="security-app section" style="padding: 60px 0;">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title text-start mb-5">
+        <h3 style="font-size: 18px; text-transform: uppercase; letter-spacing: 1px; color: #d4af37;">OUR SECURITY APP</h3>
+        <p style="font-size: 16px; font-weight: 600; color: #e2e8f0; letter-spacing: 2px;">PATROL • REPORT • COORDINATE</p>
+      </div>
+      
+      <div class="row gy-4 text-center mt-4">
+        <div class="col-md-3">
+          <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #fff;">PATROL TOOLS</h5>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Check-in • Dispatch<br>Sites • Runsheets</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #fff;">NFC CHECKPOINTS</h5>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">NFC scans • Site tours<br>Checkpoint verification</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #fff;">DIGITAL REPORTS</h5>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Shift • Incident • Photos<br>Fire watch</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #fff;">DAILY CHECKS</h5>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Vehicle inspections<br>Duty checks • Shift changes</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
+        <h4 style="font-weight: 700; color: #d4af37; margin-bottom: 10px; font-size: 16px;">OUR TEAM. YOUR MOBILE SECURITY.</h4>
+        <p style="font-size: 15px; color: #94a3b8;">Uniformed personnel and marked patrol vehicles provide a visible security presence, supported by site tours, checkpoint scanning and digital reporting.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Why Us Section -->
-  <section id="why-us" class="why-us section">
+  <section id="why-us" class="why-us section" style="padding: 60px 0;">
 
     <div class="container section-title" data-aos="fade-up">
-      <h2>Why Choose Us</h2>
-      <p>Providing unmatched security, absolute reliability, and professional vigilance across Alberta.</p>
+      <div class="row align-items-center">
+        <div class="col-md-6 text-md-start">
+          <h2 style="font-size: 20px; color: #d4af37; text-transform: uppercase; margin-bottom: 0;">WHY ELITE GUARD</h2>
+        </div>
+        <div class="col-md-6 text-md-start mt-3 mt-md-0">
+          <h2 style="font-size: 20px; color: #fff; text-transform: uppercase; margin-bottom: 0;">YOUR PROPERTY. OUR PRIORITY.</h2>
+        </div>
+      </div>
     </div>
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row g-4">
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="feature-card">
-            <div class="icon-wrapper">
-              <i class="bi bi-shield-fill-check" style="color: #34A853;"></i>
-            </div>
-            <h4>Professional Vigilance</h4>
-            <p>Our officers undergo rigorous training, comprehensive background checks, and regular performance audits to
-              ensure the highest standards of vigilance on your premises.</p>
-            <div class="feature-stats">
-              <span class="stat-number" data-purecounter-start="0" data-purecounter-end="99"
-                data-purecounter-duration="2">99</span>
-              <span class="stat-label">% On-Time Attendance</span>
-            </div>
+      <div class="row gy-4 mt-2">
+        <div class="col-md-6">
+          <div style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">SITE-FOCUSED PLANS</h5>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Coverage shaped around your property and priorities.</p>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="feature-card">
-            <div class="icon-wrapper">
-              <i class="bi bi-speedometer2" style="color: #34A853;"></i>
-            </div>
-            <h4>Proactive Mobile Patrols</h4>
-            <p>Equipped with GPS tracking and instant dispatch support, our mobile response units ensure prompt incident
-              response and unpredictable patrol coverage to secure your property.</p>
-            <div class="feature-stats">
-              <span class="stat-number" data-purecounter-start="0" data-purecounter-end="100"
-                data-purecounter-duration="2">100</span>
-              <span class="stat-label">% Response Reliability</span>
-            </div>
+        <div class="col-md-6">
+          <div style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">CONNECTED OPERATIONS</h5>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">App-based schedules, check-ins and site information.</p>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="feature-card">
-            <div class="icon-wrapper">
-              <i class="bi bi-people-fill" style="color: #34A853;"></i>
-            </div>
-            <h4>Expert Leadership</h4>
-            <p>Managed by security industry veterans, we design custom threat assessment and risk mitigation plans
-              tailored specifically to your facility's unique operational needs.</p>
-            <div class="feature-stats">
-              <span class="stat-number" data-purecounter-start="0" data-purecounter-end="15"
-                data-purecounter-duration="2">15</span>
-              <span class="stat-label">+ Years Industry Experience</span>
-            </div>
+        <div class="col-md-6">
+          <div style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">VISIBLE PRESENCE</h5>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Uniformed guards and marked mobile patrol vehicles.</p>
           </div>
         </div>
-
-      </div>
-
-      <div class="row mt-5 align-items-center">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-          <div class="feature-showcase"
-            style="border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.1);">
-            <img src="{{ asset('frontend/images/7.jpeg') }}" alt="Elite Guard Patrol Security" class="img-fluid"
-              style="width: 100%; object-fit: cover; max-height: 480px;">
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-          <div class="feature-content">
-            <h3>Why Leading Businesses Trust Elite Guard</h3>
-            <p class="lead">We combine highly trained licensed guards, advanced digital reporting tools, and dedicated
-              account managers to provide a secure environment.</p>
-
-            <div class="feature-list">
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="bi bi-check-circle-fill" style="color: #34A853;"></i>
-                </div>
-                <div class="feature-text">
-                  <h5>Licensed & Insured Officers</h5>
-                  <p>All security guards are fully licensed under Alberta's SSIA, background-checked, and regularly
-                    trained.</p>
-                </div>
-              </div>
-
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="bi bi-check-circle-fill" style="color: #34A853;"></i>
-                </div>
-                <div class="feature-text">
-                  <h5>Real-Time Digital Guard Tracking</h5>
-                  <p>We use GPS tracking and digital patrol logging to provide transparent, real-time security reports.
-                  </p>
-                </div>
-              </div>
-
-              <div class="feature-item">
-                <div class="feature-icon">
-                  <i class="bi bi-check-circle-fill" style="color: #34A853;"></i>
-                </div>
-                <div class="feature-text">
-                  <h5>24/7 Dispatch & Support</h5>
-                  <p>Our round-the-clock dispatch center stands ready to respond immediately to any on-site alerts or
-                    emergencies.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="cta-wrapper mt-4">
-              <a href="{{ route('quote') }}" class="btn btn-primary"
-                style="border-radius: 30px; padding: 12px 35px; margin-right: 15px;">Request a Quote</a>
-              <a href="#services" class="btn btn-outline" style="border-radius: 30px; padding: 12px 35px;">Our
-                Services</a>
-            </div>
+        <div class="col-md-6">
+          <div style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">CLEAR RECORDS</h5>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">NFC checkpoints, photos and digital reports.</p>
           </div>
         </div>
       </div>
-
     </div>
 
+    <div class="container mt-5" data-aos="fade-up" data-aos-delay="200">
+      <div class="row text-center" style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+        <div class="col-md-4">
+          <span style="font-weight: 600; font-size: 14px; color: #fff;">LICENSED SECURITY AGENCY</span>
+        </div>
+        <div class="col-md-4">
+          <span style="font-weight: 600; font-size: 14px; color: #fff;">LIABILITY INSURANCE</span>
+        </div>
+        <div class="col-md-4">
+          <span style="font-weight: 600; font-size: 14px; color: #fff;">WCB COVERAGE</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Testimonials Section -->
