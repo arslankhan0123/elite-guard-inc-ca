@@ -10,9 +10,9 @@
           <span class="sitename">Elite Guard Inc.</span>
         </a>
         <div class="footer-contact pt-3">
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p class="mt-3"><strong>Phone:</strong> <span>(403) 830-7772</span></p>
+          <p><a href="https://maps.app.goo.gl/HchLa4W9ooqHE58w8?g_st=iwb" target="_blank" style="color: inherit; text-decoration: none;">3961 52 Ave NE #2104</a></p>
+          <p><a href="https://maps.app.goo.gl/HchLa4W9ooqHE58w8?g_st=iwb" target="_blank" style="color: inherit; text-decoration: none;">Calgary, AB T3J 0J7</a></p>
+          <p class="mt-3" style="line-height: 1.6;"><strong>Phone:</strong><br><span class="d-inline-block mt-1">403.830.7772 (Office)</span><br><span>403.427.7773 (24/7 Security)</span></p>
           <p><strong>Email:</strong> <span><a href="mailto:info@eliteguardinc.ca">info@eliteguardinc.ca</a></span></p>
         </div>
         <div class="social-links d-flex mt-4">

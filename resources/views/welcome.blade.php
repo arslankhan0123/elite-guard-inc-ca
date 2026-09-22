@@ -24,7 +24,9 @@
         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
           <div class="hero-content">
             <h1>SECURITY YOU CAN TRUST</h1>
-            <p>Elite Guard Inc. provides professional, technology-supported security for businesses, properties and communities. We combine trained personnel, mobile patrols, responsive supervision and digital reporting to deliver dependable protection and greater accountability.</p>
+            <p>Elite Guard Inc. provides professional, technology-supported security for businesses, properties and
+              communities. We combine trained personnel, mobile patrols, responsive supervision and digital reporting to
+              deliver dependable protection and greater accountability.</p>
             <div class="hero-buttons">
               <a href="{{ route('home') }}#contact" class="btn btn-primary">Get Started</a>
               <a href="{{ route('home') }}#services" class="btn btn-outline">Our Services</a>
@@ -53,7 +55,7 @@
             <div class="hero-image">
               <img src="{{ asset('frontend/images/4.jpeg') }}" alt="Digital Agency Hero" class="img-fluid">
               <!-- <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/misc/misc-16.webp"
-                        alt="Digital Agency Hero" class="img-fluid"> -->
+                            alt="Digital Agency Hero" class="img-fluid"> -->
             </div>
           </div>
         </div>
@@ -81,7 +83,9 @@
             <h6 class="subtitle">Protection Built Around You</h6>
             <h2>Dependable Protection & Greater Accountability</h2>
             <p>
-              Elite Guard Inc. provides professional, technology-supported security for businesses, properties and communities. We combine trained personnel, mobile patrols, responsive supervision and digital reporting to deliver dependable protection and greater accountability.
+              Elite Guard Inc. provides professional, technology-supported security for businesses, properties and
+              communities. We combine trained personnel, mobile patrols, responsive supervision and digital reporting to
+              deliver dependable protection and greater accountability.
             </p>
 
             <div class="row gy-3 mb-4 mt-2">
@@ -97,7 +101,8 @@
               <div class="col-sm-6">
                 <div class="values-box"
                   style="background: #f8fafc; padding: 20px; border-radius: 12px; height: 100%; border-left: 4px solid #34A853; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
-                  <h5 style="font-weight: 700; color: #002524; margin-bottom: 8px; font-size: 14px;">PROFESSIONAL GUARDS</h5>
+                  <h5 style="font-weight: 700; color: #002524; margin-bottom: 8px; font-size: 14px;">PROFESSIONAL GUARDS
+                  </h5>
                   <p style="color: #475569; font-size: 12px; line-height: 1.5; margin: 0;">
                     Trained, uniformed and site-focused
                   </p>
@@ -158,18 +163,21 @@
 
       <div class="row gy-4 mb-5">
         @forelse($services as $service)
-        <div class="col-md-6">
-          <div style="border-left: 3px solid #d4af37; padding-left: 15px; height: 100%;">
-            <a href="{{ route('services.details', $service->id) }}" style="text-decoration: none;">
-              <h5 style="font-weight: 700; color: #fff; font-size: 16px; margin-bottom: 5px; transition: color 0.3s;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'">{{ $service->name }}</h5>
-            </a>
-            <p style="color: #94a3b8; font-size: 14px; margin-bottom: 0;">{{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}</p>
+          <div class="col-md-6">
+            <div style="border-left: 3px solid #d4af37; padding-left: 15px; height: 100%;">
+              <a href="{{ route('services.details', $service->id) }}" style="text-decoration: none;">
+                <h5 style="font-weight: 700; color: #fff; font-size: 16px; margin-bottom: 5px; transition: color 0.3s;"
+                  onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'">{{ $service->name }}</h5>
+              </a>
+              <p style="color: #94a3b8; font-size: 14px; margin-bottom: 0;">
+                {{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}
+              </p>
+            </div>
           </div>
-        </div>
         @empty
-        <div class="col-12 text-center">
-          <p class="text-white">No services found.</p>
-        </div>
+          <div class="col-12 text-center">
+            <p class="text-white">No services found.</p>
+          </div>
         @endforelse
       </div>
 
@@ -178,7 +186,8 @@
       <!-- PROPERTIES WE PROTECT -->
       <div class="row mb-5" data-aos="fade-up">
         <div class="col-12">
-          <h4 style="color: #d4af37; font-weight: 700; font-size: 16px; text-transform: uppercase; margin-bottom: 15px;">PROPERTIES WE PROTECT</h4>
+          <h4 style="color: #d4af37; font-weight: 700; font-size: 16px; text-transform: uppercase; margin-bottom: 15px;">
+            PROPERTIES WE PROTECT</h4>
           <p style="font-size: 16px; color: #e2e8f0; font-weight: 500;">
             Construction sites • Commercial plazas • Condos & apartments • Office buildings<br>
             Warehouses • Retail stores • Parking facilities • Event venues
@@ -191,19 +200,22 @@
       <!-- FROM PLANNING TO REPORTING -->
       <div class="row mb-5" data-aos="fade-up">
         <div class="col-12">
-          <h4 style="color: #d4af37; font-weight: 700; font-size: 16px; text-transform: uppercase; margin-bottom: 25px;">FROM PLANNING TO REPORTING</h4>
+          <h4 style="color: #d4af37; font-weight: 700; font-size: 16px; text-transform: uppercase; margin-bottom: 25px;">
+            FROM PLANNING TO REPORTING</h4>
           <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
             <div style="flex: 1; min-width: 200px;">
               <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                <span style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">1</span>
+                <span
+                  style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">1</span>
                 <strong style="font-size: 16px; color: #fff;">PLAN</strong>
               </div>
               <p style="color: #94a3b8; font-size: 14px;">Site needs and<br>coverage priorities</p>
             </div>
-            
+
             <div style="flex: 1; min-width: 200px;">
               <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                <span style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">2</span>
+                <span
+                  style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">2</span>
                 <strong style="font-size: 16px; color: #fff;">PATROL</strong>
               </div>
               <p style="color: #94a3b8; font-size: 14px;">Assigned checks<br>and site tours</p>
@@ -211,7 +223,8 @@
 
             <div style="flex: 1; min-width: 200px;">
               <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                <span style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">3</span>
+                <span
+                  style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">3</span>
                 <strong style="font-size: 16px; color: #fff;">RECORD</strong>
               </div>
               <p style="color: #94a3b8; font-size: 14px;">Checkpoint scans<br>and observations</p>
@@ -219,7 +232,8 @@
 
             <div style="flex: 1; min-width: 200px;">
               <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                <span style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">4</span>
+                <span
+                  style="background-color: #d4af37; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-flex; justify-content: center; align-items: center; font-weight: 700; margin-right: 10px;">4</span>
                 <strong style="font-size: 16px; color: #fff;">REPORT</strong>
               </div>
               <p style="color: #94a3b8; font-size: 14px;">Activity and<br>incident reports</p>
@@ -235,99 +249,112 @@
   <!-- Portfolio Section -->
   <!-- <section id="portfolio" class="portfolio section">
 
-                      <div class="container section-title" data-aos="fade-up">
-                        <h2>Services Gallery</h2>
-                        <p>At Elite Guard Inc., we offer a wide range of security services to protect your property, people, and assets. Our team comprises highly trained, licensed security officers who bring extensive experience in security management and risk mitigation. We utilize advanced technologies and proven industry practices to offer superior protection.</p>
-                      </div>
+                          <div class="container section-title" data-aos="fade-up">
+                            <h2>Services Gallery</h2>
+                            <p>At Elite Guard Inc., we offer a wide range of security services to protect your property, people, and assets. Our team comprises highly trained, licensed security officers who bring extensive experience in security management and risk mitigation. We utilize advanced technologies and proven industry practices to offer superior protection.</p>
+                          </div>
 
-                      <div class="container" data-aos="fade-up" data-aos-delay="100">
+                          <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-                            <li data-filter="*" class="filter-active">All Services</li>
-                            @foreach($categories as $category)
-                              <li data-filter=".filter-{{ $category->slug }}">{{ $category->name }}</li>
-                            @endforeach
-                          </ul>
+                            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+                                <li data-filter="*" class="filter-active">All Services</li>
+                                @foreach($categories as $category)
+                                  <li data-filter=".filter-{{ $category->slug }}">{{ $category->name }}</li>
+                                @endforeach
+                              </ul>
 
-                          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-                            @forelse($services as $service)
-                              @php
-                                $catSlug = $service->category->slug ?? 'uncategorized';
-                                $imagePath = $service->feature_image ? asset($service->feature_image) : 'https://bootstrapmade.com/content/demo/Clarity/assets/img/portfolio/portfolio-7.webp';
-                              @endphp
-                              <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-{{ $catSlug }}">
-                                <div class="portfolio-wrapper">
-                                  <div class="portfolio-image">
-                                    <img src="{{ $imagePath }}"
-                                      alt="{{ $service->name }}" class="img-fluid" loading="lazy" style="width: 100%; height: 280px; object-fit: cover;">
-                                    <div class="portfolio-hover">
-                                      <div class="portfolio-actions">
-                                        <a href="{{ $imagePath }}"
-                                          class="glightbox action-btn preview-btn" title="Preview Image">
-                                          <i class="bi bi-eye"></i>
-                                        </a>
-                                        <a href="{{ route('services.details', $service->id) }}" class="action-btn details-btn" title="View Details">
-                                          <i class="bi bi-arrow-up-right"></i>
-                                        </a>
+                              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+                                @forelse($services as $service)
+                                  @php
+                                    $catSlug = $service->category->slug ?? 'uncategorized';
+                                    $imagePath = $service->feature_image ? asset($service->feature_image) : 'https://bootstrapmade.com/content/demo/Clarity/assets/img/portfolio/portfolio-7.webp';
+                                  @endphp
+                                  <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-{{ $catSlug }}">
+                                    <div class="portfolio-wrapper">
+                                      <div class="portfolio-image">
+                                        <img src="{{ $imagePath }}"
+                                          alt="{{ $service->name }}" class="img-fluid" loading="lazy" style="width: 100%; height: 280px; object-fit: cover;">
+                                        <div class="portfolio-hover">
+                                          <div class="portfolio-actions">
+                                            <a href="{{ $imagePath }}"
+                                              class="glightbox action-btn preview-btn" title="Preview Image">
+                                              <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="{{ route('services.details', $service->id) }}" class="action-btn details-btn" title="View Details">
+                                              <i class="bi bi-arrow-up-right"></i>
+                                            </a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="portfolio-content">
+                                        <div class="portfolio-meta">
+                                          <span class="project-type">{{ $service->category->name ?? 'Service' }}</span>
+                                        </div>
+                                        <h3><a href="{{ route('services.details', $service->id) }}" style="color: inherit;">{{ $service->name }}</a></h3>
+                                        <p>{{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}</p>
+
+                                        @if($service->highlights->isNotEmpty())
+                                          <div class="portfolio-tech">
+                                            @foreach($service->highlights->take(3) as $highlight)
+                                              <span class="tech-badge">{{ $highlight->title }}</span>
+                                            @endforeach
+                                          </div>
+                                        @endif
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="portfolio-content">
-                                    <div class="portfolio-meta">
-                                      <span class="project-type">{{ $service->category->name ?? 'Service' }}</span>
-                                    </div>
-                                    <h3><a href="{{ route('services.details', $service->id) }}" style="color: inherit;">{{ $service->name }}</a></h3>
-                                    <p>{{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}</p>
-
-                                    @if($service->highlights->isNotEmpty())
-                                      <div class="portfolio-tech">
-                                        @foreach($service->highlights->take(3) as $highlight)
-                                          <span class="tech-badge">{{ $highlight->title }}</span>
-                                        @endforeach
-                                      </div>
-                                    @endif
+                                @empty
+                                  <div class="col-12 text-center">
+                                    <p>No services found.</p>
                                   </div>
-                                </div>
+                                @endforelse
                               </div>
-                            @empty
-                              <div class="col-12 text-center">
-                                <p>No services found.</p>
+
+                            </div>
+
+                            <div class="portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
+                              <h4>Ready to get started?</h4>
+                              <p>Let's work together to bring your vision to life</p>
+                              <div class="cta-buttons">
+                                <a href="#contact" class="btn btn-primary">Start a Project</a>
+                                <a href="{{ route('services') }}" class="btn btn-outline">View All Services</a>
                               </div>
-                            @endforelse
+                            </div>
                           </div>
 
-                        </div>
-
-                        <div class="portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
-                          <h4>Ready to get started?</h4>
-                          <p>Let's work together to bring your vision to life</p>
-                          <div class="cta-buttons">
-                            <a href="#contact" class="btn btn-primary">Start a Project</a>
-                            <a href="{{ route('services') }}" class="btn btn-outline">View All Services</a>
-                          </div>
-                        </div>
-                      </div>
-
-                    </section> -->
+                        </section> -->
 
   <!-- Selected Clients Section -->
   <section class="clients section" style="padding: 60px 0;">
     <div class="container" data-aos="fade-up">
       <div class="section-title text-center mb-5">
-        <h2 style="font-size: 24px; text-transform: uppercase; letter-spacing: 1px; color: #fff; margin-bottom: 30px; position: relative;">
+        <h2
+          style="font-size: 24px; text-transform: uppercase; letter-spacing: 1px; color: #fff; margin-bottom: 30px; position: relative;">
           EXPERIENCE & ACCOUNTABILITY
           <span style="display: block; width: 50px; height: 3px; background-color: #d4af37; margin: 15px auto 0;"></span>
         </h2>
         <p style="font-weight: 700; color: #d4af37; letter-spacing: 1px;">SELECTED CLIENTS</p>
       </div>
       <div class="row justify-content-center align-items-center gy-4 text-center">
-        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Killam Apartment REIT</h5></div>
-        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Avenue Living</h5></div>
-        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Bloom Investment Group</h5></div>
-        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Mini Mall Storage</h5></div>
-        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Emerald Hotel & Suites</h5></div>
-        <div class="col-6 col-md-4 col-lg-2"><h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Strategic Group</h5></div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Killam Apartment REIT</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Avenue Living</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Bloom Investment Group</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Mini Mall Storage</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Emerald Hotel & Suites</h5>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Strategic Group</h5>
+        </div>
       </div>
     </div>
   </section>
@@ -337,39 +364,48 @@
     <div class="container" data-aos="fade-up">
       <div class="section-title text-start mb-5">
         <h3 style="font-size: 18px; text-transform: uppercase; letter-spacing: 1px; color: #d4af37;">OUR SECURITY APP</h3>
-        <p style="font-size: 16px; font-weight: 600; color: #e2e8f0; letter-spacing: 2px;">PATROL • REPORT • COORDINATE</p>
+        <p style="font-size: 16px; font-weight: 600; color: #e2e8f0; letter-spacing: 2px;">PATROL • REPORT • COORDINATE
+        </p>
       </div>
-      
+
       <div class="row gy-4 text-center mt-4">
         <div class="col-md-3">
-          <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
+          <div
+            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
             <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #fff;">PATROL TOOLS</h5>
             <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Check-in • Dispatch<br>Sites • Runsheets</p>
           </div>
         </div>
         <div class="col-md-3">
-          <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
+          <div
+            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
             <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #fff;">NFC CHECKPOINTS</h5>
-            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">NFC scans • Site tours<br>Checkpoint verification</p>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">NFC scans • Site tours<br>Checkpoint
+              verification</p>
           </div>
         </div>
         <div class="col-md-3">
-          <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
+          <div
+            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
             <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #fff;">DIGITAL REPORTS</h5>
             <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Shift • Incident • Photos<br>Fire watch</p>
           </div>
         </div>
         <div class="col-md-3">
-          <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
+          <div
+            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; height: 100%;">
             <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 10px; color: #fff;">DAILY CHECKS</h5>
-            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Vehicle inspections<br>Duty checks • Shift changes</p>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Vehicle inspections<br>Duty checks • Shift
+              changes</p>
           </div>
         </div>
       </div>
-      
+
       <div class="mt-5 pt-4" style="border-top: 1px solid rgba(255,255,255,0.1);">
-        <h4 style="font-weight: 700; color: #d4af37; margin-bottom: 10px; font-size: 16px;">OUR TEAM. YOUR MOBILE SECURITY.</h4>
-        <p style="font-size: 15px; color: #94a3b8;">Uniformed personnel and marked patrol vehicles provide a visible security presence, supported by site tours, checkpoint scanning and digital reporting.</p>
+        <h4 style="font-weight: 700; color: #d4af37; margin-bottom: 10px; font-size: 16px;">OUR TEAM. YOUR MOBILE
+          SECURITY.</h4>
+        <p style="font-size: 15px; color: #94a3b8;">Uniformed personnel and marked patrol vehicles provide a visible
+          security presence, supported by site tours, checkpoint scanning and digital reporting.</p>
       </div>
     </div>
   </section>
@@ -383,7 +419,8 @@
           <h2 style="font-size: 20px; color: #d4af37; text-transform: uppercase; margin-bottom: 0;">WHY ELITE GUARD</h2>
         </div>
         <div class="col-md-6 text-md-start mt-3 mt-md-0">
-          <h2 style="font-size: 20px; color: #fff; text-transform: uppercase; margin-bottom: 0;">YOUR PROPERTY. OUR PRIORITY.</h2>
+          <h2 style="font-size: 20px; color: #fff; text-transform: uppercase; margin-bottom: 0;">YOUR PROPERTY. OUR
+            PRIORITY.</h2>
         </div>
       </div>
     </div>
@@ -391,25 +428,32 @@
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row gy-4 mt-2">
         <div class="col-md-6">
-          <div style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
+          <div
+            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
             <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">SITE-FOCUSED PLANS</h5>
-            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Coverage shaped around your property and priorities.</p>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Coverage shaped around your property and
+              priorities.</p>
           </div>
         </div>
         <div class="col-md-6">
-          <div style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
+          <div
+            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
             <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">CONNECTED OPERATIONS</h5>
-            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">App-based schedules, check-ins and site information.</p>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">App-based schedules, check-ins and site
+              information.</p>
           </div>
         </div>
         <div class="col-md-6">
-          <div style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
+          <div
+            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
             <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">VISIBLE PRESENCE</h5>
-            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Uniformed guards and marked mobile patrol vehicles.</p>
+            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Uniformed guards and marked mobile patrol
+              vehicles.</p>
           </div>
         </div>
         <div class="col-md-6">
-          <div style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
+          <div
+            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
             <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">CLEAR RECORDS</h5>
             <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">NFC checkpoints, photos and digital reports.</p>
           </div>
@@ -418,7 +462,8 @@
     </div>
 
     <div class="container mt-5" data-aos="fade-up" data-aos-delay="200">
-      <div class="row text-center" style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+      <div class="row text-center"
+        style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
         <div class="col-md-4">
           <span style="font-weight: 600; font-size: 14px; color: #fff;">LICENSED SECURITY AGENCY</span>
         </div>
@@ -444,32 +489,32 @@
 
       <div class="testimonials-slider swiper init-swiper">
         <script type="application/json" class="swiper-config">
-                            {
-                              "loop": true,
-                              "speed": 600,
-                              "autoplay": {
-                                "delay": 4000
-                              },
-                              "slidesPerView": 1,
-                              "centeredSlides": true,
-                              "spaceBetween": 20,
-                              "pagination": {
-                                "el": ".swiper-pagination",
-                                "type": "bullets",
-                                "clickable": true
-                              },
-                              "breakpoints": {
-                                "768": {
-                                  "slidesPerView": 1.5,
-                                  "spaceBetween": 30
-                                },
-                                "1200": {
-                                  "slidesPerView": 3,
-                                  "spaceBetween": 40
+                                {
+                                  "loop": true,
+                                  "speed": 600,
+                                  "autoplay": {
+                                    "delay": 4000
+                                  },
+                                  "slidesPerView": 1,
+                                  "centeredSlides": true,
+                                  "spaceBetween": 20,
+                                  "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "type": "bullets",
+                                    "clickable": true
+                                  },
+                                  "breakpoints": {
+                                    "768": {
+                                      "slidesPerView": 1.5,
+                                      "spaceBetween": 30
+                                    },
+                                    "1200": {
+                                      "slidesPerView": 3,
+                                      "spaceBetween": 40
+                                    }
+                                  }
                                 }
-                              }
-                            }
-                          </script>
+                              </script>
         <div class="swiper-wrapper">
           <!-- Testimonial 5: Access Control & Monitoring -->
           <div class="swiper-slide">
@@ -689,102 +734,102 @@
 
     <!-- Section Title -->
     <!-- <div class="container section-title" data-aos="fade-up">
-                        <h2>Team</h2>
-                        <p>Meet the dedicated security professionals guiding our training, patrol, and response operations across Alberta.</p>
-                      </div> -->
+                            <h2>Team</h2>
+                            <p>Meet the dedicated security professionals guiding our training, patrol, and response operations across Alberta.</p>
+                          </div> -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
       <!-- <div class="row g-4">
 
-                          <div class="col-lg-6">
-                            <div class="team-intro" data-aos="fade-right" data-aos-delay="150">
-                              <div class="intro-content">
-                                <h3>Meet Our Security Leadership</h3>
-                                <p>Elite Guard is managed by experienced law enforcement veterans and corporate security specialists committed to your protection.</p>
-                                <div class="stats-row">
-                                  <div class="stat-item">
-                                    <span class="stat-number">120+</span>
-                                    <span class="stat-label">Licensed Guards</span>
-                                  </div>
-                                  <div class="stat-item">
-                                    <span class="stat-number">4</span>
-                                    <span class="stat-label">Core Services</span>
-                                  </div>
-                                  <div class="stat-item">
-                                    <span class="stat-number">24/7</span>
-                                    <span class="stat-label">Dispatch Support</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col-lg-6">
-                            <div class="team-grid" data-aos="fade-left" data-aos-delay="200">
-                              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="250">
-                                <div class="hexagon-inner">
-                                  <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-3.webp"
-                                    alt="Team member">
-                                  <div class="member-overlay">
-                                    <h5>Sarah Chen</h5>
-                                    <span>Operations Coordinator</span>
-                                    <div class="social-icons">
-                                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                                      <a href="#"><i class="bi bi-twitter"></i></a>
+                              <div class="col-lg-6">
+                                <div class="team-intro" data-aos="fade-right" data-aos-delay="150">
+                                  <div class="intro-content">
+                                    <h3>Meet Our Security Leadership</h3>
+                                    <p>Elite Guard is managed by experienced law enforcement veterans and corporate security specialists committed to your protection.</p>
+                                    <div class="stats-row">
+                                      <div class="stat-item">
+                                        <span class="stat-number">120+</span>
+                                        <span class="stat-label">Licensed Guards</span>
+                                      </div>
+                                      <div class="stat-item">
+                                        <span class="stat-number">4</span>
+                                        <span class="stat-label">Core Services</span>
+                                      </div>
+                                      <div class="stat-item">
+                                        <span class="stat-number">24/7</span>
+                                        <span class="stat-label">Dispatch Support</span>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
 
-                              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="300">
-                                <div class="hexagon-inner">
-                                  <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-4.webp"
-                                    alt="Team member">
-                                  <div class="member-overlay">
-                                    <h5>Marcus Johnson</h5>
-                                    <span>Patrol Supervisor</span>
-                                    <div class="social-icons">
-                                      <a href="#"><i class="bi bi-github"></i></a>
-                                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                              <div class="col-lg-6">
+                                <div class="team-grid" data-aos="fade-left" data-aos-delay="200">
+                                  <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="250">
+                                    <div class="hexagon-inner">
+                                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-3.webp"
+                                        alt="Team member">
+                                      <div class="member-overlay">
+                                        <h5>Sarah Chen</h5>
+                                        <span>Operations Coordinator</span>
+                                        <div class="social-icons">
+                                          <a href="#"><i class="bi bi-linkedin"></i></a>
+                                          <a href="#"><i class="bi bi-twitter"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="300">
+                                    <div class="hexagon-inner">
+                                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-4.webp"
+                                        alt="Team member">
+                                      <div class="member-overlay">
+                                        <h5>Marcus Johnson</h5>
+                                        <span>Patrol Supervisor</span>
+                                        <div class="social-icons">
+                                          <a href="#"><i class="bi bi-github"></i></a>
+                                          <a href="#"><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="350">
+                                    <div class="hexagon-inner">
+                                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-8.webp"
+                                        alt="Team member">
+                                      <div class="member-overlay">
+                                        <h5>Emma Rodriguez</h5>
+                                        <span>HR & Compliance</span>
+                                        <div class="social-icons">
+                                          <a href="#"><i class="bi bi-instagram"></i></a>
+                                          <a href="#"><i class="bi bi-dribbble"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="400">
+                                    <div class="hexagon-inner">
+                                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-6.webp"
+                                        alt="Team member">
+                                      <div class="member-overlay">
+                                        <h5>David Kim</h5>
+                                        <span>Tactical Advisor</span>
+                                        <div class="social-icons">
+                                          <a href="#"><i class="bi bi-behance"></i></a>
+                                          <a href="#"><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
 
-                              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="350">
-                                <div class="hexagon-inner">
-                                  <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-8.webp"
-                                    alt="Team member">
-                                  <div class="member-overlay">
-                                    <h5>Emma Rodriguez</h5>
-                                    <span>HR & Compliance</span>
-                                    <div class="social-icons">
-                                      <a href="#"><i class="bi bi-instagram"></i></a>
-                                      <a href="#"><i class="bi bi-dribbble"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="400">
-                                <div class="hexagon-inner">
-                                  <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-6.webp"
-                                    alt="Team member">
-                                  <div class="member-overlay">
-                                    <h5>David Kim</h5>
-                                    <span>Tactical Advisor</span>
-                                    <div class="social-icons">
-                                      <a href="#"><i class="bi bi-behance"></i></a>
-                                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div> -->
+                            </div> -->
 
       <div class="row mt-5">
         <div class="col-12">
@@ -795,28 +840,28 @@
 
             <div class="leadership-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
-                                  {
-                                    "loop": true,
-                                    "speed": 600,
-                                    "autoplay": {
-                                      "delay": 4000
-                                    },
-                                    "slidesPerView": 1,
-                                    "spaceBetween": 0,
-                                    "pagination": {
-                                      "el": ".swiper-pagination",
-                                      "clickable": true
-                                    },
-                                    "breakpoints": {
-                                      "768": {
-                                        "slidesPerView": 2
-                                      },
-                                      "1024": {
-                                        "slidesPerView": 3
+                                      {
+                                        "loop": true,
+                                        "speed": 600,
+                                        "autoplay": {
+                                          "delay": 4000
+                                        },
+                                        "slidesPerView": 1,
+                                        "spaceBetween": 0,
+                                        "pagination": {
+                                          "el": ".swiper-pagination",
+                                          "clickable": true
+                                        },
+                                        "breakpoints": {
+                                          "768": {
+                                            "slidesPerView": 2
+                                          },
+                                          "1024": {
+                                            "slidesPerView": 3
+                                          }
+                                        }
                                       }
-                                    }
-                                  }
-                                </script>
+                                    </script>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="leader-card">
@@ -1015,8 +1060,8 @@
                 </div>
                 <div class="card-content">
                   <h5>Call Us</h5>
-                  <p>(403) 830-7772</p>
-                  <span class="response-time">Available 9AM - 6PM EST</span>
+                  <p style="margin-bottom: 5px;">403.830.7772 (Office)<br>403.427.7773 (24/7 Security)</p>
+                  <span class="response-time">Available 24/7</span>
                 </div>
               </div>
 
@@ -1026,7 +1071,7 @@
                 </div>
                 <div class="card-content">
                   <h5>Visit Our Office</h5>
-                  <p>4821 Broadway Street, New York, NY 10013</p>
+                  <p><a href="https://maps.app.goo.gl/HchLa4W9ooqHE58w8?g_st=iwb" target="_blank" style="color: inherit; text-decoration: none;">3961 52 Ave NE #2104, Calgary, AB T3J 0J7</a></p>
                   <span class="response-time">Open Monday - Friday</span>
                 </div>
               </div>
