@@ -337,40 +337,55 @@
 </style>
 
 <main id="primary" class="site-main">
-    <div class="space-for-header" style="height: 100px; background-color: #16181B;"></div>
+    <div class="space-for-header"></div>
     
-    <!-- Hero Section -->
-    <section class="careers-hero">
+    <!-- start: Breadcrumb Section -->
+    <section class="rts__breadcrumb__area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 careers-hero-content">
-                    <p class="text-uppercase mb-2" style="color: #e5b95f; font-weight: 600; letter-spacing: 2px;">Join Elite Guard Inc.</p>
-                    <h1 class="careers-hero-title">
-                        A Career <span>With Purpose</span>
-                    </h1>
-                    <p class="careers-hero-desc">Be part of a dedicated team keeping people, property and communities safe across Calgary and Alberta.</p>
-                    
-                    <div class="hero-features mt-5">
-                        <div class="hero-feature-item">
-                            <i class="fa-solid fa-shield-halved hero-feature-icon"></i>
-                            <h4 class="hero-feature-title">Make a Difference</h4>
-                            <p class="hero-feature-text">Help create safer<br>communities</p>
-                        </div>
-                        <div class="hero-feature-item">
-                            <i class="fa-solid fa-users hero-feature-icon"></i>
-                            <h4 class="hero-feature-title">Grow Your Skills</h4>
-                            <p class="hero-feature-text">Training and advancement<br>opportunities</p>
-                        </div>
-                        <div class="hero-feature-item">
-                            <i class="fa-regular fa-clock hero-feature-icon"></i>
-                            <h4 class="hero-feature-title">Professional Team</h4>
-                            <p class="hero-feature-text">Supportive and respectful<br>work environment</p>
+                <div class="col-lg-12">
+                    <div class="rts__breadcrumb__content"
+                        style="background-image: url('{{ asset('frontend/images/4.jpeg') }}');">
+                        
+                        <div class="row justify-content-between align-items-center w-100 px-lg-5">
+                            <div class="col-lg-6 text-start">
+                                <p class="text-uppercase mb-2 text-white" style="font-weight: 600; letter-spacing: 2px;"><span style="color: #e5b95f;">Join Elite Guard Inc.</span></p>
+                                <h1 class="title" style="font-size: 3rem; line-height: 1.1; margin-bottom: 20px;">
+                                    A Career <br><span style="color: #e5b95f;">With Purpose</span>
+                                </h1>
+                                <p class="text-white" style="font-size: 1.1rem; max-width: 500px;">Be part of a dedicated team keeping people, property and communities safe across Calgary and Alberta.</p>
+                            </div>
+                            
+                            <div class="col-lg-5 text-start mt-4 mt-lg-0 border-start border-light ps-lg-5">
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fa-solid fa-shield-halved me-3 mt-1" style="color: #e5b95f; font-size: 1.5rem;"></i>
+                                    <div>
+                                        <h5 class="text-white fw-bold mb-1" style="font-size: 1rem;">Make a Difference</h5>
+                                        <p class="text-light small mb-0">Help create safer communities</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fa-solid fa-users me-3 mt-1" style="color: #e5b95f; font-size: 1.5rem;"></i>
+                                    <div>
+                                        <h5 class="text-white fw-bold mb-1" style="font-size: 1rem;">Grow Your Skills</h5>
+                                        <p class="text-light small mb-0">Training and advancement opportunities</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <i class="fa-regular fa-clock me-3 mt-1" style="color: #e5b95f; font-size: 1.5rem;"></i>
+                                    <div>
+                                        <h5 class="text-white fw-bold mb-1" style="font-size: 1rem;">Professional Team</h5>
+                                        <p class="text-light small mb-0">Supportive and respectful work environment</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- end: Breadcrumb Section -->
 
     <!-- Main Content Area (Light Theme) -->
     <div class="careers-content-area">
