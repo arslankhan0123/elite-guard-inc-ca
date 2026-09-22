@@ -198,7 +198,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="rts__breadcrumb__content" data-bg-src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&amp;fit=crop&amp;w=1600&amp;q=85">
+                <div class="rts__breadcrumb__content" style="background-image: url('{{ asset('frontend/images/industries/banner.png') }}');">
                     <ul class="list">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><i class="fa-solid fa-chevron-right"></i></li>
