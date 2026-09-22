@@ -9,7 +9,7 @@
   </style> -->
   
   <div
-    class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    class="header-container container-fluid container-xxl position-relative d-flex align-items-center justify-content-between">
 
     <a href="{{ route('home') }}" class="logo d-flex align-items-center me-auto me-xl-0">
       <!-- Logo with white circular background badge -->
@@ -21,35 +21,20 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="{{ route('home') }}#home" class="active">Home</a></li>
-        <li><a href="{{ route('home') }}#about">About</a></li>
-        <li><a href="{{ route('home') }}#services">Services</a></li>
-        <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-        <!-- <li><a href="#team">Team</a></li> -->
-        <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
-                <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
-          </ul>
-        </li> -->
-        <li><a href="{{ route('home') }}#contact">Contact</a></li>
+        <li><a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">Home</a></li>
+        <li><a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">About</a></li>
+        <li><a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'active' : '' }}">Services</a></li>
+        <li><a href="{{ route('industries') }}" class="{{ request()->routeIs('industries') ? 'active' : '' }}">Industries</a></li>
+        <li><a href="{{ route('mobile-patrol') }}" class="{{ request()->routeIs('mobile-patrol') ? 'active' : '' }}">Mobile Patrol</a></li>
+        <li><a href="{{ route('technology') }}" class="{{ request()->routeIs('technology') ? 'active' : '' }}">Technology</a></li>
+        <li><a href="{{ route('careers') }}" class="{{ request()->routeIs('careers') ? 'active' : '' }}">Careers</a></li>
+        <li><a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a></li>
+        <li><a href="{{ route('quote') }}" class="{{ request()->routeIs('quote') ? 'active' : '' }}">Quote</a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
 
-    <a class="btn-getstarted" href="{{ route('home') }}#contact">Get Started</a>
+    <a class="btn-getstarted" href="{{ route('contact') }}">Get Started</a>
 
   </div>
 </header>

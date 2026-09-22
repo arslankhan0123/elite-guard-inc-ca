@@ -40,6 +40,16 @@ class FrontendController extends Controller
         return view('frontend.industries.index');
     }
 
+    public function mobilePatrol()
+    {
+        return view('frontend.mobile-patrol.index');
+    }
+
+    public function technology()
+    {
+        return view('frontend.technology.index');
+    }
+
     public function globalSourcing()
     {
         return view('frontend.global-sourcing.index');

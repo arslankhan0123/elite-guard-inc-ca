@@ -15,6 +15,8 @@ Route::get('/', [FrontendController::class, 'index'])->name('home');
 
 Route::get('/about', [FrontendController::class, 'about'])->name('about');
 Route::get('/industries', [FrontendController::class, 'industries'])->name('industries');
+Route::get('/mobile-patrol', [FrontendController::class, 'mobilePatrol'])->name('mobile-patrol');
+Route::get('/technology', [FrontendController::class, 'technology'])->name('technology');
 Route::get('/global-sourcing', [FrontendController::class, 'globalSourcing'])->name('global-sourcing');
 Route::get('/projects', [FrontendController::class, 'projects'])->name('projects');
 Route::get('/partners-vendors', [FrontendController::class, 'partnersVendors'])->name('partners-vendors');
