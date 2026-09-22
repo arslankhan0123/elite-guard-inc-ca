@@ -48,19 +48,19 @@
                         <p class="mb-0 text-dark fw-semibold">{{ $quote->country ?: '-' }}</p>
                     </div>
                     <div class="col-md-3">
-                        <label class="text-muted small text-uppercase fw-bold mb-1">Business Line</label>
-                        <p class="mb-0 text-dark fw-semibold">{{ $quote->business_line ? ucwords(str_replace('_', ' ', $quote->business_line)) : 'Legacy Request' }}</p>
+                        <label class="text-muted small text-uppercase fw-bold mb-1">Property Type</label>
+                        <p class="mb-0 text-dark fw-semibold">{{ $quote->property_type ? ucwords(str_replace('_', ' ', $quote->property_type)) : 'Not Specified' }}</p>
                     </div>
                 </div>
 
                 <div class="row g-4 mb-4 pt-2">
                     <div class="col-md-3">
-                        <label class="text-muted small text-uppercase fw-bold mb-1">Product</label>
-                        <h5 class="text-dark fw-bold">{{ $quote->product?->name ?: 'Other / Not Listed' }}</h5>
+                        <label class="text-muted small text-uppercase fw-bold mb-1">Service Requested</label>
+                        <h5 class="text-dark fw-bold">{{ $quote->service?->name ?: 'Not Specified' }}</h5>
                     </div>
                     <div class="col-md-3">
-                        <label class="text-muted small text-uppercase fw-bold mb-1">Condition</label>
-                        <p class="mb-0 text-dark fw-semibold">{{ $quote->equipment_condition ? ucfirst($quote->equipment_condition) : '-' }}</p>
+                        <label class="text-muted small text-uppercase fw-bold mb-1">Shift / Schedule</label>
+                        <p class="mb-0 text-dark fw-semibold">{{ $quote->equipment_condition ? ucwords(str_replace('_', ' ', $quote->equipment_condition)) : '-' }}</p>
                     </div>
                     <div class="col-md-3">
                         <label class="text-muted small text-uppercase fw-bold mb-1">Quantity</label>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div class="mb-5 p-4 bg-light rounded-4">
-                    <label class="text-muted small text-uppercase fw-bold mb-3 d-block">Product Specifications / Requirements</label>
+                    <label class="text-muted small text-uppercase fw-bold mb-3 d-block">Security Requirements / Description of Needs</label>
                     <div class="text-dark" style="line-height: 1.8; white-space: pre-wrap;">{{ $quote->message }}</div>
                 </div>
 

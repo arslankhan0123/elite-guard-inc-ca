@@ -20,8 +20,8 @@
                                 <th>S.No</th>
                                 <th>Name</th>
                                 <th>Company</th>
-                                <th>Service / Product</th>
-                                <th>Type / Line</th>
+                                <th>Service</th>
+                                <th>Property Type</th>
                                 <th>Country</th>
                                 <th>Date</th>
                                 <th>Action</th>
@@ -36,19 +36,15 @@
                                 <td>
                                     @if($quote->service)
                                         <span class="badge bg-success" style="font-size: 13px;">{{ $quote->service->name }}</span>
-                                    @elseif($quote->product)
-                                        <span class="badge bg-secondary" style="font-size: 13px;">{{ $quote->product->name }} (Product)</span>
                                     @else
-                                        <span class="text-muted">Other / Not Listed</span>
+                                        <span class="text-muted">Not Specified</span>
                                     @endif
                                 </td>
                                 <td>
                                     @if($quote->property_type)
                                         {{ ucwords(str_replace('_', ' ', $quote->property_type)) }}
-                                    @elseif($quote->business_line)
-                                        {{ ucwords(str_replace('_', ' ', $quote->business_line)) }}
                                     @else
-                                        Legacy Request
+                                        -
                                     @endif
                                 </td>
                                 <td>{{ $quote->country ?: '-' }}</td>
