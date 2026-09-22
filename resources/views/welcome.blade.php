@@ -17,7 +17,7 @@
     </div>
   @endif
   <!-- Hero Section -->
-  <section id="hero" class="hero section">
+  <section id="home" class="hero section">
 
     <div class="container">
       <div class="row align-items-center">
