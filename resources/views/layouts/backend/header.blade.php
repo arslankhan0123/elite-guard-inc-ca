@@ -147,6 +147,13 @@
                                 <span data-key="t-quotes">Quotes</span>
                             </a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle arrow-none" href="{{route('admin.applications.index')}}" id="topnav-applications" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="icon nav-icon" data-feather="briefcase"></i>
+                                <span data-key="t-applications">Job Applications</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

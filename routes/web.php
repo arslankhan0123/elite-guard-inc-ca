@@ -9,6 +9,8 @@ use App\Http\Controllers\AdminContactController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\QuoteController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\JobApplicationController;
+use App\Http\Controllers\AdminJobApplicationController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontendController::class, 'index'])->name('home');
@@ -22,6 +24,7 @@ Route::get('/projects', [FrontendController::class, 'projects'])->name('projects
 Route::get('/partners-vendors', [FrontendController::class, 'partnersVendors'])->name('partners-vendors');
 Route::get('/careers', [FrontendController::class, 'careers'])->name('careers');
 Route::get('/careers/details/{slug}', [FrontendController::class, 'careerDetails'])->name('careers.details');
+Route::post('/career/apply', [JobApplicationController::class, 'store'])->name('career.apply');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 Route::get('/gallery', [FrontendController::class, 'gallery'])->name('gallery');
 Route::get('/reviews', [FrontendController::class, 'reviews'])->name('reviews');
@@ -97,6 +100,12 @@ Route::middleware('auth')->group(function () {
         Route::get('/index', [QuoteController::class, 'index'])->name('admin.quotes.index');
         Route::get('/show/{id}', [QuoteController::class, 'show'])->name('admin.quotes.show');
         Route::delete('/destroy/{id}', [QuoteController::class, 'destroy'])->name('admin.quotes.destroy');
+    });
+
+    Route::group(['prefix' => '/job-applications'], function () {
+        Route::get('/index', [AdminJobApplicationController::class, 'index'])->name('admin.applications.index');
+        Route::get('/show/{id}', [AdminJobApplicationController::class, 'show'])->name('admin.applications.show');
+        Route::delete('/destroy/{id}', [AdminJobApplicationController::class, 'destroy'])->name('admin.applications.destroy');
     });
 });
 

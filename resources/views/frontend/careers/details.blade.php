@@ -91,11 +91,32 @@
                         <div class="tj-main-sidebar slidebar-stickiy">
                             <div class="tj-sidebar-widget p-4 bg-light rounded-4 mb-4 wow fadeInUp" data-wow-delay=".1s">
                                 <h4 class="widget-title mb-3">Apply for this position</h4>
-                                <p class="small text-muted mb-4">Are you a good fit for this role? Click the button below to send us your information or contact us directly.</p>
-                                <a href="{{ route('contact') }}" class="tj-primary-btn w-100 text-center">
-                                    <span class="btn-text"><span>Apply Now</span></span>
-                                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                </a>
+                                <form id="jobApplicationForm" action="{{ route('career.apply') }}" method="post" enctype="multipart/form-data">
+                                    @csrf
+                                    <input type="hidden" name="career_id" value="{{ $career->id }}">
+                                    
+                                    <div class="mb-3">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name *" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" name="email" class="form-control" placeholder="Email Address *" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" name="phone" class="form-control" placeholder="Phone Number (Optional)">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label small text-muted">Upload CV/Resume (PDF, DOC) *</label>
+                                        <input type="file" name="cv" class="form-control" accept=".pdf,.doc,.docx" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <textarea name="message" class="form-control" rows="3" placeholder="Cover Letter / Message (Optional)"></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" class="tj-primary-btn w-100 text-center border-0 submit-btn" style="cursor: pointer;">
+                                        <span class="btn-text"><span>Submit Application</span></span>
+                                        <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                                    </button>
+                                </form>
                             </div>
 
                             <div class="tj-sidebar-widget widget-feature-item wow fadeInUp" data-wow-delay=".3s">
@@ -145,4 +166,60 @@
         </section>
         <!-- end: Cta Section -->
     </main>
+
+    @push('scripts')
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            $('#jobApplicationForm').on('submit', function (e) {
+                e.preventDefault();
+                
+                let form = $(this);
+                let submitBtn = form.find('.submit-btn');
+                let submitBtnText = submitBtn.find('span.btn-text span');
+                let submitIcon = submitBtn.find('.btn-icon i');
+                let formData = new FormData(this);
+
+                submitBtn.prop('disabled', true);
+                submitBtnText.text('Submitting...');
+                submitIcon.attr('class', 'fa-solid fa-spinner fa-spin');
+
+                $.ajax({
+                    url: form.attr('action'),
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Application Submitted!',
+                            text: response.message,
+                            confirmButtonColor: '#34A853'
+                        });
+                        form[0].reset();
+                        submitBtn.prop('disabled', false);
+                        submitBtnText.text('Submit Application');
+                        submitIcon.attr('class', 'tji-arrow-right-long');
+                    },
+                    error: function (xhr) {
+                        let errorMessage = 'Something went wrong. Please try again.';
+                        if (xhr.responseJSON && xhr.responseJSON.message) {
+                            errorMessage = xhr.responseJSON.message;
+                        }
+
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: errorMessage,
+                            confirmButtonColor: '#d33'
+                        });
+                        submitBtn.prop('disabled', false);
+                        submitBtnText.text('Submit Application');
+                        submitIcon.attr('class', 'tji-arrow-right-long');
+                    }
+                });
+            });
+        });
+    </script>
+    @endpush
 @endsection
