@@ -673,35 +673,35 @@
 
                     <div class="col-lg-15 col-md-3 col-sm-6 mb-4" style="flex: 0 0 auto; width: 20%;">
                         <div class="process-step">
-                            <div class="process-icon"><i class="fa-solid fa-file-signature"></i></div>
+                            <div class="process-icon"><i class="fa-solid fa-file-signature" style="color: #b8860b;"></i></div>
                             <h4 class="process-title">1. Apply</h4>
                             <p class="process-text">Submit your application</p>
                         </div>
                     </div>
                     <div class="col-lg-15 col-md-3 col-sm-6 mb-4" style="flex: 0 0 auto; width: 20%;">
                         <div class="process-step">
-                            <div class="process-icon"><i class="fa-solid fa-user-check"></i></div>
+                            <div class="process-icon"><i class="fa-solid fa-user-check" style="color: #b8860b;"></i></div>
                             <h4 class="process-title">2. Review</h4>
                             <p class="process-text">We review your information</p>
                         </div>
                     </div>
                     <div class="col-lg-15 col-md-3 col-sm-6 mb-4" style="flex: 0 0 auto; width: 20%;">
                         <div class="process-step">
-                            <div class="process-icon"><i class="fa-solid fa-comments"></i></div>
+                            <div class="process-icon"><i class="fa-solid fa-comments" style="color: #b8860b;"></i></div>
                             <h4 class="process-title">3. Interview</h4>
                             <p class="process-text">Initial interview (virtual/in-person)</p>
                         </div>
                     </div>
                     <div class="col-lg-15 col-md-3 col-sm-6 mb-4" style="flex: 0 0 auto; width: 20%;">
                         <div class="process-step">
-                            <div class="process-icon"><i class="fa-solid fa-shield-check"></i></div>
+                            <div class="process-icon"><i class="fa-solid fa-shield-halved" style="color: #b8860b;"></i></div>
                             <h4 class="process-title">4. Verification</h4>
                             <p class="process-text">Licence and reference checks</p>
                         </div>
                     </div>
                     <div class="col-lg-15 col-md-3 col-sm-6 mb-4" style="flex: 0 0 auto; width: 20%;">
                         <div class="process-step">
-                            <div class="process-icon"><i class="fa-solid fa-handshake"></i></div>
+                            <div class="process-icon"><i class="fa-solid fa-handshake" style="color: #b8860b;"></i></div>
                             <h4 class="process-title">5. Welcome</h4>
                             <p class="process-text">Join the team!</p>
                         </div>
