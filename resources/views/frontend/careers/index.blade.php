@@ -394,50 +394,50 @@
             
             <!-- Why Work With Us -->
             <div class="row mb-5 pb-4">
-                <div class="col-12 text-center mb-5">
+                <div class="col-12 text-start mb-4">
                     <h2 class="section-heading">Why Work With Us?</h2>
                 </div>
                 
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="benefit-card">
-                        <i class="fa-solid fa-coins benefit-icon"></i>
-                        <h4 class="benefit-title">Competitive Pay</h4>
-                        <p class="benefit-text">Fair and timely compensation</p>
+                    <div class="benefit-card h-100 p-4 border-0 shadow-sm" style="background-color: #fafafa; border-radius: 8px;">
+                        <i class="fa-solid fa-coins benefit-icon" style="color: #b8860b;"></i>
+                        <h4 class="benefit-title" style="font-size: 1rem; font-weight: 800;">Competitive Pay</h4>
+                        <p class="benefit-text" style="font-size: 0.85rem;">Fair and timely compensation</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="benefit-card">
-                        <i class="fa-solid fa-chart-line benefit-icon"></i>
-                        <h4 class="benefit-title">Training & Dev</h4>
-                        <p class="benefit-text">Ongoing training and career growth</p>
+                    <div class="benefit-card h-100 p-4 border-0 shadow-sm" style="background-color: #fafafa; border-radius: 8px;">
+                        <i class="fa-solid fa-chart-column benefit-icon" style="color: #b8860b;"></i>
+                        <h4 class="benefit-title" style="font-size: 1rem; font-weight: 800;">Training & Development</h4>
+                        <p class="benefit-text" style="font-size: 0.85rem;">Ongoing training and career growth</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="benefit-card">
-                        <i class="fa-regular fa-calendar-check benefit-icon"></i>
-                        <h4 class="benefit-title">Flexible Schedules</h4>
-                        <p class="benefit-text">Full-time, part-time and casual</p>
+                    <div class="benefit-card h-100 p-4 border-0 shadow-sm" style="background-color: #fafafa; border-radius: 8px;">
+                        <i class="fa-regular fa-calendar-days benefit-icon" style="color: #b8860b;"></i>
+                        <h4 class="benefit-title" style="font-size: 1rem; font-weight: 800;">Flexible Schedules</h4>
+                        <p class="benefit-text" style="font-size: 0.85rem;">Full-time, part-time and casual positions</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="benefit-card">
-                        <i class="fa-solid fa-people-group benefit-icon"></i>
-                        <h4 class="benefit-title">Supportive Team</h4>
-                        <p class="benefit-text">Work with experienced professionals</p>
+                    <div class="benefit-card h-100 p-4 border-0 shadow-sm" style="background-color: #fafafa; border-radius: 8px;">
+                        <i class="fa-solid fa-people-group benefit-icon" style="color: #b8860b;"></i>
+                        <h4 class="benefit-title" style="font-size: 1rem; font-weight: 800;">Supportive Team</h4>
+                        <p class="benefit-text" style="font-size: 0.85rem;">Work with experienced professionals</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="benefit-card">
-                        <i class="fa-solid fa-shield-heart benefit-icon"></i>
-                        <h4 class="benefit-title">Safe Environment</h4>
-                        <p class="benefit-text">Health and safety is our priority</p>
+                    <div class="benefit-card h-100 p-4 border-0 shadow-sm" style="background-color: #fafafa; border-radius: 8px;">
+                        <i class="fa-solid fa-shield-halved benefit-icon" style="color: #b8860b;"></i>
+                        <h4 class="benefit-title" style="font-size: 1rem; font-weight: 800;">Safe Work Environment</h4>
+                        <p class="benefit-text" style="font-size: 0.85rem;">Health and safety is our priority</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                    <div class="benefit-card">
-                        <i class="fa-solid fa-user-tie benefit-icon"></i>
-                        <h4 class="benefit-title">Advancement</h4>
-                        <p class="benefit-text">Supervisory and management roles</p>
+                    <div class="benefit-card h-100 p-4 border-0 shadow-sm" style="background-color: #fafafa; border-radius: 8px;">
+                        <i class="fa-solid fa-user-astronaut benefit-icon" style="color: #b8860b;"></i>
+                        <h4 class="benefit-title" style="font-size: 1rem; font-weight: 800;">Advancement Opportunities</h4>
+                        <p class="benefit-text" style="font-size: 0.85rem;">Supervisory and management roles</p>
                     </div>
                 </div>
             </div>
