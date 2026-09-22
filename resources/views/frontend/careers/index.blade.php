@@ -338,8 +338,75 @@
 </style>
 
 <main id="primary" class="site-main">
-    <div class="space-for-header"></div>
-    
+    <style>
+        /* Breadcrumb Premium Overrides */
+        .rts__breadcrumb__area {
+            padding: 0;
+            margin: 0;
+        }
+        .rts__breadcrumb__content {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            padding: 100px 0 !important;
+            text-align: center;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        .rts__breadcrumb__content::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(11, 15, 25, 0.85) 100%) !important;
+            z-index: 1;
+            border-radius: inherit;
+        }
+        .rts__breadcrumb__content .list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 0 15px 0 !important;
+            gap: 12px;
+            position: relative;
+            z-index: 2;
+        }
+        .rts__breadcrumb__content .list li {
+            display: flex;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.8) !important;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .rts__breadcrumb__content .list li a {
+            color: #ffffff !important;
+            text-decoration: none !important;
+            transition: color 0.3s;
+        }
+        .rts__breadcrumb__content .list li a:hover {
+            color: #34A853 !important;
+        }
+        .rts__breadcrumb__content .list li i {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .rts__breadcrumb__content .title {
+            color: #ffffff !important;
+            font-size: 42px !important;
+            font-weight: 800 !important;
+            margin: 0 !important;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+    </style>
+
     <!-- start: Breadcrumb Section -->
     <section class="rts__breadcrumb__area">
         <div class="container">
@@ -347,40 +414,12 @@
                 <div class="col-lg-12">
                     <div class="rts__breadcrumb__content"
                         style="background-image: url('{{ asset('frontend/images/4.jpeg') }}');">
-                        
-                        <div class="row justify-content-between align-items-center w-100 px-lg-5">
-                            <div class="col-lg-6 text-start">
-                                <p class="text-uppercase mb-2 text-white" style="font-weight: 600; letter-spacing: 2px;"><span style="color: #e5b95f;">Join Elite Guard Inc.</span></p>
-                                <h1 class="title" style="font-size: 3rem; line-height: 1.1; margin-bottom: 20px;">
-                                    A Career <br><span style="color: #e5b95f;">With Purpose</span>
-                                </h1>
-                                <p class="text-white" style="font-size: 1.1rem; max-width: 500px;">Be part of a dedicated team keeping people, property and communities safe across Calgary and Alberta.</p>
-                            </div>
-                            
-                            <div class="col-lg-5 text-start mt-4 mt-lg-0 border-start border-light ps-lg-5">
-                                <div class="d-flex align-items-start mb-3">
-                                    <i class="fa-solid fa-shield-halved me-3 mt-1" style="color: #e5b95f; font-size: 1.5rem;"></i>
-                                    <div>
-                                        <h5 class="text-white fw-bold mb-1" style="font-size: 1rem;">Make a Difference</h5>
-                                        <p class="text-light small mb-0">Help create safer communities</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <i class="fa-solid fa-users me-3 mt-1" style="color: #e5b95f; font-size: 1.5rem;"></i>
-                                    <div>
-                                        <h5 class="text-white fw-bold mb-1" style="font-size: 1rem;">Grow Your Skills</h5>
-                                        <p class="text-light small mb-0">Training and advancement opportunities</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-start">
-                                    <i class="fa-regular fa-clock me-3 mt-1" style="color: #e5b95f; font-size: 1.5rem;"></i>
-                                    <div>
-                                        <h5 class="text-white fw-bold mb-1" style="font-size: 1rem;">Professional Team</h5>
-                                        <p class="text-light small mb-0">Supportive and respectful work environment</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="list">
+                            <li><a href="{{ route('home') }}">Home</a></li>
+                            <li><i class="fa-solid fa-chevron-right"></i></li>
+                            <li>Careers</li>
+                        </ul>
+                        <h2 class="title rts-text-anime">Careers</h2>
                     </div>
                 </div>
             </div>
