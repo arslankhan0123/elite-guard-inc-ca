@@ -230,25 +230,25 @@
             $industries = [
                 [
                     'title' => 'Commercial & Corporate',
-                    'image' => asset('frontend/images/4.jpeg'),
+                    'image' => asset('frontend/images/industries/commercial.png'),
                     'description' => 'We provide professional, highly-trained security personnel to protect corporate offices, business parks, and commercial facilities against unauthorized access and security breaches.',
                     'items' => ['Access Control', 'Concierge Security', 'CCTV Monitoring', 'After-Hours Patrols', 'Emergency Response'],
                 ],
                 [
                     'title' => 'Construction Sites',
-                    'image' => asset('frontend/images/5.jpeg'),
+                    'image' => asset('frontend/images/industries/construction.png'),
                     'description' => 'Construction sites are vulnerable to theft, vandalism, and safety hazards. Elite Guard Inc. offers specialized security solutions to keep your site, equipment, and materials safe 24/7.',
                     'items' => ['Equipment Protection', 'Perimeter Security', 'Gate House Operations', 'Mobile Patrols', 'Fire Watch'],
                 ],
                 [
                     'title' => 'Residential Communities',
-                    'image' => asset('frontend/images/6.jpeg'),
+                    'image' => asset('frontend/images/industries/residential.png'),
                     'description' => 'Ensure the safety and peace of mind of your residents. We offer tailored security services for condominiums, gated communities, and residential complexes.',
                     'items' => ['Concierge & Front Desk', 'Parking Enforcement', 'Property Patrols', 'Amenity Lock-ups', 'Visitor Management'],
                 ],
                 [
                     'title' => 'Events & Entertainment',
-                    'image' => asset('frontend/images/7.jpeg'),
+                    'image' => asset('frontend/images/industries/event.png'),
                     'description' => 'From private functions to large-scale public events, our event security teams are trained in crowd control, VIP protection, and emergency management to ensure your event runs smoothly.',
                     'items' => ['Crowd Management', 'Bag Checks & Screening', 'VIP Protection', 'Traffic Control', 'Alcohol Management'],
                 ],
