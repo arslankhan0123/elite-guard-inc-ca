@@ -1109,6 +1109,7 @@
     </div>
   </section><!-- /Contact Section -->
 
+  @push('scripts')
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       $('#contactForm').on('submit', function (e) {
@@ -1167,4 +1168,5 @@
       });
     });
   </script>
+  @endpush
 @endsection
