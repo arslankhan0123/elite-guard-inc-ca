@@ -66,6 +66,29 @@
     --contrast-color: #000000;
 }
 
+.white-background {
+    --background-color: #f9f9f9;
+    --surface-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #111111;
+}
+
+.white-background [style*="color: #fff"],
+.white-background [style*="color: #ffffff"] {
+    color: var(--heading-color) !important;
+}
+.white-background [style*="color: #94a3b8"] {
+    color: var(--default-color) !important;
+}
+.white-background [style*="background: rgba(255,255,255,0.03)"] {
+    background: var(--surface-color) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.white-background [style*="rgba(255,255,255,0.05)"],
+.white-background [style*="rgba(255,255,255,0.1)"] {
+    border-color: rgba(0,0,0,0.05) !important;
+}
+
 /* Smooth scroll */
 :root {
     scroll-behavior: smooth;

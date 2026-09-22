@@ -72,7 +72,7 @@
 
   <!-- About Section -->
   <!-- About Section -->
-  <section id="about" class="about section">
+  <section id="about" class="about section white-background">
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -411,7 +411,7 @@
   </section>
 
   <!-- Why Us Section -->
-  <section id="why-us" class="why-us section" style="padding: 60px 0;">
+  <section id="why-us" class="why-us section white-background" style="padding: 60px 0;">
 
     <div class="container section-title" data-aos="fade-up">
       <div class="row align-items-center">
@@ -419,7 +419,7 @@
           <h2 style="font-size: 20px; color: #d4af37; text-transform: uppercase; margin-bottom: 0;">WHY ELITE GUARD</h2>
         </div>
         <div class="col-md-6 text-md-start mt-3 mt-md-0">
-          <h2 style="font-size: 20px; color: #fff; text-transform: uppercase; margin-bottom: 0;">YOUR PROPERTY. OUR
+          <h2 style="font-size: 20px; color: #000; text-transform: uppercase; margin-bottom: 0;">YOUR PROPERTY. OUR
             PRIORITY.</h2>
         </div>
       </div>
@@ -429,33 +429,33 @@
       <div class="row gy-4 mt-2">
         <div class="col-md-6">
           <div
-            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
-            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">SITE-FOCUSED PLANS</h5>
-            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Coverage shaped around your property and
+            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #000;">SITE-FOCUSED PLANS</h5>
+            <p style="font-size: 14px; color: #333; margin-bottom: 0;">Coverage shaped around your property and
               priorities.</p>
           </div>
         </div>
         <div class="col-md-6">
           <div
-            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
-            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">CONNECTED OPERATIONS</h5>
-            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">App-based schedules, check-ins and site
+            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #000;">CONNECTED OPERATIONS</h5>
+            <p style="font-size: 14px; color: #333; margin-bottom: 0;">App-based schedules, check-ins and site
               information.</p>
           </div>
         </div>
         <div class="col-md-6">
           <div
-            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
-            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">VISIBLE PRESENCE</h5>
-            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">Uniformed guards and marked mobile patrol
+            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #000;">VISIBLE PRESENCE</h5>
+            <p style="font-size: 14px; color: #333; margin-bottom: 0;">Uniformed guards and marked mobile patrol
               vehicles.</p>
           </div>
         </div>
         <div class="col-md-6">
           <div
-            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(255,255,255,0.03); border-radius: 0 8px 8px 0; height: 100%;">
-            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #fff;">CLEAR RECORDS</h5>
-            <p style="font-size: 14px; color: #94a3b8; margin-bottom: 0;">NFC checkpoints, photos and digital reports.</p>
+            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; height: 100%;">
+            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #000;">CLEAR RECORDS</h5>
+            <p style="font-size: 14px; color: #333; margin-bottom: 0;">NFC checkpoints, photos and digital reports.</p>
           </div>
         </div>
       </div>
@@ -463,15 +463,15 @@
 
     <div class="container mt-5" data-aos="fade-up" data-aos-delay="200">
       <div class="row text-center"
-        style="background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+        style="background-color: rgba(0,0,0,0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1);">
         <div class="col-md-4">
-          <span style="font-weight: 600; font-size: 14px; color: #fff;">LICENSED SECURITY AGENCY</span>
+          <span style="font-weight: 600; font-size: 14px; color: #000;">LICENSED SECURITY AGENCY</span>
         </div>
         <div class="col-md-4">
-          <span style="font-weight: 600; font-size: 14px; color: #fff;">LIABILITY INSURANCE</span>
+          <span style="font-weight: 600; font-size: 14px; color: #000;">LIABILITY INSURANCE</span>
         </div>
         <div class="col-md-4">
-          <span style="font-weight: 600; font-size: 14px; color: #fff;">WCB COVERAGE</span>
+          <span style="font-weight: 600; font-size: 14px; color: #000;">WCB COVERAGE</span>
         </div>
       </div>
     </div>
