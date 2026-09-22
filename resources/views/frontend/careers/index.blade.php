@@ -84,6 +84,7 @@
     }
     
     .section-heading {
+        color: #111 !important;
         font-size: 2rem;
         font-weight: 800;
         text-transform: uppercase;
