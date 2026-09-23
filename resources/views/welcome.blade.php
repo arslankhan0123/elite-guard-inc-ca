@@ -54,8 +54,6 @@
           <div class="hero-visual">
             <div class="hero-image">
               <img src="{{ asset('frontend/images/4.jpeg') }}" alt="Digital Agency Hero" class="img-fluid">
-              <!-- <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/misc/misc-16.webp"
-                                          alt="Digital Agency Hero" class="img-fluid"> -->
             </div>
           </div>
         </div>
@@ -221,31 +219,31 @@
 
       <div class="services-slider swiper init-swiper mb-5">
         <script type="application/json" class="swiper-config">
-                        {
-                          "loop": true,
-                          "speed": 600,
-                          "autoplay": {
-                            "delay": 5000
-                          },
-                          "slidesPerView": 1,
-                          "spaceBetween": 20,
-                          "pagination": {
-                            "el": ".swiper-pagination",
-                            "type": "bullets",
-                            "clickable": true
-                          },
-                          "breakpoints": {
-                            "768": {
-                              "slidesPerView": 2,
-                              "spaceBetween": 30
+                          {
+                            "loop": true,
+                            "speed": 600,
+                            "autoplay": {
+                              "delay": 5000
                             },
-                            "1200": {
-                              "slidesPerView": 4,
-                              "spaceBetween": 30
+                            "slidesPerView": 1,
+                            "spaceBetween": 20,
+                            "pagination": {
+                              "el": ".swiper-pagination",
+                              "type": "bullets",
+                              "clickable": true
+                            },
+                            "breakpoints": {
+                              "768": {
+                                "slidesPerView": 2,
+                                "spaceBetween": 30
+                              },
+                              "1200": {
+                                "slidesPerView": 4,
+                                "spaceBetween": 30
+                              }
                             }
                           }
-                        }
-                      </script>
+                        </script>
         <div class="swiper-wrapper">
           @forelse($services as $service)
             @php
@@ -339,84 +337,7 @@
 
   </section><!-- /Services Section -->
 
-  <!-- Portfolio Section -->
-  <!-- <section id="portfolio" class="portfolio section">
 
-                                        <div class="container section-title" data-aos="fade-up">
-                                          <h2>Services Gallery</h2>
-                                          <p>At Elite Guard Inc., we offer a wide range of security services to protect your property, people, and assets. Our team comprises highly trained, licensed security officers who bring extensive experience in security management and risk mitigation. We utilize advanced technologies and proven industry practices to offer superior protection.</p>
-                                        </div>
-
-                                        <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                                          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                                            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-                                              <li data-filter="*" class="filter-active">All Services</li>
-                                              @foreach($categories as $category)
-                                                <li data-filter=".filter-{{ $category->slug }}">{{ $category->name }}</li>
-                                              @endforeach
-                                            </ul>
-
-                                            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-                                              @forelse($services as $service)
-                                                @php
-                                                  $catSlug = $service->category->slug ?? 'uncategorized';
-                                                  $imagePath = $service->feature_image ? asset($service->feature_image) : 'https://bootstrapmade.com/content/demo/Clarity/assets/img/portfolio/portfolio-7.webp';
-                                                @endphp
-                                                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-{{ $catSlug }}">
-                                                  <div class="portfolio-wrapper">
-                                                    <div class="portfolio-image">
-                                                      <img src="{{ $imagePath }}"
-                                                        alt="{{ $service->name }}" class="img-fluid" loading="lazy" style="width: 100%; height: 280px; object-fit: cover;">
-                                                      <div class="portfolio-hover">
-                                                        <div class="portfolio-actions">
-                                                          <a href="{{ $imagePath }}"
-                                                            class="glightbox action-btn preview-btn" title="Preview Image">
-                                                            <i class="bi bi-eye"></i>
-                                                          </a>
-                                                          <a href="{{ route('services.details', $service->id) }}" class="action-btn details-btn" title="View Details">
-                                                            <i class="bi bi-arrow-up-right"></i>
-                                                          </a>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    <div class="portfolio-content">
-                                                      <div class="portfolio-meta">
-                                                        <span class="project-type">{{ $service->category->name ?? 'Service' }}</span>
-                                                      </div>
-                                                      <h3><a href="{{ route('services.details', $service->id) }}" style="color: inherit;">{{ $service->name }}</a></h3>
-                                                      <p>{{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}</p>
-
-                                                      @if($service->highlights->isNotEmpty())
-                                                        <div class="portfolio-tech">
-                                                          @foreach($service->highlights->take(3) as $highlight)
-                                                            <span class="tech-badge">{{ $highlight->title }}</span>
-                                                          @endforeach
-                                                        </div>
-                                                      @endif
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              @empty
-                                                <div class="col-12 text-center">
-                                                  <p>No services found.</p>
-                                                </div>
-                                              @endforelse
-                                            </div>
-
-                                          </div>
-
-                                          <div class="portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
-                                            <h4>Ready to get started?</h4>
-                                            <p>Let's work together to bring your vision to life</p>
-                                            <div class="cta-buttons">
-                                              <a href="#contact" class="btn btn-primary">Start a Project</a>
-                                              <a href="{{ route('services') }}" class="btn btn-outline">View All Services</a>
-                                            </div>
-                                          </div>
-                                        </div>
-
-                                      </section> -->
 
   <style>
     .clients-new {
@@ -633,7 +554,8 @@
             Contact us today for a customized security solution.
           </p>
           <div class="d-flex align-items-stretch flex-wrap gap-2">
-            <a href="{{ route('quote') }}" class="d-flex align-items-center justify-content-center cta-btn-outline" style="margin-left: 0;">
+            <a href="{{ route('quote') }}" class="d-flex align-items-center justify-content-center cta-btn-outline"
+              style="margin-left: 0;">
               REQUEST A QUOTE <i class="fa-solid fa-arrow-right" style="margin-left: 8px; margin-right: 0;"></i>
             </a>
             <div class="d-flex align-items-center cta-btn-outline" style="margin-left: 0;">
@@ -876,32 +798,32 @@
 
       <div class="testimonials-slider swiper init-swiper">
         <script type="application/json" class="swiper-config">
-                                              {
-                                                "loop": true,
-                                                "speed": 600,
-                                                "autoplay": {
-                                                  "delay": 4000
-                                                },
-                                                "slidesPerView": 1,
-                                                "centeredSlides": true,
-                                                "spaceBetween": 20,
-                                                "pagination": {
-                                                  "el": ".swiper-pagination",
-                                                  "type": "bullets",
-                                                  "clickable": true
-                                                },
-                                                "breakpoints": {
-                                                  "768": {
-                                                    "slidesPerView": 1.5,
-                                                    "spaceBetween": 30
+                                                {
+                                                  "loop": true,
+                                                  "speed": 600,
+                                                  "autoplay": {
+                                                    "delay": 4000
                                                   },
-                                                  "1200": {
-                                                    "slidesPerView": 3,
-                                                    "spaceBetween": 40
+                                                  "slidesPerView": 1,
+                                                  "centeredSlides": true,
+                                                  "spaceBetween": 20,
+                                                  "pagination": {
+                                                    "el": ".swiper-pagination",
+                                                    "type": "bullets",
+                                                    "clickable": true
+                                                  },
+                                                  "breakpoints": {
+                                                    "768": {
+                                                      "slidesPerView": 1.5,
+                                                      "spaceBetween": 30
+                                                    },
+                                                    "1200": {
+                                                      "slidesPerView": 3,
+                                                      "spaceBetween": 40
+                                                    }
                                                   }
                                                 }
-                                              }
-                                            </script>
+                                              </script>
         <div class="swiper-wrapper">
           <!-- Testimonial 5: Access Control & Monitoring -->
           <div class="swiper-slide">
@@ -1129,28 +1051,28 @@
 
             <div class="leadership-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
-                        {
-                          "loop": true,
-                          "speed": 600,
-                          "autoplay": {
-                            "delay": 4000
-                          },
-                          "slidesPerView": 1,
-                          "spaceBetween": 0,
-                          "pagination": {
-                            "el": ".swiper-pagination",
-                            "clickable": true
-                          },
-                          "breakpoints": {
-                            "768": {
-                              "slidesPerView": 2
+                          {
+                            "loop": true,
+                            "speed": 600,
+                            "autoplay": {
+                              "delay": 4000
                             },
-                            "1024": {
-                              "slidesPerView": 3
+                            "slidesPerView": 1,
+                            "spaceBetween": 0,
+                            "pagination": {
+                              "el": ".swiper-pagination",
+                              "clickable": true
+                            },
+                            "breakpoints": {
+                              "768": {
+                                "slidesPerView": 2
+                              },
+                              "1024": {
+                                "slidesPerView": 3
+                              }
                             }
                           }
-                        }
-                      </script>
+                        </script>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="leader-card">
