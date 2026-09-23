@@ -167,34 +167,34 @@
 
                       <div class="hero-features" data-aos="fade-up" data-aos-delay="200">
                           <div class="hero-feature-item">
-                              <div class="hero-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                              <div class="hero-feature-icon"><i class="fa-solid fa-phone-volume"></i></div>
                               <div class="hero-feature-text">
-                                  <span class="ft-title">PROTECT</span>
-                                  <span class="ft-desc">People & Property</span>
+                                  <span class="ft-title">24/7 SUPPORT</span>
+                                  <span class="ft-desc">Always Available</span>
                               </div>
                           </div>
                           <div class="hero-feature-divider d-none d-md-block"></div>
                           <div class="hero-feature-item">
-                              <div class="hero-feature-icon"><i class="fa-solid fa-eye"></i></div>
+                              <div class="hero-feature-icon"><i class="fa-solid fa-location-dot"></i></div>
                               <div class="hero-feature-text">
-                                  <span class="ft-title">MONITOR</span>
-                                  <span class="ft-desc">Activity & Risk</span>
+                                  <span class="ft-title">LOCAL</span>
+                                  <span class="ft-desc">Calgary & Alberta</span>
                               </div>
                           </div>
                           <div class="hero-feature-divider d-none d-md-block"></div>
                           <div class="hero-feature-item">
-                              <div class="hero-feature-icon"><i class="fa-solid fa-person-running"></i></div>
+                              <div class="hero-feature-icon"><i class="fa-solid fa-comments"></i></div>
                               <div class="hero-feature-text">
-                                  <span class="ft-title">RESPOND</span>
-                                  <span class="ft-desc">Quickly & Effectively</span>
+                                  <span class="ft-title">QUICK</span>
+                                  <span class="ft-desc">Fast Response</span>
                               </div>
                           </div>
                           <div class="hero-feature-divider d-none d-md-block"></div>
                           <div class="hero-feature-item">
-                              <div class="hero-feature-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                              <div class="hero-feature-icon"><i class="fa-solid fa-handshake-angle"></i></div>
                               <div class="hero-feature-text">
-                                  <span class="ft-title">SAFER</span>
-                                  <span class="ft-desc">Communities</span>
+                                  <span class="ft-title">HELPFUL</span>
+                                  <span class="ft-desc">Expert Advice</span>
                               </div>
                           </div>
                       </div>

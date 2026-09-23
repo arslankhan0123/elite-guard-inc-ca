@@ -442,34 +442,34 @@
 
                             <div class="hero-features" data-aos="fade-up" data-aos-delay="200">
                                 <div class="hero-feature-item">
-                                    <div class="hero-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <div class="hero-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
                                     <div class="hero-feature-text">
-                                        <span class="ft-title">PROTECT</span>
-                                        <span class="ft-desc">People & Property</span>
+                                        <span class="ft-title">GROWTH</span>
+                                        <span class="ft-desc">Career Advancement</span>
                                     </div>
                                 </div>
                                 <div class="hero-feature-divider d-none d-md-block"></div>
                                 <div class="hero-feature-item">
-                                    <div class="hero-feature-icon"><i class="fa-solid fa-eye"></i></div>
+                                    <div class="hero-feature-icon"><i class="fa-solid fa-handshake"></i></div>
                                     <div class="hero-feature-text">
-                                        <span class="ft-title">MONITOR</span>
-                                        <span class="ft-desc">Activity & Risk</span>
+                                        <span class="ft-title">SUPPORT</span>
+                                        <span class="ft-desc">Team Environment</span>
                                     </div>
                                 </div>
                                 <div class="hero-feature-divider d-none d-md-block"></div>
                                 <div class="hero-feature-item">
-                                    <div class="hero-feature-icon"><i class="fa-solid fa-person-running"></i></div>
+                                    <div class="hero-feature-icon"><i class="fa-solid fa-medal"></i></div>
                                     <div class="hero-feature-text">
-                                        <span class="ft-title">RESPOND</span>
-                                        <span class="ft-desc">Quickly & Effectively</span>
+                                        <span class="ft-title">REWARDS</span>
+                                        <span class="ft-desc">Competitive Pay</span>
                                     </div>
                                 </div>
                                 <div class="hero-feature-divider d-none d-md-block"></div>
                                 <div class="hero-feature-item">
-                                    <div class="hero-feature-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                                    <div class="hero-feature-icon"><i class="fa-solid fa-clock"></i></div>
                                     <div class="hero-feature-text">
-                                        <span class="ft-title">SAFER</span>
-                                        <span class="ft-desc">Communities</span>
+                                        <span class="ft-title">FLEXIBLE</span>
+                                        <span class="ft-desc">Work Schedules</span>
                                     </div>
                                 </div>
                             </div>

@@ -251,34 +251,34 @@
 
                     <div class="hero-features" data-aos="fade-up" data-aos-delay="200">
                         <div class="hero-feature-item">
-                            <div class="hero-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="hero-feature-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
                             <div class="hero-feature-text">
-                                <span class="ft-title">PROTECT</span>
-                                <span class="ft-desc">People & Property</span>
+                                <span class="ft-title">FREE</span>
+                                <span class="ft-desc">No Obligation Quote</span>
                             </div>
                         </div>
                         <div class="hero-feature-divider d-none d-md-block"></div>
                         <div class="hero-feature-item">
-                            <div class="hero-feature-icon"><i class="fa-solid fa-eye"></i></div>
+                            <div class="hero-feature-icon"><i class="fa-solid fa-stopwatch"></i></div>
                             <div class="hero-feature-text">
-                                <span class="ft-title">MONITOR</span>
-                                <span class="ft-desc">Activity & Risk</span>
+                                <span class="ft-title">FAST</span>
+                                <span class="ft-desc">Quick Turnaround</span>
                             </div>
                         </div>
                         <div class="hero-feature-divider d-none d-md-block"></div>
                         <div class="hero-feature-item">
-                            <div class="hero-feature-icon"><i class="fa-solid fa-person-running"></i></div>
+                            <div class="hero-feature-icon"><i class="fa-solid fa-sliders"></i></div>
                             <div class="hero-feature-text">
-                                <span class="ft-title">RESPOND</span>
-                                <span class="ft-desc">Quickly & Effectively</span>
+                                <span class="ft-title">CUSTOM</span>
+                                <span class="ft-desc">Tailored Solutions</span>
                             </div>
                         </div>
                         <div class="hero-feature-divider d-none d-md-block"></div>
                         <div class="hero-feature-item">
-                            <div class="hero-feature-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                            <div class="hero-feature-icon"><i class="fa-solid fa-tags"></i></div>
                             <div class="hero-feature-text">
-                                <span class="ft-title">SAFER</span>
-                                <span class="ft-desc">Communities</span>
+                                <span class="ft-title">COMPETITIVE</span>
+                                <span class="ft-desc">Fair Pricing</span>
                             </div>
                         </div>
                     </div>
