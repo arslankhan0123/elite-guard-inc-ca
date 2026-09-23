@@ -4,11 +4,12 @@
 
 @section('content')
 <style>
-    /* Breadcrumb Premium Overrides */
+    /* Breadcrumb Premium Overrides - Left Aligned Hero */
     .rts__breadcrumb__area {
         padding: 0;
         margin: 0;
     }
+
     .rts__breadcrumb__content {
         position: relative;
         overflow: hidden;
@@ -16,59 +17,76 @@
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
-        padding: 100px 0 !important;
-        text-align: center;
+        padding: 70px 50px !important;
+        text-align: left;
         border-radius: 20px;
         margin-top: 30px;
         margin-bottom: 50px;
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     }
+
     .rts__breadcrumb__content::before {
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(11, 15, 25, 0.85) 100%) !important;
+        background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
         z-index: 1;
         border-radius: inherit;
     }
-    .rts__breadcrumb__content .list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none !important;
-        padding: 0 !important;
-        margin: 0 0 15px 0 !important;
-        gap: 12px;
+
+    .hero-top-title {
+        color: #d4af37;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
         position: relative;
         z-index: 2;
     }
-    .rts__breadcrumb__content .list li {
-        display: flex;
-        align-items: center;
-        color: rgba(255, 255, 255, 0.8) !important;
-        font-size: 15px;
-        font-weight: 500;
-    }
-    .rts__breadcrumb__content .list li a {
-        color: #ffffff !important;
-        text-decoration: none !important;
-        transition: color 0.3s;
-    }
-    .rts__breadcrumb__content .list li a:hover {
-        color: #34A853 !important;
-    }
-    .rts__breadcrumb__content .list li i {
-        font-size: 11px;
-        color: rgba(255, 255, 255, 0.5);
-    }
-    .rts__breadcrumb__content .title {
-        color: #ffffff !important;
-        font-size: 42px !important;
-        font-weight: 800 !important;
-        margin: 0 !important;
+
+    .hero-title-main {
+        color: #ffffff;
+        font-size: 55px;
+        font-weight: 800;
+        margin: 0;
+        line-height: 1.1;
         position: relative;
         z-index: 2;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-title-main span {
+        color: #d4af37;
+    }
+
+    .hero-divider {
+        width: 60px;
+        height: 3px;
+        background-color: #d4af37;
+        margin: 25px 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-desc {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 100%;
+        margin-bottom: 35px;
+        position: relative;
+        z-index: 2;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+        .hero-title-main {
+            font-size: 35px;
+        }
+        .rts__breadcrumb__content {
+            padding: 60px 30px !important;
+        }
     }
 
     /* Content Title overrides */
@@ -156,17 +174,25 @@
     }
 </style>
 <!-- rts breadcrumb area start -->
-<section class="rts__breadcrumb__area ">
+<section class="rts__breadcrumb__area">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="rts__breadcrumb__content" style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
-                    <ul class="list">
-                        <li><a href="{{ route('home') }}">Home</a></li>
-                        <li><i class="fa-solid fa-chevron-right"></i></li>
-                        <li>Request a Quote</li>
-                    </ul>
-                    <h2 class="title rts-text-anime">Request a Service Quote</h2>
+                    
+                    <div class="hero-top-title" data-aos="fade-up">REQUEST A QUOTE</div>
+                    
+                    <h1 class="hero-title-main rts-text-anime">
+                        CUSTOM SECURITY SOLUTIONS
+                        <span>FOR YOUR PEACE OF MIND</span>
+                    </h1>
+                    
+                    <div class="hero-divider" data-aos="fade-up" data-aos-delay="50"></div>
+                    
+                    <p class="hero-desc" data-aos="fade-up" data-aos-delay="100">
+                        Contact us today to receive a personalized quote tailored to your specific security requirements.
+                    </p>
+
                 </div>
             </div>
         </div>
