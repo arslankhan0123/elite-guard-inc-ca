@@ -3,7 +3,7 @@
 
 @section('content')
     <style>
-        /* Breadcrumb Styles */
+        /* Breadcrumb Premium Overrides - Left Aligned Hero */
         .rts__breadcrumb__area {
             padding: 0;
             margin: 0;
@@ -16,8 +16,8 @@
             background-size: cover !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
-            padding: 100px 0 !important;
-            text-align: center;
+            padding: 70px 50px !important;
+            text-align: left;
             border-radius: 20px;
             margin-top: 30px;
             margin-bottom: 50px;
@@ -28,54 +28,112 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(11, 15, 25, 0.85) 100%) !important;
+            background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
             z-index: 1;
             border-radius: inherit;
         }
 
-        .rts__breadcrumb__content .list {
+        .hero-top-title {
+            color: #d4af37;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title-main {
+            color: #ffffff;
+            font-size: 55px;
+            font-weight: 800;
+            margin: 0;
+            line-height: 1.1;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-title-main span {
+            color: #d4af37;
+            display: block;
+        }
+
+        .hero-desc {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.6;
+            max-width: 90%;
+            margin-top: 25px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-features {
             display: flex;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+        }
+
+        .hero-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .hero-feature-icon {
+            color: #111;
+            background-color: #d4af37;
+            font-size: 20px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            align-items: center;
-            list-style: none !important;
-            padding: 0 !important;
-            margin: 0 0 15px 0 !important;
-            gap: 12px;
-            position: relative;
-            z-index: 2;
         }
 
-        .rts__breadcrumb__content .list li {
+        .hero-feature-text {
             display: flex;
-            align-items: center;
-            color: rgba(255, 255, 255, 0.8) !important;
-            font-size: 15px;
-            font-weight: 500;
+            flex-direction: column;
         }
 
-        .rts__breadcrumb__content .list li a {
-            color: #ffffff !important;
-            text-decoration: none !important;
-            transition: color 0.3s;
+        .hero-feature-text .ft-title {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
         }
 
-        .rts__breadcrumb__content .list li a:hover {
-            color: #b8860b !important;
+        .hero-feature-text .ft-desc {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
         }
 
-        .rts__breadcrumb__content .list li i {
-            font-size: 11px;
-            color: rgba(255, 255, 255, 0.5);
+        .hero-feature-divider {
+            width: 1px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.15);
         }
 
-        .rts__breadcrumb__content .title {
-            color: #ffffff !important;
-            font-size: 42px !important;
-            font-weight: 800 !important;
-            margin: 0 !important;
-            position: relative;
-            z-index: 2;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        @media (max-width: 768px) {
+            .hero-title-main {
+                font-size: 35px;
+            }
+            .rts__breadcrumb__content {
+                padding: 60px 30px !important;
+            }
+            .hero-feature-divider {
+                display: none;
+            }
         }
 
         /* Page Specific Overrides */
@@ -247,14 +305,53 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="rts__breadcrumb__content"
-                        style="background-image: url('{{ asset('frontend/images/industries/banner.png') }}');">
-                        <ul class="list">
-                            <li><a href="{{ route('home') }}">Home</a></li>
-                            <li><i class="fa-solid fa-chevron-right"></i></li>
-                            <li>Industries</li>
-                        </ul>
-                        <h2 class="title rts-text-anime">Industries We Serve</h2>
+                    <div class="rts__breadcrumb__content" style="background-image: url('{{ asset('frontend/images/industries/banner.png') }}');">
+                        
+                        <div class="hero-top-title" data-aos="fade-up">INDUSTRIES</div>
+                        
+                        <h1 class="hero-title-main rts-text-anime">
+                            SECURITY SOLUTIONS
+                            <span>FOR EVERY INDUSTRY</span>
+                        </h1>
+                        
+                        <p class="hero-desc" data-aos="fade-up" data-aos-delay="100">
+                            Each industry has unique challenges. Elite Guard Inc. delivers customized security solutions to protect your people, property and operations — no matter the environment.
+                        </p>
+                        
+                        <div class="hero-features" data-aos="fade-up" data-aos-delay="200">
+                            <div class="hero-feature-item">
+                                <div class="hero-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                <div class="hero-feature-text">
+                                    <span class="ft-title">PROTECT</span>
+                                    <span class="ft-desc">People & Property</span>
+                                </div>
+                            </div>
+                            <div class="hero-feature-divider d-none d-md-block"></div>
+                            <div class="hero-feature-item">
+                                <div class="hero-feature-icon"><i class="fa-solid fa-eye"></i></div>
+                                <div class="hero-feature-text">
+                                    <span class="ft-title">MONITOR</span>
+                                    <span class="ft-desc">Activity & Risk</span>
+                                </div>
+                            </div>
+                            <div class="hero-feature-divider d-none d-md-block"></div>
+                            <div class="hero-feature-item">
+                                <div class="hero-feature-icon"><i class="fa-solid fa-person-running"></i></div>
+                                <div class="hero-feature-text">
+                                    <span class="ft-title">RESPOND</span>
+                                    <span class="ft-desc">Quickly & Effectively</span>
+                                </div>
+                            </div>
+                            <div class="hero-feature-divider d-none d-md-block"></div>
+                            <div class="hero-feature-item">
+                                <div class="hero-feature-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                                <div class="hero-feature-text">
+                                    <span class="ft-title">SAFER</span>
+                                    <span class="ft-desc">Communities</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
