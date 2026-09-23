@@ -78,6 +78,17 @@
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
+        .rts__breadcrumb__content p {
+            color: #ffffff !important;
+            position: relative;
+            z-index: 2;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 20px auto 0;
+            line-height: 1.6;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
         /* Technology Page Specific Styles */
         .tech-content-area {
             background-color: #f8f9fa;
@@ -231,7 +242,8 @@
 
         /* App Screenshots Slider */
         .app-screenshots-area {
-            background: #090e17; /* Very dark blue/black */
+            background: #090e17;
+            /* Very dark blue/black */
             padding: 120px 0;
             position: relative;
             overflow: hidden;
@@ -258,7 +270,7 @@
 
         .app-screenshots-area .section-heading {
             color: #ffffff !important;
-            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
         }
 
         .app-screenshots-area .section-heading::after {
@@ -268,7 +280,7 @@
         .app-screenshots-area .text-muted {
             color: rgba(255, 255, 255, 0.7) !important;
         }
-        
+
         .app-screenshot-slide {
             border-radius: 45px;
             overflow: hidden;
@@ -282,7 +294,7 @@
             transition: transform 0.4s ease;
             position: relative;
         }
-        
+
         /* Subtle inner shine on the frame */
         .app-screenshot-slide::after {
             content: '';
@@ -307,18 +319,18 @@
         .app-slider {
             padding-bottom: 60px;
         }
-        
+
         .app-slider .swiper-pagination {
             bottom: 0 !important;
         }
-        
+
         .app-slider .swiper-pagination-bullet {
             background-color: rgba(255, 255, 255, 0.3);
             width: 10px;
             height: 10px;
             transition: all 0.3s;
         }
-        
+
         .app-slider .swiper-pagination-bullet-active {
             background-color: #d4af37;
             width: 25px;
@@ -337,7 +349,12 @@
                             <li><i class="fa-solid fa-chevron-right"></i></li>
                             <li>Technology</li>
                         </ul>
-                        <h2 class="title rts-text-anime">Guard App Guide</h2>
+                        <h2 class="title rts-text-anime">SMART SECURITY STRONGER COMMUNITIES</h2>
+                        <p>At Elite Guard Inc., we use modern technology to improve
+                            communication,
+                            increase accountability
+                            and deliver high quality security services. Our custom mobile app, digital reporting and
+                            real-time coordination keep our guards connected and our clients informed.</p>
                     </div>
                 </div>
             </div>
@@ -720,60 +737,61 @@
                     <p class="text-muted">Take a look at the intuitive and modern interface of the Elite Guard App.</p>
                 </div>
             </div>
-            
+
             <div class="app-slider swiper init-swiper">
                 <script type="application/json" class="swiper-config">
-                    {
-                        "loop": true,
-                        "speed": 800,
-                        "effect": "coverflow",
-                        "grabCursor": true,
-                        "centeredSlides": true,
-                        "coverflowEffect": {
-                            "rotate": 10,
-                            "stretch": 0,
-                            "depth": 150,
-                            "modifier": 1.2,
-                            "slideShadows": false
-                        },
-                        "autoplay": {
-                            "delay": 3500,
-                            "disableOnInteraction": false
-                        },
-                        "slidesPerView": 1,
-                        "spaceBetween": 20,
-                        "pagination": {
-                            "el": ".swiper-pagination",
-                            "type": "bullets",
-                            "clickable": true
-                        },
-                        "breakpoints": {
-                            "576": {
-                                "slidesPerView": 2,
-                                "spaceBetween": 20
-                            },
-                            "768": {
-                                "slidesPerView": 3,
-                                "spaceBetween": 30
-                            },
-                            "992": {
-                                "slidesPerView": 4,
-                                "spaceBetween": 30
-                            },
-                            "1200": {
-                                "slidesPerView": 5,
-                                "spaceBetween": 30
-                            }
-                        }
-                    }
-                </script>
+                                        {
+                                            "loop": true,
+                                            "speed": 800,
+                                            "effect": "coverflow",
+                                            "grabCursor": true,
+                                            "centeredSlides": true,
+                                            "coverflowEffect": {
+                                                "rotate": 10,
+                                                "stretch": 0,
+                                                "depth": 150,
+                                                "modifier": 1.2,
+                                                "slideShadows": false
+                                            },
+                                            "autoplay": {
+                                                "delay": 3500,
+                                                "disableOnInteraction": false
+                                            },
+                                            "slidesPerView": 1,
+                                            "spaceBetween": 20,
+                                            "pagination": {
+                                                "el": ".swiper-pagination",
+                                                "type": "bullets",
+                                                "clickable": true
+                                            },
+                                            "breakpoints": {
+                                                "576": {
+                                                    "slidesPerView": 2,
+                                                    "spaceBetween": 20
+                                                },
+                                                "768": {
+                                                    "slidesPerView": 3,
+                                                    "spaceBetween": 30
+                                                },
+                                                "992": {
+                                                    "slidesPerView": 4,
+                                                    "spaceBetween": 30
+                                                },
+                                                "1200": {
+                                                    "slidesPerView": 5,
+                                                    "spaceBetween": 30
+                                                }
+                                            }
+                                        }
+                                    </script>
                 <div class="swiper-wrapper">
                     @for ($i = 18; $i <= 27; $i++)
-                    <div class="swiper-slide">
-                        <div class="app-screenshot-slide">
-                            <img src="{{ asset('frontend/images/app/' . $i . '.jpg') }}" alt="App Screenshot {{ $i }}" loading="lazy">
+                        <div class="swiper-slide">
+                            <div class="app-screenshot-slide">
+                                <img src="{{ asset('frontend/images/app/' . $i . '.jpg') }}" alt="App Screenshot {{ $i }}"
+                                    loading="lazy">
+                            </div>
                         </div>
-                    </div>
                     @endfor
                 </div>
                 <div class="swiper-pagination"></div>
