@@ -3,18 +3,227 @@
 
 @section('content')
 
+   <style>
+      .rts__breadcrumb__area {
+          padding: 0;
+          margin: 0;
+      }
+      .rts__breadcrumb__content {
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+          background-size: cover !important;
+          background-position: center !important;
+          background-repeat: no-repeat !important;
+          padding: 70px 50px !important;
+          text-align: left;
+          border-radius: 20px;
+          margin-top: 30px;
+          margin-bottom: 50px;
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      }
+      .rts__breadcrumb__content::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(90deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
+          z-index: 1;
+          border-radius: inherit;
+      }
+      .hero-title-main {
+          color: #ffffff;
+          font-size: 55px;
+          font-weight: 800;
+          margin: 0;
+          line-height: 1.1;
+          position: relative;
+          z-index: 2;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .hero-title-sub {
+          color: #d4af37;
+          font-size: 55px;
+          font-weight: 800;
+          margin: 0 0 20px 0;
+          line-height: 1.1;
+          position: relative;
+          z-index: 2;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .hero-tags {
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+          margin-bottom: 25px;
+          position: relative;
+          z-index: 2;
+      }
+      .hero-desc {
+          color: #ffffff;
+          font-size: 16px;
+          line-height: 1.6;
+          max-width: 90%;
+          margin-bottom: 35px;
+          position: relative;
+          z-index: 2;
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      }
+      .hero-buttons {
+          display: flex;
+          gap: 20px;
+          position: relative;
+          z-index: 2;
+          flex-wrap: wrap;
+      }
+      .btn-gold {
+          background-color: #d4af37;
+          color: #111;
+          font-weight: 700;
+          padding: 15px 30px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 14px;
+          transition: all 0.3s;
+          border: 2px solid #d4af37;
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+      }
+      .btn-gold:hover {
+          background-color: #b8860b;
+          border-color: #b8860b;
+          color: #fff;
+      }
+      .btn-outline-gold {
+          background-color: transparent;
+          color: #ffffff;
+          font-weight: 700;
+          padding: 15px 30px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 14px;
+          transition: all 0.3s;
+          border: 2px solid #d4af37;
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+      }
+      .btn-outline-gold:hover {
+          background-color: #d4af37;
+          color: #111;
+      }
+      
+      .hero-top-title {
+          color: #d4af37;
+          font-size: 14px;
+          font-weight: 700;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          margin-bottom: 15px;
+          position: relative;
+          z-index: 2;
+      }
+      .hero-features {
+          margin-top: 40px;
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          position: relative;
+          z-index: 2;
+          flex-wrap: wrap;
+      }
+      .hero-feature-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 12px;
+      }
+      .hero-feature-icon {
+          color: #d4af37;
+          font-size: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      .hero-feature-text {
+          color: #ffffff;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          line-height: 1.4;
+      }
+      .hero-feature-divider {
+          width: 1px;
+          height: 40px;
+          background-color: rgba(255, 255, 255, 0.15);
+      }
+      
+      @media (max-width: 768px) {
+          .hero-title-main, .hero-title-sub {
+              font-size: 35px;
+          }
+          .rts__breadcrumb__content {
+              padding: 60px 30px !important;
+          }
+      }
+   </style>
+
    <section class="rts__breadcrumb__area">
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
-               <div class="rts__breadcrumb__content"
-                  style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
-                  <ul class="list">
-                     <li><a href="{{ route('home') }}">Home</a></li>
-                     <li><i class="fa-solid fa-chevron-right"></i></li>
-                     <li>Mobile Patrol</li>
-                  </ul>
-                  <h2 class="title rts-text-anime">Mobile Patrol</h2>
+               <div class="rts__breadcrumb__content" style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
+                  <div class="hero-top-title" data-aos="fade-up">MOBILE PATROL</div>
+                  <h1 class="hero-title-main rts-text-anime" style="margin-bottom: 20px;">
+                     VISIBLE SECURITY <span style="color: #d4af37;">ANYTIME. ANYWHERE.</span>
+                  </h1>
+                  
+                  <div class="hero-tags" data-aos="fade-up" data-aos-delay="100">
+                     RAPID RESPONSE. DETER CRIME. PROTECT YOUR PROPERTY.
+                  </div>
+                  
+                  <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+                     Elite Guard Inc. delivers professional mobile patrol services across Calgary and surrounding areas. Our marked patrol vehicles and trained security professionals conduct scheduled and random patrols to deter criminal activity, identify risks and respond quickly to incidents.
+                  </p>
+                  
+                  <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                     <a href="{{ route('quote') }}" class="btn-gold">
+                        REQUEST A MOBILE PATROL QUOTE <i class="fa-solid fa-arrow-right"></i>
+                     </a>
+                     <a href="{{ route('services') }}" class="btn-outline-gold">
+                        OUR SERVICES <i class="fa-solid fa-arrow-down"></i>
+                     </a>
+                  </div>
+                  
+                  <div class="hero-features" data-aos="fade-up" data-aos-delay="400">
+                     <div class="hero-feature-item">
+                        <div class="hero-feature-icon"><i class="fa-regular fa-clock"></i></div>
+                        <div class="hero-feature-text">24/7<br>MONITORING</div>
+                     </div>
+                     <div class="hero-feature-divider d-none d-md-block"></div>
+                     <div class="hero-feature-item">
+                        <div class="hero-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="hero-feature-text">VISIBLE<br>DETERENCE</div>
+                     </div>
+                     <div class="hero-feature-divider d-none d-md-block"></div>
+                     <div class="hero-feature-item">
+                        <div class="hero-feature-icon"><i class="fa-solid fa-car"></i></div>
+                        <div class="hero-feature-text">RAPID<br>RESPONSE</div>
+                     </div>
+                     <div class="hero-feature-divider d-none d-md-block"></div>
+                     <div class="hero-feature-item">
+                        <div class="hero-feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="hero-feature-text">GPS<br>TRACKING</div>
+                     </div>
+                     <div class="hero-feature-divider d-none d-md-block"></div>
+                     <div class="hero-feature-item">
+                        <div class="hero-feature-icon"><i class="fa-solid fa-file-invoice"></i></div>
+                        <div class="hero-feature-text">DIGITAL<br>REPORTING</div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
