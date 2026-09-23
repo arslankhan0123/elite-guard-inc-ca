@@ -231,30 +231,60 @@
 
         /* App Screenshots Slider */
         .app-screenshots-area {
-            background-color: #fff;
-            padding: 80px 0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .app-screenshots-area .section-heading {
+            color: #ffffff !important;
+        }
+
+        .app-screenshots-area .section-heading::after {
+            background-color: #d4af37;
+        }
+
+        .app-screenshots-area .text-muted {
+            color: rgba(255, 255, 255, 0.7) !important;
         }
         
         .app-screenshot-slide {
-            border-radius: 15px;
+            border-radius: 45px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border: 5px solid #f1f1f1;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+            border: 10px solid #1a1a1a;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: #000;
+            transition: transform 0.4s ease;
+            position: relative;
+        }
+        
+        /* Subtle inner shine on the frame */
+        .app-screenshot-slide::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 35px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            pointer-events: none;
+        }
+
+        .app-screenshot-slide:hover {
+            transform: translateY(-10px);
         }
 
         .app-screenshot-slide img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 35px;
             object-fit: cover;
         }
 
         .app-slider {
-            padding-bottom: 50px;
+            padding-bottom: 60px;
         }
         
         .app-slider .swiper-pagination {
@@ -262,13 +292,16 @@
         }
         
         .app-slider .swiper-pagination-bullet {
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.3);
             width: 10px;
             height: 10px;
+            transition: all 0.3s;
         }
         
         .app-slider .swiper-pagination-bullet-active {
-            background-color: #b8860b;
+            background-color: #d4af37;
+            width: 25px;
+            border-radius: 5px;
         }
     </style>
 
