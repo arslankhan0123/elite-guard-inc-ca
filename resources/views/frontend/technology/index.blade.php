@@ -3,7 +3,7 @@
 
 @section('content')
     <style>
-        /* Breadcrumb Premium Overrides */
+        /* Breadcrumb Premium Overrides - Left Aligned Hero */
         .rts__breadcrumb__area {
             padding: 0;
             margin: 0;
@@ -16,8 +16,8 @@
             background-size: cover !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
-            padding: 100px 0 !important;
-            text-align: center;
+            padding: 70px 50px !important;
+            text-align: left;
             border-radius: 20px;
             margin-top: 30px;
             margin-bottom: 50px;
@@ -28,81 +28,75 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, rgba(15, 23, 42, 0.75) 0%, rgba(11, 15, 25, 0.85) 100%) !important;
+            background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
             z-index: 1;
             border-radius: inherit;
         }
 
-        .rts__breadcrumb__content .list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            list-style: none !important;
-            padding: 0 !important;
-            margin: 0 0 15px 0 !important;
-            gap: 12px;
+        .hero-top-title {
+            color: #d4af37;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
             position: relative;
             z-index: 2;
-        }
-
-        .rts__breadcrumb__content .list li {
             display: flex;
             align-items: center;
-            color: rgba(255, 255, 255, 0.8) !important;
-            font-size: 15px;
-            font-weight: 500;
+            gap: 15px;
         }
 
-        .rts__breadcrumb__content .list li a {
-            color: #ffffff !important;
-            text-decoration: none !important;
-            transition: color 0.3s;
+        .hero-top-title::after {
+            content: '';
+            display: inline-block;
+            width: 80px;
+            height: 2px;
+            background-color: #d4af37;
         }
 
-        .rts__breadcrumb__content .list li a:hover {
-            color: #34A853 !important;
-        }
-
-        .rts__breadcrumb__content .list li i {
-            font-size: 11px;
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .rts__breadcrumb__content .title {
-            color: #ffffff !important;
-            font-size: 42px !important;
-            font-weight: 800 !important;
-            margin: 0 !important;
+        .hero-title-main {
+            color: #ffffff;
+            font-size: 55px;
+            font-weight: 800;
+            margin: 0 0 25px 0;
+            line-height: 1.1;
             position: relative;
             z-index: 2;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
-        .rts__breadcrumb__content p {
-            color: #ffffff !important;
-            position: relative;
-            z-index: 2;
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 20px auto 0;
+        .hero-title-main span {
+            color: #d4af37;
+            display: block;
+        }
+
+        .hero-desc {
+            color: #ffffff;
+            font-size: 16px;
             line-height: 1.6;
+            max-width: 90%;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .gold-line-divider {
+            width: 50px;
+            height: 3px;
+            background-color: #d4af37;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
         }
 
         .tech-hero-tags {
             position: relative;
             z-index: 2;
-            margin-top: 10px;
             display: inline-flex;
             flex-direction: column;
-            align-items: center;
-        }
-
-        .tech-hero-tags .gold-line {
-            width: 100px;
-            height: 3px;
-            background-color: #d4af37;
-            margin-bottom: 10px;
+            align-items: flex-start;
         }
 
         .tech-hero-tags .tags-text {
@@ -120,6 +114,16 @@
             color: #d4af37;
             font-weight: 300;
             font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title-main {
+                font-size: 35px;
+            }
+
+            .rts__breadcrumb__content {
+                padding: 60px 30px !important;
+            }
         }
 
         /* Technology Page Specific Styles */
@@ -377,20 +381,24 @@
                 <div class="col-lg-12">
                     <div class="rts__breadcrumb__content"
                         style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
-                        <ul class="list">
-                            <li><a href="{{ route('home') }}">Home</a></li>
-                            <li><i class="fa-solid fa-chevron-right"></i></li>
-                            <li>Technology</li>
-                        </ul>
-                        <h2 class="title rts-text-anime">SMART SECURITY STRONGER COMMUNITIES</h2>
-                        <p>At Elite Guard Inc., we use modern technology to improve
-                            communication,
-                            increase accountability
-                            and deliver high quality security services. Our custom mobile app, digital reporting and
-                            real-time coordination keep our guards connected and our clients informed.</p>
 
-                        <div class="tech-hero-tags">
-                            <div class="gold-line"></div>
+                        <div class="hero-top-title" data-aos="fade-up">OUR TECHNOLOGY</div>
+
+                        <h1 class="hero-title-main rts-text-anime">
+                            SMART SECURITY
+                            <span>STRONGER COMMUNITIES</span>
+                        </h1>
+
+                        <div class="gold-line-divider" data-aos="fade-up" data-aos-delay="100"></div>
+
+                        <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+                            At Elite Guard Inc., we use modern technology to improve communication, increase accountability
+                            and deliver higher quality security services. Our custom mobile app, digital reporting and
+                            real-time coordination keep our guards connected and our clients informed.
+                        </p>
+
+                        <div class="tech-hero-tags" data-aos="fade-up" data-aos-delay="300">
+                            <div class="gold-line-divider"></div>
                             <div class="tags-text">
                                 <span>TECHNOLOGY</span>
                                 <span class="divider">|</span>
@@ -399,6 +407,7 @@
                                 <span>SAFER COMMUNITIES</span>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -784,50 +793,50 @@
 
             <div class="app-slider swiper init-swiper">
                 <script type="application/json" class="swiper-config">
-                                                    {
-                                                        "loop": true,
-                                                        "speed": 800,
-                                                        "effect": "coverflow",
-                                                        "grabCursor": true,
-                                                        "centeredSlides": true,
-                                                        "coverflowEffect": {
-                                                            "rotate": 10,
-                                                            "stretch": 0,
-                                                            "depth": 150,
-                                                            "modifier": 1.2,
-                                                            "slideShadows": false
-                                                        },
-                                                        "autoplay": {
-                                                            "delay": 3500,
-                                                            "disableOnInteraction": false
-                                                        },
-                                                        "slidesPerView": 1,
-                                                        "spaceBetween": 20,
-                                                        "pagination": {
-                                                            "el": ".swiper-pagination",
-                                                            "type": "bullets",
-                                                            "clickable": true
-                                                        },
-                                                        "breakpoints": {
-                                                            "576": {
-                                                                "slidesPerView": 2,
-                                                                "spaceBetween": 20
+                                                        {
+                                                            "loop": true,
+                                                            "speed": 800,
+                                                            "effect": "coverflow",
+                                                            "grabCursor": true,
+                                                            "centeredSlides": true,
+                                                            "coverflowEffect": {
+                                                                "rotate": 10,
+                                                                "stretch": 0,
+                                                                "depth": 150,
+                                                                "modifier": 1.2,
+                                                                "slideShadows": false
                                                             },
-                                                            "768": {
-                                                                "slidesPerView": 3,
-                                                                "spaceBetween": 30
+                                                            "autoplay": {
+                                                                "delay": 3500,
+                                                                "disableOnInteraction": false
                                                             },
-                                                            "992": {
-                                                                "slidesPerView": 4,
-                                                                "spaceBetween": 30
+                                                            "slidesPerView": 1,
+                                                            "spaceBetween": 20,
+                                                            "pagination": {
+                                                                "el": ".swiper-pagination",
+                                                                "type": "bullets",
+                                                                "clickable": true
                                                             },
-                                                            "1200": {
-                                                                "slidesPerView": 5,
-                                                                "spaceBetween": 30
+                                                            "breakpoints": {
+                                                                "576": {
+                                                                    "slidesPerView": 2,
+                                                                    "spaceBetween": 20
+                                                                },
+                                                                "768": {
+                                                                    "slidesPerView": 3,
+                                                                    "spaceBetween": 30
+                                                                },
+                                                                "992": {
+                                                                    "slidesPerView": 4,
+                                                                    "spaceBetween": 30
+                                                                },
+                                                                "1200": {
+                                                                    "slidesPerView": 5,
+                                                                    "spaceBetween": 30
+                                                                }
                                                             }
                                                         }
-                                                    }
-                                                </script>
+                                                    </script>
                 <div class="swiper-wrapper">
                     @for ($i = 18; $i <= 27; $i++)
                         <div class="swiper-slide">
