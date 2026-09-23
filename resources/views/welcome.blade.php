@@ -325,35 +325,222 @@
 
                         </section> -->
 
-  <!-- Selected Clients Section -->
-  <section class="clients section" style="padding: 60px 0;">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title text-center mb-5">
-        <h2
-          style="font-size: 24px; text-transform: uppercase; letter-spacing: 1px; color: #fff; margin-bottom: 30px; position: relative;">
-          EXPERIENCE & ACCOUNTABILITY
-          <span style="display: block; width: 50px; height: 3px; background-color: #d4af37; margin: 15px auto 0;"></span>
-        </h2>
-        <p style="font-weight: 700; color: #d4af37; letter-spacing: 1px;">SELECTED CLIENTS</p>
+  <style>
+    .clients-new {
+      background: #fafafa;
+      padding: 80px 0;
+      border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ebebeb;
+    }
+    .client-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      height: 80px;
+      background: #fff;
+      border: 1px solid #ebebeb;
+      border-radius: 4px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+      text-align: center;
+    }
+    .client-logo h6 {
+      margin: 0;
+      font-weight: 800;
+      color: #111;
+      font-size: 13px;
+    }
+    .locations-section {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .location-card {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-right: 1px solid #ebebeb;
+      padding: 10px 20px;
+      flex: 1;
+    }
+    @media (max-width: 768px) {
+      .location-card {
+        border-right: none;
+        border-bottom: 1px solid #ebebeb;
+        padding: 20px 0;
+      }
+    }
+    .location-card:last-child {
+      border-right: none;
+      border-bottom: none;
+    }
+    .location-icon {
+      color: #d4af37;
+      font-size: 24px;
+      margin-right: 15px;
+    }
+    .location-text h5 {
+      font-size: 15px;
+      font-weight: 800;
+      color: #111;
+      margin: 0 0 2px 0;
+    }
+    .location-text p {
+      font-size: 12px;
+      color: #666;
+      margin: 0;
+    }
+    
+    .cta-footer-new {
+      background: url('https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=1920') no-repeat center/cover;
+      position: relative;
+      padding: 60px 0;
+      color: #fff;
+    }
+    .cta-footer-new::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 15, 20, 0.9);
+    }
+    .cta-footer-content {
+      position: relative;
+      z-index: 2;
+    }
+    .cta-btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+      font-weight: 800;
+      padding: 10px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      font-size: 13px;
+      transition: all 0.3s;
+      margin-left: 15px;
+    }
+    .cta-btn-outline:hover {
+      border-color: #fff;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+    }
+    .cta-btn-outline i { margin-right: 8px; }
+  </style>
+
+  <section class="clients-new">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" style="margin-bottom: 40px;">
+        <h2>TRUSTED BY <span>LEADING ORGANIZATIONS</span></h2>
+        <p>We are proud to work with a diverse range of clients in commercial, residential, construction and public sector environments.</p>
       </div>
-      <div class="row justify-content-center align-items-center gy-4 text-center">
-        <div class="col-6 col-md-4 col-lg-2">
-          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Killam Apartment REIT</h5>
+      <div class="row g-3 justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="client-logo"><h6>Killam Apartment REIT</h6></div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Avenue Living</h5>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="client-logo"><h6>20 Avenue Living</h6></div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Bloom Investment Group</h5>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="client-logo"><h6>Bloom Investment Group</h6></div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Mini Mall Storage</h5>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="client-logo"><h6>Mini Mall Storage</h6></div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Emerald Hotel & Suites</h5>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="client-logo"><h6>Emerald Hotel & Suites</h6></div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
-          <h5 style="font-weight: 700; color: #e2e8f0; font-size: 16px;">Strategic Group</h5>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="client-logo"><h6>Strategic Group</h6></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="locations-section">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up" style="margin-bottom: 40px;">
+        <h2 style="font-size: 22px;">SECURITY SERVICES ACROSS <span>ALBERTA & BEYOND</span></h2>
+        <p>Proudly serving Calgary, Edmonton, Medicine Hat, Saskatoon and surrounding areas.</p>
+      </div>
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12">
+          <div class="d-flex flex-wrap flex-column flex-md-row justify-content-between">
+            <div class="location-card">
+              <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="location-text">
+                <h5>Calgary</h5>
+                <p>Our Home Base</p>
+              </div>
+            </div>
+            <div class="location-card">
+              <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="location-text">
+                <h5>Edmonton</h5>
+                <p>Serving Northern Alberta</p>
+              </div>
+            </div>
+            <div class="location-card">
+              <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="location-text">
+                <h5>Medicine Hat</h5>
+                <p>Supporting Southern Alberta</p>
+              </div>
+            </div>
+            <div class="location-card border-0">
+              <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="location-text">
+                <h5>Saskatoon</h5>
+                <p>Extending Our Services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-footer-new">
+    <div class="container cta-footer-content">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 style="font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 10px; text-transform: uppercase;">
+            LET'S BUILD A SAFER TOMORROW
+          </h2>
+          <p style="color: #e2e8f0; font-size: 15px; margin-bottom: 25px;">
+            Contact us today for a customized security solution.
+          </p>
+          <div class="d-flex align-items-center flex-wrap gap-2">
+            <a href="{{ route('quote') }}" class="btn-gold" style="border: none;">
+              REQUEST A QUOTE <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="d-flex align-items-center cta-btn-outline" style="margin-left: 0;">
+              <i class="fa-solid fa-phone"></i>
+              <div class="ms-2">
+                <span style="display: block; font-size: 14px;">403.427.7773</span>
+                <span style="font-size: 9px; display:block; line-height:1; font-weight:normal;">24/7 SECURITY LINE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="d-flex justify-content-end gap-4 text-center">
+            <div>
+              <i class="fa-solid fa-users" style="color: #d4af37; font-size: 28px; margin-bottom: 8px;"></i>
+              <h6 style="color: #fff; font-size: 12px; font-weight: 800; margin: 0;">People</h6>
+              <span style="color: #a0aab2; font-size: 11px;">Protected</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-building" style="color: #d4af37; font-size: 28px; margin-bottom: 8px;"></i>
+              <h6 style="color: #fff; font-size: 12px; font-weight: 800; margin: 0;">Properties</h6>
+              <span style="color: #a0aab2; font-size: 11px;">Secured</span>
+            </div>
+            <div>
+              <i class="fa-solid fa-city" style="color: #d4af37; font-size: 28px; margin-bottom: 8px;"></i>
+              <h6 style="color: #fff; font-size: 12px; font-weight: 800; margin: 0;">Communities</h6>
+              <span style="color: #a0aab2; font-size: 11px;">Stronger</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -410,68 +597,136 @@
     </div>
   </section>
 
+  <style>
+    .why-us-new {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .section-header h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #111;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    .section-header h2 span {
+      color: #d4af37;
+    }
+    .section-header p {
+      color: #666;
+      font-size: 15px;
+      margin: 0;
+    }
+    .why-card {
+      text-align: center;
+      padding: 30px 15px;
+      background: #fff;
+      border: 1px solid #f0f0f0;
+      border-radius: 8px;
+      height: 100%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+      transition: all 0.3s;
+    }
+    .why-card:hover {
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transform: translateY(-5px);
+    }
+    .why-card .icon-wrapper {
+      width: 60px;
+      height: 60px;
+      background: #fdf6e3;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+    .why-card .icon-wrapper i {
+      font-size: 24px;
+      color: #111;
+    }
+    .why-card h5 {
+      font-size: 15px;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 10px;
+    }
+    .why-card p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.5;
+      margin: 0;
+    }
+  </style>
+
   <!-- Why Us Section -->
-  <section id="why-us" class="why-us section white-background" style="padding: 60px 0;">
-
-    <div class="container section-title" data-aos="fade-up">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-md-start">
-          <h2 style="font-size: 20px; color: #d4af37; text-transform: uppercase; margin-bottom: 0;">WHY ELITE GUARD</h2>
-        </div>
-        <div class="col-md-6 text-md-start mt-3 mt-md-0">
-          <h2 style="font-size: 20px; color: #000; text-transform: uppercase; margin-bottom: 0;">YOUR PROPERTY. OUR
-            PRIORITY.</h2>
-        </div>
+  <section id="why-us" class="why-us-new">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>WHY CHOOSE <span>ELITE GUARD INC.?</span></h2>
+        <p>More than security — a partner you can trust.</p>
       </div>
-    </div>
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row gy-4 mt-2">
-        <div class="col-md-6">
-          <div
-            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; height: 100%;">
-            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #000;">SITE-FOCUSED PLANS</h5>
-            <p style="font-size: 14px; color: #333; margin-bottom: 0;">Coverage shaped around your property and
-              priorities.</p>
+      <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-users"></i></div>
+            <h5>Trained Professionals</h5>
+            <p>Licensed, experienced and background-checked guards.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div
-            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; height: 100%;">
-            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #000;">CONNECTED OPERATIONS</h5>
-            <p style="font-size: 14px; color: #333; margin-bottom: 0;">App-based schedules, check-ins and site
-              information.</p>
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-car"></i></div>
+            <h5>Dedicated Mobile Patrol Fleet</h5>
+            <p>Marked vehicles provide a visible presence and faster response across Calgary.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div
-            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; height: 100%;">
-            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #000;">VISIBLE PRESENCE</h5>
-            <p style="font-size: 14px; color: #333; margin-bottom: 0;">Uniformed guards and marked mobile patrol
-              vehicles.</p>
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-clock"></i></div>
+            <h5>24/7 Operations & Support</h5>
+            <p>Always available for emergencies, alarm response and client needs.</p>
           </div>
         </div>
-        <div class="col-md-6">
-          <div
-            style="padding: 20px; border-left: 3px solid #d4af37; background: rgba(0,0,0,0.05); border-radius: 0 8px 8px 0; height: 100%;">
-            <h5 style="font-weight: 700; font-size: 16px; margin-bottom: 5px; color: #000;">CLEAR RECORDS</h5>
-            <p style="font-size: 14px; color: #333; margin-bottom: 0;">NFC checkpoints, photos and digital reports.</p>
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-chart-simple"></i></div>
+            <h5>Technology Driven</h5>
+            <p>Real-time reporting, GPS tracking and digital records for complete transparency.</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container mt-5" data-aos="fade-up" data-aos-delay="200">
-      <div class="row text-center"
-        style="background-color: rgba(0,0,0,0.05); padding: 20px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.1);">
-        <div class="col-md-4">
-          <span style="font-weight: 600; font-size: 14px; color: #000;">LICENSED SECURITY AGENCY</span>
+        
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-clipboard-list"></i></div>
+            <h5>Custom Security Plans</h5>
+            <p>Site-specific solutions tailored to your property, risks and objectives.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <span style="font-weight: 600; font-size: 14px; color: #000;">LIABILITY INSURANCE</span>
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-shield-halved"></i></div>
+            <h5>Fully Insured & WCB</h5>
+            <p>Your peace of mind is backed by comprehensive insurance and WCB coverage.</p>
+          </div>
         </div>
-        <div class="col-md-4">
-          <span style="font-weight: 600; font-size: 14px; color: #000;">WCB COVERAGE</span>
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-location-dot"></i></div>
+            <h5>Local Management</h5>
+            <p>Calgary-based management with direct communication and responsive supervision.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="why-card">
+            <div class="icon-wrapper"><i class="fa-solid fa-handshake"></i></div>
+            <h5>Client-Focused Approach</h5>
+            <p>We build long-term relationships through reliable service, clear communication and accountability.</p>
+          </div>
         </div>
       </div>
     </div>
