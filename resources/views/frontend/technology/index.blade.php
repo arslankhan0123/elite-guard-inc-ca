@@ -228,6 +228,48 @@
             margin: 0;
             line-height: 1.5;
         }
+
+        /* App Screenshots Slider */
+        .app-screenshots-area {
+            background-color: #fff;
+            padding: 80px 0;
+        }
+        
+        .app-screenshot-slide {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 5px solid #f1f1f1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .app-screenshot-slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .app-slider {
+            padding-bottom: 50px;
+        }
+        
+        .app-slider .swiper-pagination {
+            bottom: 0 !important;
+        }
+        
+        .app-slider .swiper-pagination-bullet {
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 10px;
+            height: 10px;
+        }
+        
+        .app-slider .swiper-pagination-bullet-active {
+            background-color: #b8860b;
+        }
     </style>
 
     <section class="rts__breadcrumb__area">
@@ -614,6 +656,66 @@
             </div>
         </div>
     </div>
+
+    <!-- App Screenshots Slider Area -->
+    <section class="app-screenshots-area">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-heading">App Overview</h2>
+                    <p class="text-muted">Take a look at the intuitive and modern interface of the Elite Guard App.</p>
+                </div>
+            </div>
+            
+            <div class="app-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                    {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": {
+                            "delay": 3000,
+                            "disableOnInteraction": false
+                        },
+                        "slidesPerView": 1,
+                        "spaceBetween": 20,
+                        "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                        },
+                        "breakpoints": {
+                            "576": {
+                                "slidesPerView": 2,
+                                "spaceBetween": 20
+                            },
+                            "768": {
+                                "slidesPerView": 3,
+                                "spaceBetween": 30
+                            },
+                            "992": {
+                                "slidesPerView": 4,
+                                "spaceBetween": 30
+                            },
+                            "1200": {
+                                "slidesPerView": 5,
+                                "spaceBetween": 30
+                            }
+                        }
+                    }
+                </script>
+                <div class="swiper-wrapper">
+                    @for ($i = 18; $i <= 27; $i++)
+                    <div class="swiper-slide">
+                        <div class="app-screenshot-slide">
+                            <img src="{{ asset('frontend/images/app/' . $i . '.jpg') }}" alt="App Screenshot {{ $i }}" loading="lazy">
+                        </div>
+                    </div>
+                    @endfor
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
 
     @push('scripts')
         <script>
