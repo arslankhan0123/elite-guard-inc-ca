@@ -4,81 +4,6 @@
 @section('content')
     <style>
         /* Careers Page Specific Styles */
-        .careers-hero {
-            position: relative;
-            background: url('{{ asset('frontend/images/29.jpg') }}') center/cover no-repeat;
-            min-height: 400px;
-            color: white;
-            display: flex;
-            align-items: center;
-            padding: 60px 0;
-        }
-
-        .careers-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.1) 100%);
-            z-index: 1;
-        }
-
-        .careers-hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .careers-hero-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            line-height: 1.1;
-        }
-
-        .careers-hero-title span {
-            color: #e5b95f;
-            /* Elite Guard Gold */
-            display: block;
-        }
-
-        .careers-hero-desc {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 40px;
-        }
-
-        .hero-features {
-            display: flex;
-            gap: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            padding-top: 30px;
-        }
-
-        .hero-feature-item {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .hero-feature-icon {
-            color: #e5b95f;
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .hero-feature-title {
-            font-weight: 700;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-        }
-
-        .hero-feature-text {
-            font-size: 0.8rem;
-            color: #ccc;
-        }
 
         /* Light Theme Content Area */
         .careers-content-area {
@@ -430,12 +355,68 @@
                 text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
             }
 
+            .hero-features {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-top: 30px;
+                position: relative;
+                z-index: 2;
+                flex-wrap: wrap;
+            }
+
+            .hero-feature-item {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .hero-feature-icon {
+                color: #111;
+                background-color: #d4af37;
+                font-size: 20px;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .hero-feature-text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .hero-feature-text .ft-title {
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom: 2px;
+            }
+
+            .hero-feature-text .ft-desc {
+                color: rgba(255, 255, 255, 0.8);
+                font-size: 12px;
+            }
+
+            .hero-feature-divider {
+                width: 1px;
+                height: 40px;
+                background-color: rgba(255, 255, 255, 0.15);
+            }
+
             @media (max-width: 768px) {
                 .hero-title-main {
                     font-size: 35px;
                 }
                 .rts__breadcrumb__content {
                     padding: 60px 30px !important;
+                }
+                .hero-feature-divider {
+                    display: none;
                 }
             }
         </style>
@@ -458,6 +439,40 @@
                             <p class="hero-desc" data-aos="fade-up" data-aos-delay="100">
                                 Be part of a dedicated team keeping people, property and communities safe across Calgary and Alberta.
                             </p>
+
+                            <div class="hero-features" data-aos="fade-up" data-aos-delay="200">
+                                <div class="hero-feature-item">
+                                    <div class="hero-feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                                    <div class="hero-feature-text">
+                                        <span class="ft-title">PROTECT</span>
+                                        <span class="ft-desc">People & Property</span>
+                                    </div>
+                                </div>
+                                <div class="hero-feature-divider d-none d-md-block"></div>
+                                <div class="hero-feature-item">
+                                    <div class="hero-feature-icon"><i class="fa-solid fa-eye"></i></div>
+                                    <div class="hero-feature-text">
+                                        <span class="ft-title">MONITOR</span>
+                                        <span class="ft-desc">Activity & Risk</span>
+                                    </div>
+                                </div>
+                                <div class="hero-feature-divider d-none d-md-block"></div>
+                                <div class="hero-feature-item">
+                                    <div class="hero-feature-icon"><i class="fa-solid fa-person-running"></i></div>
+                                    <div class="hero-feature-text">
+                                        <span class="ft-title">RESPOND</span>
+                                        <span class="ft-desc">Quickly & Effectively</span>
+                                    </div>
+                                </div>
+                                <div class="hero-feature-divider d-none d-md-block"></div>
+                                <div class="hero-feature-item">
+                                    <div class="hero-feature-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                                    <div class="hero-feature-text">
+                                        <span class="ft-title">SAFER</span>
+                                        <span class="ft-desc">Communities</span>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
