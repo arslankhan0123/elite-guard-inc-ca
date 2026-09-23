@@ -4,21 +4,20 @@
 @section('content')
 
   <section class="rts__breadcrumb__area">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="rts__breadcrumb__content"
-                      style="background-image: url('{{ asset('frontend/images/4.jpeg') }}');">
-                      <ul class="list">
-                          <li><a href="{{ route('home') }}">Home</a></li>
-                          <li><i class="fa-solid fa-chevron-right"></i></li>
-                          <li>Contact</li>
-                      </ul>
-                      <h2 class="title rts-text-anime">Contact Us</h2>
-                  </div>
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="rts__breadcrumb__content" style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
+            <ul class="list">
+              <li><a href="{{ route('home') }}">Home</a></li>
+              <li><i class="fa-solid fa-chevron-right"></i></li>
+              <li>Contact</li>
+            </ul>
+            <h2 class="title rts-text-anime">Contact Us</h2>
           </div>
+        </div>
       </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
@@ -108,7 +107,8 @@
                 </div>
                 <div class="card-content">
                   <h5>Visit Our Office</h5>
-                  <p><a href="https://maps.app.goo.gl/HchLa4W9ooqHE58w8?g_st=iwb" target="_blank" style="color: inherit; text-decoration: none;">3961 52 Ave NE #2104, Calgary, AB T3J 0J7</a></p>
+                  <p><a href="https://maps.app.goo.gl/HchLa4W9ooqHE58w8?g_st=iwb" target="_blank"
+                      style="color: inherit; text-decoration: none;">3961 52 Ave NE #2104, Calgary, AB T3J 0J7</a></p>
                   <span class="response-time">Open Monday - Friday</span>
                 </div>
               </div>

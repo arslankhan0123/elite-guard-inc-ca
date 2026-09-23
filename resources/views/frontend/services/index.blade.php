@@ -83,7 +83,7 @@
             background-color: #fdfdfd;
             padding: 60px 0 0 0;
         }
-        
+
         .service-card {
             background: #fff;
             border-radius: 6px;
@@ -92,7 +92,7 @@
             display: flex;
             flex-direction: column;
             border: 1px solid #f0f0f0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-decoration: none;
             color: inherit;
@@ -100,7 +100,7 @@
 
         .service-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
             color: inherit;
         }
 
@@ -127,10 +127,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             z-index: 2;
         }
-        
+
         .service-icon-inner {
             width: 38px;
             height: 38px;
@@ -140,7 +140,7 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .service-icon-inner i {
             color: #111;
             font-size: 16px;
@@ -184,7 +184,7 @@
             color: #111;
             margin-right: 15px;
         }
-        
+
         .feature-icon.gold {
             color: #d4af37;
         }
@@ -203,7 +203,7 @@
             margin: 0;
             line-height: 1.4;
         }
-        
+
         .header-divider {
             border-left: 3px solid #d4af37;
             padding-left: 20px;
@@ -213,17 +213,18 @@
         }
 
         .cta-section {
-            background: url('https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=1920') no-repeat center/cover;
+            background: url('{{ asset('frontend/images/8.jpg') }}') no-repeat center/cover;
             position: relative;
             padding: 60px 0;
             color: #fff;
         }
-        
+
         .cta-section::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: rgba(10, 15, 20, 0.85); /* Dark overlay */
+            background: rgba(10, 15, 20, 0.85);
+            /* Dark overlay */
         }
 
         .cta-content {
@@ -245,16 +246,20 @@
             letter-spacing: 0.5px;
             transition: all 0.3s;
         }
+
         .cta-btn-primary:hover {
             background: #b8860b;
             color: #fff;
         }
-        .cta-btn-primary i { margin-right: 8px; }
+
+        .cta-btn-primary i {
+            margin-right: 8px;
+        }
 
         .cta-btn-outline {
             background: transparent;
             color: #fff;
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             font-weight: 800;
             padding: 10px 25px;
             border-radius: 4px;
@@ -265,26 +270,33 @@
             transition: all 0.3s;
             margin-left: 15px;
         }
+
         .cta-btn-outline:hover {
             border-color: #fff;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             color: #fff;
         }
-        .cta-btn-outline i { margin-right: 8px; }
+
+        .cta-btn-outline i {
+            margin-right: 8px;
+        }
 
         .cta-stats {
             display: flex;
             justify-content: flex-end;
             gap: 30px;
         }
+
         .stat-item {
             text-align: center;
         }
+
         .stat-item i {
             color: #d4af37;
             font-size: 30px;
             margin-bottom: 10px;
         }
+
         .stat-item h6 {
             color: #fff;
             font-size: 12px;
@@ -293,6 +305,7 @@
             margin: 0;
             line-height: 1.4;
         }
+
         .stat-item span {
             color: #a0aab2;
             font-size: 11px;
@@ -304,7 +317,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="rts__breadcrumb__content"
-                        style="background-image: url('{{ asset('frontend/images/industries/banner.png') }}');">
+                        style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
                         <ul class="list">
                             <li><a href="{{ route('home') }}">Home</a></li>
                             <li><i class="fa-solid fa-chevron-right"></i></li>
@@ -317,7 +330,8 @@
                             @endif
                         </ul>
                         <h2 class="title rts-text-anime">
-                            {{ $selected_category ? $selected_category->name : 'Our Security Services' }}</h2>
+                            {{ $selected_category ? $selected_category->name : 'Our Security Services' }}
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -329,17 +343,22 @@
             <!-- Header -->
             <div class="row align-items-center mb-5 pb-2">
                 <div class="col-lg-9 pr-lg-5 mb-4 mb-lg-0">
-                    <h6 style="color: #d4af37; font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; margin-bottom: 10px;">OUR SERVICES</h6>
-                    <h2 style="font-size: 32px; font-weight: 800; color: #111; margin-bottom: 15px; text-transform: uppercase;">
+                    <h6
+                        style="color: #d4af37; font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; margin-bottom: 10px;">
+                        OUR SERVICES</h6>
+                    <h2
+                        style="font-size: 32px; font-weight: 800; color: #111; margin-bottom: 15px; text-transform: uppercase;">
                         COMPLETE SECURITY SOLUTIONS
                     </h2>
                     <p style="color: #555; font-size: 15px; line-height: 1.6; margin: 0; max-width: 95%;">
-                        A full range of professional security services designed to meet the needs of businesses, communities and special events.
+                        A full range of professional security services designed to meet the needs of businesses, communities
+                        and special events.
                     </p>
                 </div>
                 <div class="col-lg-3">
                     <div class="header-divider">
-                        <h4 style="font-size: 15px; font-weight: 800; color: #555; margin: 0; line-height: 1.4; letter-spacing: 1px;">
+                        <h4
+                            style="font-size: 15px; font-weight: 800; color: #555; margin: 0; line-height: 1.4; letter-spacing: 1px;">
                             ONE TEAM<br>MANY SOLUTIONS<br>A SAFER TOMORROW
                         </h4>
                     </div>
@@ -349,13 +368,15 @@
             <div class="row g-4">
                 @forelse($services as $service)
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <a href="{{ route('services.details', $service->id) }}" style="text-decoration: none; display: block; height: 100%;">
+                        <a href="{{ route('services.details', $service->id) }}"
+                            style="text-decoration: none; display: block; height: 100%;">
                             <div class="service-card">
                                 <div class="service-image">
                                     @if($service->feature_image)
                                         <img src="{{ asset($service->feature_image) }}" alt="{{ $service->name }}">
                                     @else
-                                        <img src="{{ asset('frontend/images/industries/commercial.png') }}" alt="{{ $service->name }}">
+                                        <img src="{{ asset('frontend/images/industries/commercial.png') }}"
+                                            alt="{{ $service->name }}">
                                     @endif
                                     <div class="service-icon">
                                         <div class="service-icon-inner">
@@ -378,7 +399,7 @@
                 @endforelse
             </div>
         </div>
-        
+
         <!-- Bottom Features -->
         <div class="bottom-features">
             <div class="container">
@@ -429,8 +450,11 @@
         <div class="container cta-content">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h6 style="color: #d4af37; font-weight: 700; text-transform: uppercase; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">LET'S GET STARTED</h6>
-                    <h2 style="font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 15px; text-transform: uppercase;">
+                    <h6
+                        style="color: #d4af37; font-weight: 700; text-transform: uppercase; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">
+                        LET'S GET STARTED</h6>
+                    <h2
+                        style="font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 15px; text-transform: uppercase;">
                         SECURE YOUR PROPERTY TODAY
                     </h2>
                     <p style="color: #e2e8f0; font-size: 14px; margin-bottom: 25px;">

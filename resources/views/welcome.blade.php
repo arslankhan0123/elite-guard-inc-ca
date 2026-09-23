@@ -75,30 +75,34 @@
       display: flex;
       flex-wrap: wrap;
       position: relative;
-      background: #fff; 
+      background: #fff;
       min-height: 550px;
       border-bottom: 1px solid #ebebeb;
     }
+
     .about-hero-left {
-      padding: 80px 5% 80px 8%; 
-      position: relative; 
-      z-index: 2; 
+      padding: 80px 5% 80px 8%;
+      position: relative;
+      z-index: 2;
       background: #fff;
     }
+
     .about-hero-right {
-      position: absolute; 
-      right: 0; 
-      top: 0; 
-      bottom: 0; 
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
       overflow: hidden;
     }
+
     .hero-img-slanted {
       position: absolute;
       inset: 0;
       margin-left: 8px;
-      background: url('{{ asset('frontend/images/4.jpeg') }}') no-repeat center/cover;
+      background: url('{{ asset('frontend/images/28.jpg') }}') no-repeat center/cover;
       clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
     }
+
     .hero-gold-line {
       position: absolute;
       inset: 0;
@@ -112,6 +116,7 @@
       padding: 80px 0;
       border-bottom: 1px solid #ebebeb;
     }
+
     .mvv-icon {
       width: 70px;
       height: 70px;
@@ -122,13 +127,16 @@
       justify-content: center;
       margin: 0 auto 20px;
     }
+
     .mvv-icon i {
       font-size: 30px;
       color: #111;
     }
+
     .mvv-col {
       padding: 0 20px;
     }
+
     .mvv-col:not(:last-child) {
       border-right: 1px solid #ebebeb;
     }
@@ -140,7 +148,7 @@
       position: relative;
       clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
     }
-    
+
     /* Licensed Section */
     .licensed-section {
       background: #fdfbf7;
@@ -153,17 +161,21 @@
         height: 400px;
         width: 100%;
       }
-      .hero-img-slanted, .hero-gold-line {
+
+      .hero-img-slanted,
+      .hero-gold-line {
         clip-path: none;
         margin-left: 0;
         border-top: 8px solid #d4af37;
       }
+
       .mvv-col:not(:last-child) {
         border-right: none;
         border-bottom: 1px solid #ebebeb;
         padding-bottom: 30px;
         margin-bottom: 30px;
       }
+
       .people-img-col {
         clip-path: none;
       }
@@ -174,19 +186,28 @@
   <section id="about" class="about section p-0">
     <div class="about-hero-container">
       <div class="col-lg-5 col-12 d-flex flex-column justify-content-center about-hero-left">
-        <h4 style="color: #d4af37; font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">OUR COMPANY</h4>
-        <h1 style="font-size: 42px; font-weight: 900; color: #111; margin-bottom: 25px; line-height: 1.1; text-transform: uppercase;">BUILT ON TRUST.<br>DRIVEN BY PURPOSE.</h1>
+        <h4
+          style="color: #d4af37; font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">
+          OUR COMPANY</h4>
+        <h1
+          style="font-size: 42px; font-weight: 900; color: #111; margin-bottom: 25px; line-height: 1.1; text-transform: uppercase;">
+          BUILT ON TRUST.<br>DRIVEN BY PURPOSE.</h1>
         <p style="color: #555; font-size: 15px; line-height: 1.6; margin-bottom: 20px;">
-          Elite Guard Inc. is a Calgary-based security company providing reliable and professional security services for commercial, residential, construction and event properties. We combine trained personnel, mobile patrols, responsive supervision and modern technology to deliver dependable protection and greater accountability.
+          Elite Guard Inc. is a Calgary-based security company providing reliable and professional security services for
+          commercial, residential, construction and event properties. We combine trained personnel, mobile patrols,
+          responsive supervision and modern technology to deliver dependable protection and greater accountability.
         </p>
         <p style="color: #555; font-size: 15px; line-height: 1.6; margin-bottom: 30px;">
-          Our focus is simple &mdash; to understand your unique needs and provide customized security solutions that help reduce risk, enhance safety and create peace of mind.
+          Our focus is simple &mdash; to understand your unique needs and provide customized security solutions that help
+          reduce risk, enhance safety and create peace of mind.
         </p>
         <div>
-          <a href="{{ route('contact') ?? '#' }}" class="btn-gold" style="display: inline-block; padding: 12px 30px; font-weight: 800; font-size: 14px; text-transform: uppercase;">CONTACT US <i class="fa-solid fa-arrow-right ms-2"></i></a>
+          <a href="{{ route('contact') ?? '#' }}" class="btn-gold"
+            style="display: inline-block; padding: 12px 30px; font-weight: 800; font-size: 14px; text-transform: uppercase;">CONTACT
+            US <i class="fa-solid fa-arrow-right ms-2"></i></a>
         </div>
       </div>
-      
+
       <div class="col-lg-7 col-12 about-hero-right">
         <div class="hero-gold-line"></div>
         <div class="hero-img-slanted"></div>
@@ -200,43 +221,48 @@
             <div class="mvv-icon">
               <i class="fa-solid fa-bullseye"></i>
             </div>
-            <h3 style="font-size: 18px; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; color: #111;">OUR MISSION</h3>
-            <p style="color: #666; font-size: 14px;">To deliver reliable, professional security services that protect people, property and communities.</p>
+            <h3 style="font-size: 18px; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; color: #111;">
+              OUR MISSION</h3>
+            <p style="color: #666; font-size: 14px;">To deliver reliable, professional security services that protect
+              people, property and communities.</p>
           </div>
-          
+
           <div class="col-md-4 mvv-col">
             <div class="mvv-icon">
               <i class="fa-solid fa-eye"></i>
             </div>
-            <h3 style="font-size: 18px; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; color: #111;">OUR VISION</h3>
-            <p style="color: #666; font-size: 14px;">To be a leading security company recognized for trust, innovation and exceptional service.</p>
+            <h3 style="font-size: 18px; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; color: #111;">
+              OUR VISION</h3>
+            <p style="color: #666; font-size: 14px;">To be a leading security company recognized for trust, innovation and
+              exceptional service.</p>
           </div>
-          
+
           <div class="col-md-4 mvv-col">
             <div class="mvv-icon">
               <i class="fa-solid fa-users"></i>
             </div>
-            <h3 style="font-size: 18px; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; color: #111;">OUR VALUES</h3>
+            <h3 style="font-size: 18px; font-weight: 800; text-transform: uppercase; margin-bottom: 15px; color: #111;">
+              OUR VALUES</h3>
             <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
               <div class="text-center">
-                 <i class="fa-solid fa-shield-halved" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
-                 <div style="font-size: 10px; font-weight: 600; color: #111;">Integrity</div>
+                <i class="fa-solid fa-shield-halved" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
+                <div style="font-size: 10px; font-weight: 600; color: #111;">Integrity</div>
               </div>
               <div class="text-center">
-                 <i class="fa-solid fa-handshake" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
-                 <div style="font-size: 10px; font-weight: 600; color: #111;">Professionalism</div>
+                <i class="fa-solid fa-handshake" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
+                <div style="font-size: 10px; font-weight: 600; color: #111;">Professionalism</div>
               </div>
               <div class="text-center">
-                 <i class="fa-solid fa-user-group" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
-                 <div style="font-size: 10px; font-weight: 600; color: #111;">Client Focus</div>
+                <i class="fa-solid fa-user-group" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
+                <div style="font-size: 10px; font-weight: 600; color: #111;">Client Focus</div>
               </div>
               <div class="text-center">
-                 <i class="fa-solid fa-gear" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
-                 <div style="font-size: 10px; font-weight: 600; color: #111;">Accountability</div>
+                <i class="fa-solid fa-gear" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
+                <div style="font-size: 10px; font-weight: 600; color: #111;">Accountability</div>
               </div>
               <div class="text-center">
-                 <i class="fa-solid fa-chart-line" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
-                 <div style="font-size: 10px; font-weight: 600; color: #111;">Teamwork</div>
+                <i class="fa-solid fa-chart-line" style="font-size: 20px; color: #111; margin-bottom: 5px;"></i>
+                <div style="font-size: 10px; font-weight: 600; color: #111;">Teamwork</div>
               </div>
             </div>
           </div>
@@ -248,34 +274,46 @@
       <div class="container-fluid p-0">
         <div class="row g-0">
           <div class="col-lg-6 people-img-col"></div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center" style="padding: 60px 8% 60px 5%; background: #fff;">
-            <h4 style="color: #d4af37; font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">OUR PEOPLE</h4>
-            <h2 style="font-size: 32px; font-weight: 900; color: #111; margin-bottom: 20px; text-transform: uppercase;">TRAINED. PROFESSIONAL. RELIABLE.</h2>
+          <div class="col-lg-6 d-flex flex-column justify-content-center"
+            style="padding: 60px 8% 60px 5%; background: #fff;">
+            <h4
+              style="color: #d4af37; font-size: 13px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">
+              OUR PEOPLE</h4>
+            <h2 style="font-size: 32px; font-weight: 900; color: #111; margin-bottom: 20px; text-transform: uppercase;">
+              TRAINED. PROFESSIONAL. RELIABLE.</h2>
             <p style="color: #555; font-size: 15px; line-height: 1.6; margin-bottom: 30px;">
-              Our team is made up of trained, uniformed professionals who take pride in delivering high-quality service. Through continuous training, clear communication and strong supervision, we ensure our personnel are prepared to handle a wide range of situations with professionalism and care.
+              Our team is made up of trained, uniformed professionals who take pride in delivering high-quality service.
+              Through continuous training, clear communication and strong supervision, we ensure our personnel are
+              prepared to handle a wide range of situations with professionalism and care.
             </p>
-            
+
             <div class="d-flex flex-wrap gap-4 mt-2">
-               <div class="d-flex align-items-center gap-3">
-                  <div style="width: 45px; height: 45px; background: #faeac4; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                     <i class="fa-solid fa-user-check" style="font-size: 18px; color: #111;"></i>
-                  </div>
-                  <div style="font-size: 12px; font-weight: 700; line-height: 1.2; color: #111;">Trained & Vetted<br>Professionals</div>
-               </div>
-               
-               <div class="d-flex align-items-center gap-3">
-                  <div style="width: 45px; height: 45px; background: #faeac4; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                     <i class="fa-solid fa-shield-halved" style="font-size: 18px; color: #111;"></i>
-                  </div>
-                  <div style="font-size: 12px; font-weight: 700; line-height: 1.2; color: #111;">Ongoing Training<br>& Supervision</div>
-               </div>
-               
-               <div class="d-flex align-items-center gap-3">
-                  <div style="width: 45px; height: 45px; background: #faeac4; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                     <i class="fa-solid fa-heart" style="font-size: 18px; color: #111;"></i>
-                  </div>
-                  <div style="font-size: 12px; font-weight: 700; line-height: 1.2; color: #111;">Committed to<br>Client Safety</div>
-               </div>
+              <div class="d-flex align-items-center gap-3">
+                <div
+                  style="width: 45px; height: 45px; background: #faeac4; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fa-solid fa-user-check" style="font-size: 18px; color: #111;"></i>
+                </div>
+                <div style="font-size: 12px; font-weight: 700; line-height: 1.2; color: #111;">Trained &
+                  Vetted<br>Professionals</div>
+              </div>
+
+              <div class="d-flex align-items-center gap-3">
+                <div
+                  style="width: 45px; height: 45px; background: #faeac4; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fa-solid fa-shield-halved" style="font-size: 18px; color: #111;"></i>
+                </div>
+                <div style="font-size: 12px; font-weight: 700; line-height: 1.2; color: #111;">Ongoing Training<br>&
+                  Supervision</div>
+              </div>
+
+              <div class="d-flex align-items-center gap-3">
+                <div
+                  style="width: 45px; height: 45px; background: #faeac4; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                  <i class="fa-solid fa-heart" style="font-size: 18px; color: #111;"></i>
+                </div>
+                <div style="font-size: 12px; font-weight: 700; line-height: 1.2; color: #111;">Committed to<br>Client
+                  Safety</div>
+              </div>
             </div>
           </div>
         </div>
@@ -284,27 +322,28 @@
 
     <section class="licensed-section">
       <div class="container text-center">
-        <h3 style="font-size: 20px; font-weight: 900; text-transform: uppercase; margin-bottom: 40px; color: #111;">FULLY LICENSED. FULLY INSURED. FULLY COMMITTED.</h3>
+        <h3 style="font-size: 20px; font-weight: 900; text-transform: uppercase; margin-bottom: 40px; color: #111;">FULLY
+          LICENSED. FULLY INSURED. FULLY COMMITTED.</h3>
         <div class="row justify-content-center g-4">
           <div class="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center gap-3">
             <i class="fa-solid fa-file-contract" style="font-size: 32px; color: #111;"></i>
             <div class="text-start">
-               <div style="font-size: 14px; font-weight: 800; color: #111;">Licensed Security Agency</div>
-               <div style="font-size: 12px; color: #666;">Compliant with Alberta regulations</div>
+              <div style="font-size: 14px; font-weight: 800; color: #111;">Licensed Security Agency</div>
+              <div style="font-size: 12px; color: #666;">Compliant with Alberta regulations</div>
             </div>
           </div>
           <div class="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center gap-3">
             <i class="fa-solid fa-shield-halved" style="font-size: 32px; color: #111;"></i>
             <div class="text-start">
-               <div style="font-size: 14px; font-weight: 800; color: #111;">Comprehensive Liability Insurance</div>
-               <div style="font-size: 12px; color: #666;">Your security, our responsibility</div>
+              <div style="font-size: 14px; font-weight: 800; color: #111;">Comprehensive Liability Insurance</div>
+              <div style="font-size: 12px; color: #666;">Your security, our responsibility</div>
             </div>
           </div>
           <div class="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center gap-3">
             <i class="fa-solid fa-users-rectangle" style="font-size: 32px; color: #111;"></i>
             <div class="text-start">
-               <div style="font-size: 14px; font-weight: 800; color: #111;">WCB Coverage</div>
-               <div style="font-size: 12px; color: #666;">Protection for our team and your property</div>
+              <div style="font-size: 14px; font-weight: 800; color: #111;">WCB Coverage</div>
+              <div style="font-size: 12px; color: #666;">Protection for our team and your property</div>
             </div>
           </div>
         </div>
@@ -384,31 +423,31 @@
 
       <div class="services-slider swiper init-swiper mb-5">
         <script type="application/json" class="swiper-config">
-                              {
-                                "loop": true,
-                                "speed": 600,
-                                "autoplay": {
-                                  "delay": 5000
-                                },
-                                "slidesPerView": 1,
-                                "spaceBetween": 20,
-                                "pagination": {
-                                  "el": ".swiper-pagination",
-                                  "type": "bullets",
-                                  "clickable": true
-                                },
-                                "breakpoints": {
-                                  "768": {
-                                    "slidesPerView": 2,
-                                    "spaceBetween": 30
-                                  },
-                                  "1200": {
-                                    "slidesPerView": 4,
-                                    "spaceBetween": 30
-                                  }
-                                }
-                              }
-                            </script>
+                                      {
+                                        "loop": true,
+                                        "speed": 600,
+                                        "autoplay": {
+                                          "delay": 5000
+                                        },
+                                        "slidesPerView": 1,
+                                        "spaceBetween": 20,
+                                        "pagination": {
+                                          "el": ".swiper-pagination",
+                                          "type": "bullets",
+                                          "clickable": true
+                                        },
+                                        "breakpoints": {
+                                          "768": {
+                                            "slidesPerView": 2,
+                                            "spaceBetween": 30
+                                          },
+                                          "1200": {
+                                            "slidesPerView": 4,
+                                            "spaceBetween": 30
+                                          }
+                                        }
+                                      }
+                                    </script>
         <div class="swiper-wrapper">
           @forelse($services as $service)
             @php
@@ -579,7 +618,7 @@
     }
 
     .cta-footer-new {
-      background: url('{{ asset('frontend/images/2.jpeg') }}') no-repeat center/cover;
+      background: url('{{ asset('frontend/images/8.jpg') }}') no-repeat center/cover;
       position: relative;
       padding: 60px 0;
       color: #fff;
@@ -963,32 +1002,32 @@
 
       <div class="testimonials-slider swiper init-swiper">
         <script type="application/json" class="swiper-config">
-                                                    {
-                                                      "loop": true,
-                                                      "speed": 600,
-                                                      "autoplay": {
-                                                        "delay": 4000
-                                                      },
-                                                      "slidesPerView": 1,
-                                                      "centeredSlides": true,
-                                                      "spaceBetween": 20,
-                                                      "pagination": {
-                                                        "el": ".swiper-pagination",
-                                                        "type": "bullets",
-                                                        "clickable": true
-                                                      },
-                                                      "breakpoints": {
-                                                        "768": {
-                                                          "slidesPerView": 1.5,
-                                                          "spaceBetween": 30
-                                                        },
-                                                        "1200": {
-                                                          "slidesPerView": 3,
-                                                          "spaceBetween": 40
-                                                        }
-                                                      }
-                                                    }
-                                                  </script>
+                                                            {
+                                                              "loop": true,
+                                                              "speed": 600,
+                                                              "autoplay": {
+                                                                "delay": 4000
+                                                              },
+                                                              "slidesPerView": 1,
+                                                              "centeredSlides": true,
+                                                              "spaceBetween": 20,
+                                                              "pagination": {
+                                                                "el": ".swiper-pagination",
+                                                                "type": "bullets",
+                                                                "clickable": true
+                                                              },
+                                                              "breakpoints": {
+                                                                "768": {
+                                                                  "slidesPerView": 1.5,
+                                                                  "spaceBetween": 30
+                                                                },
+                                                                "1200": {
+                                                                  "slidesPerView": 3,
+                                                                  "spaceBetween": 40
+                                                                }
+                                                              }
+                                                            }
+                                                          </script>
         <div class="swiper-wrapper">
           <!-- Testimonial 5: Access Control & Monitoring -->
           <div class="swiper-slide">
@@ -1216,28 +1255,28 @@
 
             <div class="leadership-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
-                              {
-                                "loop": true,
-                                "speed": 600,
-                                "autoplay": {
-                                  "delay": 4000
-                                },
-                                "slidesPerView": 1,
-                                "spaceBetween": 0,
-                                "pagination": {
-                                  "el": ".swiper-pagination",
-                                  "clickable": true
-                                },
-                                "breakpoints": {
-                                  "768": {
-                                    "slidesPerView": 2
-                                  },
-                                  "1024": {
-                                    "slidesPerView": 3
-                                  }
-                                }
-                              }
-                            </script>
+                                      {
+                                        "loop": true,
+                                        "speed": 600,
+                                        "autoplay": {
+                                          "delay": 4000
+                                        },
+                                        "slidesPerView": 1,
+                                        "spaceBetween": 0,
+                                        "pagination": {
+                                          "el": ".swiper-pagination",
+                                          "clickable": true
+                                        },
+                                        "breakpoints": {
+                                          "768": {
+                                            "slidesPerView": 2
+                                          },
+                                          "1024": {
+                                            "slidesPerView": 3
+                                          }
+                                        }
+                                      }
+                                    </script>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="leader-card">

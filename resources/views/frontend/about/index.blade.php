@@ -7,7 +7,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="rts__breadcrumb__content" style="background-image: url('{{ asset('frontend/images/4.jpeg') }}');">
+          <div class="rts__breadcrumb__content" style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
             <ul class="list">
               <li><a href="{{ route('home') }}">Home</a></li>
               <li><i class="fa-solid fa-chevron-right"></i></li>
@@ -69,7 +69,7 @@
       position: absolute;
       inset: 0;
       margin-left: 8px;
-      background: url('{{ asset('frontend/images/4.jpeg') }}') no-repeat center/cover;
+      background: url('{{ asset('frontend/images/17.jpg') }}') no-repeat center/cover;
       clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
     }
 
@@ -127,7 +127,7 @@
 
     /* CTA Footer */
     .cta-footer-new {
-      background: url('{{ asset('frontend/images/2.jpeg') }}') no-repeat center/cover;
+      background: url('{{ asset('frontend/images/8.jpg') }}') no-repeat center/cover;
       position: relative;
       padding: 60px 0;
       color: #fff;

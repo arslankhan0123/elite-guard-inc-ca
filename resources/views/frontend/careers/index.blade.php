@@ -6,7 +6,7 @@
         /* Careers Page Specific Styles */
         .careers-hero {
             position: relative;
-            background: url('{{ asset('frontend/images/4.jpeg') }}') center/cover no-repeat;
+            background: url('{{ asset('frontend/images/29.jpg') }}') center/cover no-repeat;
             min-height: 400px;
             color: white;
             display: flex;
@@ -436,7 +436,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="rts__breadcrumb__content"
-                            style="background-image: url('{{ asset('frontend/images/4.jpeg') }}');">
+                            style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
 
                             <ul class="list">
                                 <li><a href="{{ route('home') }}">Home</a></li>
@@ -680,7 +680,8 @@
 
                     <div class="col-lg-15 col-md-4 col-sm-6 col-12 mb-4">
                         <div class="process-step">
-                            <div class="process-icon"><i class="fa-solid fa-file-signature" style="color: #b8860b;"></i></div>
+                            <div class="process-icon"><i class="fa-solid fa-file-signature" style="color: #b8860b;"></i>
+                            </div>
                             <h4 class="process-title">1. Apply</h4>
                             <p class="process-text">Submit your application</p>
                         </div>
@@ -701,7 +702,8 @@
                     </div>
                     <div class="col-lg-15 col-md-4 col-sm-6 col-12 mb-4">
                         <div class="process-step">
-                            <div class="process-icon"><i class="fa-solid fa-shield-halved" style="color: #b8860b;"></i></div>
+                            <div class="process-icon"><i class="fa-solid fa-shield-halved" style="color: #b8860b;"></i>
+                            </div>
                             <h4 class="process-title">4. Verification</h4>
                             <p class="process-text">Licence and reference checks</p>
                         </div>
@@ -720,22 +722,22 @@
 
         <!-- Bottom CTA -->
         <!-- <section class="careers-cta">
-            <div class="container">
-                <div class="cta-inner row align-items-center">
-                    <div class="col-lg-8 mb-4 mb-lg-0">
-                        <h2 class="cta-heading mb-2">A SAFER CALGARY<br>STARTS WITH PEOPLE</h2>
-                        <p class="cta-sub">Build your future with Elite Guard Inc.</p>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <div class="d-flex align-items-center justify-content-lg-end mb-3">
-                            <i class="fa-solid fa-users text-dark fs-1 me-3"></i>
-                            <p class="text-white text-start mb-0 fw-semibold" style="max-width: 200px;">Join a team that makes a real impact.</p>
+                        <div class="container">
+                            <div class="cta-inner row align-items-center">
+                                <div class="col-lg-8 mb-4 mb-lg-0">
+                                    <h2 class="cta-heading mb-2">A SAFER CALGARY<br>STARTS WITH PEOPLE</h2>
+                                    <p class="cta-sub">Build your future with Elite Guard Inc.</p>
+                                </div>
+                                <div class="col-lg-4 text-lg-end">
+                                    <div class="d-flex align-items-center justify-content-lg-end mb-3">
+                                        <i class="fa-solid fa-users text-dark fs-1 me-3"></i>
+                                        <p class="text-white text-start mb-0 fw-semibold" style="max-width: 200px;">Join a team that makes a real impact.</p>
+                                    </div>
+                                    <a href="#apply-form-section" class="btn btn-dark text-warning fw-bold px-4 py-3 rounded-1 text-uppercase w-100" style="max-width: 250px;">Apply Today <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <a href="#apply-form-section" class="btn btn-dark text-warning fw-bold px-4 py-3 rounded-1 text-uppercase w-100" style="max-width: 250px;">Apply Today <i class="fa-solid fa-arrow-right ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+                    </section> -->
 
         @push('scripts')
             <script>

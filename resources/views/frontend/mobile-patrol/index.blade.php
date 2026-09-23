@@ -8,7 +8,7 @@
          <div class="row">
             <div class="col-lg-12">
                <div class="rts__breadcrumb__content"
-                  style="background-image: url('{{ asset('frontend/images/4.jpeg') }}');">
+                  style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
                   <ul class="list">
                      <li><a href="{{ route('home') }}">Home</a></li>
                      <li><i class="fa-solid fa-chevron-right"></i></li>
@@ -263,7 +263,7 @@
             </div>
             <div class="col-lg-5">
                <div style="position: relative; overflow: hidden; display: flex; min-height: 350px;">
-                  <img src="{{ asset('frontend/images/4.jpeg') }}" alt="Security Services"
+                  <img src="{{ asset('frontend/images/27.jpg') }}" alt="Security Services"
                      style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
 
                   <div
