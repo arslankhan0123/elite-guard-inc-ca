@@ -219,31 +219,31 @@
 
       <div class="services-slider swiper init-swiper mb-5">
         <script type="application/json" class="swiper-config">
-                          {
-                            "loop": true,
-                            "speed": 600,
-                            "autoplay": {
-                              "delay": 5000
-                            },
-                            "slidesPerView": 1,
-                            "spaceBetween": 20,
-                            "pagination": {
-                              "el": ".swiper-pagination",
-                              "type": "bullets",
-                              "clickable": true
-                            },
-                            "breakpoints": {
-                              "768": {
-                                "slidesPerView": 2,
-                                "spaceBetween": 30
-                              },
-                              "1200": {
-                                "slidesPerView": 4,
-                                "spaceBetween": 30
+                              {
+                                "loop": true,
+                                "speed": 600,
+                                "autoplay": {
+                                  "delay": 5000
+                                },
+                                "slidesPerView": 1,
+                                "spaceBetween": 20,
+                                "pagination": {
+                                  "el": ".swiper-pagination",
+                                  "type": "bullets",
+                                  "clickable": true
+                                },
+                                "breakpoints": {
+                                  "768": {
+                                    "slidesPerView": 2,
+                                    "spaceBetween": 30
+                                  },
+                                  "1200": {
+                                    "slidesPerView": 4,
+                                    "spaceBetween": 30
+                                  }
+                                }
                               }
-                            }
-                          }
-                        </script>
+                            </script>
         <div class="swiper-wrapper">
           @forelse($services as $service)
             @php
@@ -798,32 +798,32 @@
 
       <div class="testimonials-slider swiper init-swiper">
         <script type="application/json" class="swiper-config">
-                                                {
-                                                  "loop": true,
-                                                  "speed": 600,
-                                                  "autoplay": {
-                                                    "delay": 4000
-                                                  },
-                                                  "slidesPerView": 1,
-                                                  "centeredSlides": true,
-                                                  "spaceBetween": 20,
-                                                  "pagination": {
-                                                    "el": ".swiper-pagination",
-                                                    "type": "bullets",
-                                                    "clickable": true
-                                                  },
-                                                  "breakpoints": {
-                                                    "768": {
-                                                      "slidesPerView": 1.5,
-                                                      "spaceBetween": 30
-                                                    },
-                                                    "1200": {
-                                                      "slidesPerView": 3,
-                                                      "spaceBetween": 40
+                                                    {
+                                                      "loop": true,
+                                                      "speed": 600,
+                                                      "autoplay": {
+                                                        "delay": 4000
+                                                      },
+                                                      "slidesPerView": 1,
+                                                      "centeredSlides": true,
+                                                      "spaceBetween": 20,
+                                                      "pagination": {
+                                                        "el": ".swiper-pagination",
+                                                        "type": "bullets",
+                                                        "clickable": true
+                                                      },
+                                                      "breakpoints": {
+                                                        "768": {
+                                                          "slidesPerView": 1.5,
+                                                          "spaceBetween": 30
+                                                        },
+                                                        "1200": {
+                                                          "slidesPerView": 3,
+                                                          "spaceBetween": 40
+                                                        }
+                                                      }
                                                     }
-                                                  }
-                                                }
-                                              </script>
+                                                  </script>
         <div class="swiper-wrapper">
           <!-- Testimonial 5: Access Control & Monitoring -->
           <div class="swiper-slide">
@@ -1051,28 +1051,28 @@
 
             <div class="leadership-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
-                          {
-                            "loop": true,
-                            "speed": 600,
-                            "autoplay": {
-                              "delay": 4000
-                            },
-                            "slidesPerView": 1,
-                            "spaceBetween": 0,
-                            "pagination": {
-                              "el": ".swiper-pagination",
-                              "clickable": true
-                            },
-                            "breakpoints": {
-                              "768": {
-                                "slidesPerView": 2
-                              },
-                              "1024": {
-                                "slidesPerView": 3
+                              {
+                                "loop": true,
+                                "speed": 600,
+                                "autoplay": {
+                                  "delay": 4000
+                                },
+                                "slidesPerView": 1,
+                                "spaceBetween": 0,
+                                "pagination": {
+                                  "el": ".swiper-pagination",
+                                  "clickable": true
+                                },
+                                "breakpoints": {
+                                  "768": {
+                                    "slidesPerView": 2
+                                  },
+                                  "1024": {
+                                    "slidesPerView": 3
+                                  }
+                                }
                               }
-                            }
-                          }
-                        </script>
+                            </script>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="leader-card">
