@@ -78,101 +78,224 @@
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-        /* Fix global white text issue on headings */
-        .services-section {
-            background-color: #f8f9fa;
+        /* New Layout Styles */
+        .services-new-section {
+            background-color: #fdfdfd;
+            padding: 60px 0 0 0;
         }
-
-        .services-section h2,
-        .services-section h3,
-        .services-section h4 {
-            color: #111 !important;
-        }
-
-        /* Modern Service Card Design */
-        .modern-service-card {
+        
+        .service-card {
             background: #fff;
-            border-radius: 15px;
+            border-radius: 6px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            transition: all 0.4s ease;
             height: 100%;
             display: flex;
             flex-direction: column;
-            border: 1px solid rgba(0, 0, 0, 0.03);
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
         }
 
-        .modern-service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            color: inherit;
         }
 
-        .card-img-wrapper {
+        .service-image {
             position: relative;
-            height: 220px;
-            overflow: hidden;
+            height: 160px;
+            width: 100%;
         }
 
-        .card-img-wrapper img {
+        .service-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.6s ease;
         }
 
-        .modern-service-card:hover .card-img-wrapper img {
-            transform: scale(1.08);
+        .service-icon {
+            position: absolute;
+            bottom: -25px;
+            left: 15px;
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 2;
+        }
+        
+        .service-icon-inner {
+            width: 38px;
+            height: 38px;
+            background: #fdf6e3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-icon-inner i {
+            color: #111;
+            font-size: 16px;
         }
 
-        .card-content {
-            padding: 30px 25px;
+        .service-content {
+            padding: 35px 15px 20px 15px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
 
-        .card-content h3 {
-            font-size: 1.3rem;
+        .service-content h4 {
+            font-size: 15px;
             font-weight: 800;
-            margin-bottom: 15px;
-            line-height: 1.3;
+            color: #111;
+            margin-bottom: 8px;
         }
 
-        .card-content p {
+        .service-content p {
+            font-size: 12px;
             color: #555;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            flex-grow: 1;
+            line-height: 1.5;
+            margin-bottom: 0;
         }
 
-        .btn-read-more {
+        .bottom-features {
+            background: #fafafa;
+            border-top: 1px solid #ebebeb;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            color: #111;
+            margin-right: 15px;
+        }
+        
+        .feature-icon.gold {
+            color: #d4af37;
+        }
+
+        .feature-text h5 {
+            font-size: 13px;
+            font-weight: 800;
+            color: #111;
+            margin: 0 0 3px 0;
+            text-transform: uppercase;
+        }
+
+        .feature-text p {
+            font-size: 11px;
+            color: #666;
+            margin: 0;
+            line-height: 1.4;
+        }
+        
+        .header-divider {
+            border-left: 3px solid #d4af37;
+            padding-left: 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .cta-section {
+            background: url('https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=1920') no-repeat center/cover;
+            position: relative;
+            padding: 60px 0;
+            color: #fff;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 15, 20, 0.85); /* Dark overlay */
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-btn-primary {
+            background: #d4af37;
+            color: #111;
+            font-weight: 800;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            padding: 10px 20px;
-            background-color: #f8f9fa;
-            color: #111;
-            font-weight: 700;
-            border-radius: 8px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s;
+        }
+        .cta-btn-primary:hover {
+            background: #b8860b;
+            color: #fff;
+        }
+        .cta-btn-primary i { margin-right: 8px; }
+
+        .cta-btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.3);
+            font-weight: 800;
+            padding: 10px 25px;
+            border-radius: 4px;
             text-decoration: none;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            font-size: 13px;
+            transition: all 0.3s;
+            margin-left: 15px;
         }
-
-        .btn-read-more i {
-            margin-left: 8px;
-            font-size: 0.8rem;
-            transition: transform 0.3s ease;
+        .cta-btn-outline:hover {
+            border-color: #fff;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
         }
+        .cta-btn-outline i { margin-right: 8px; }
 
-        .btn-read-more:hover {
-            background-color: #b8860b;
-            color: #fff !important;
+        .cta-stats {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
         }
-
-        .btn-read-more:hover i {
-            transform: translateX(4px);
+        .stat-item {
+            text-align: center;
+        }
+        .stat-item i {
+            color: #d4af37;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .stat-item h6 {
+            color: #fff;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1.4;
+        }
+        .stat-item span {
+            color: #a0aab2;
+            font-size: 11px;
         }
     </style>
 
@@ -201,49 +324,51 @@
         </div>
     </section>
 
-    <section class="services-section py-5">
+    <section class="services-new-section">
         <div class="container">
             <!-- Header -->
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-lg-8 text-center">
-                    <p class="text-uppercase mb-2" style="font-weight: 700; letter-spacing: 2px; color: #b8860b;">
-                        Professional Protection</p>
-                    <h2 class="title text-dark"
-                        style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 20px; font-weight: 800;">
-                        Comprehensive <span style="color: #b8860b;">Security Solutions</span>
+            <div class="row align-items-center mb-5 pb-2">
+                <div class="col-lg-9 pr-lg-5 mb-4 mb-lg-0">
+                    <h6 style="color: #d4af37; font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; margin-bottom: 10px;">OUR SERVICES</h6>
+                    <h2 style="font-size: 32px; font-weight: 800; color: #111; margin-bottom: 15px; text-transform: uppercase;">
+                        COMPLETE SECURITY SOLUTIONS
                     </h2>
-                    <p class="text-muted mx-auto" style="font-size: 1.1rem; max-width: 800px;">
-                        We offer a wide range of highly specialized security services to ensure the safety, protection, and
-                        peace of mind of your personnel, assets, and properties.
+                    <p style="color: #555; font-size: 15px; line-height: 1.6; margin: 0; max-width: 95%;">
+                        A full range of professional security services designed to meet the needs of businesses, communities and special events.
                     </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header-divider">
+                        <h4 style="font-size: 15px; font-weight: 800; color: #555; margin: 0; line-height: 1.4; letter-spacing: 1px;">
+                            ONE TEAM<br>MANY SOLUTIONS<br>A SAFER TOMORROW
+                        </h4>
+                    </div>
                 </div>
             </div>
 
             <div class="row g-4">
                 @forelse($services as $service)
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".{{ ($loop->index % 5) + 2 }}s">
-                        <div class="modern-service-card">
-                            @if($service->feature_image)
-                                <div class="card-img-wrapper">
-                                    <img src="{{ asset($service->feature_image) }}" alt="{{ $service->name }}">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <a href="{{ route('services.details', $service->id) }}" style="text-decoration: none; display: block; height: 100%;">
+                            <div class="service-card">
+                                <div class="service-image">
+                                    @if($service->feature_image)
+                                        <img src="{{ asset($service->feature_image) }}" alt="{{ $service->name }}">
+                                    @else
+                                        <img src="{{ asset('frontend/images/industries/commercial.png') }}" alt="{{ $service->name }}">
+                                    @endif
+                                    <div class="service-icon">
+                                        <div class="service-icon-inner">
+                                            <i class="fa-solid fa-shield-halved"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                            @else
-                                <div class="card-img-wrapper">
-                                    <img src="{{ asset('frontend/images/industries/commercial.png') }}" alt="{{ $service->name }}">
-                                </div>
-                            @endif
-                            <div class="card-content">
-                                <h3>{{ $service->name }}</h3>
-                                <!-- Using short_description to keep cards clean and uniform -->
-                                <p>{{ Str::limit($service->short_description, 120) }}</p>
-
-                                <div class="mt-auto pt-3">
-                                    <a href="{{ route('services.details', $service->id) }}" class="btn-read-more">
-                                        View Details <i class="fa-solid fa-arrow-right"></i>
-                                    </a>
+                                <div class="service-content">
+                                    <h4>{{ $service->name }}</h4>
+                                    <p>{{ Str::limit($service->short_description, 120) }}</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 @empty
                     <div class="col-12 text-center" style="padding: 100px 0;">
@@ -251,6 +376,94 @@
                         <p style="color: #666;">Check back later for updates on our services.</p>
                     </div>
                 @endforelse
+            </div>
+        </div>
+        
+        <!-- Bottom Features -->
+        <div class="bottom-features">
+            <div class="container">
+                <div class="row gx-2 gy-4 align-items-center justify-content-between">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+                            <div class="feature-text">
+                                <h5>TRAINED PROFESSIONALS</h5>
+                                <p>Licensed, experienced and reliable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                            <div class="feature-text">
+                                <h5>TECHNOLOGY DRIVEN</h5>
+                                <p>NFC checkpoints, real-time reporting and digital records.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-item">
+                            <div class="feature-icon gold"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="feature-text">
+                                <h5>FULLY INSURED</h5>
+                                <p>Licensed security agency, liability insurance and WCB coverage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="feature-item">
+                            <div class="feature-icon gold"><i class="fa-solid fa-clock"></i></div>
+                            <div class="feature-text">
+                                <h5>24/7 SUPPORT</h5>
+                                <p>Always available when you need us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h6 style="color: #d4af37; font-weight: 700; text-transform: uppercase; font-size: 12px; letter-spacing: 2px; margin-bottom: 10px;">LET'S GET STARTED</h6>
+                    <h2 style="font-size: 32px; font-weight: 800; color: #fff; margin-bottom: 15px; text-transform: uppercase;">
+                        SECURE YOUR PROPERTY TODAY
+                    </h2>
+                    <p style="color: #e2e8f0; font-size: 14px; margin-bottom: 25px;">
+                        Contact us for a customized security solution tailored to your needs.
+                    </p>
+                    <div>
+                        <a href="{{ route('quote') }}" class="cta-btn-primary">
+                            <i class="fa-solid fa-envelope"></i> REQUEST A QUOTE
+                        </a>
+                        <a href="tel:4034277773" class="cta-btn-outline">
+                            <i class="fa-solid fa-phone"></i> CALL 403.427.7773
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cta-stats">
+                        <div class="stat-item">
+                            <i class="fa-solid fa-users"></i>
+                            <h6>PEOPLE</h6>
+                            <span>Protected</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-building"></i>
+                            <h6>PROPERTY</h6>
+                            <span>Secured</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-city"></i>
+                            <h6>COMMUNITIES</h6>
+                            <span>Stronger</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
