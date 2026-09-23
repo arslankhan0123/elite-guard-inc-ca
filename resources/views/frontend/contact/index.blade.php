@@ -6,203 +6,206 @@
   <style>
     /* Breadcrumb Premium Overrides - Left Aligned Hero */
     .rts__breadcrumb__area {
-        padding: 0;
-        margin: 0;
+      padding: 0;
+      margin: 0;
     }
 
     .rts__breadcrumb__content {
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        background-size: cover !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        padding: 70px 50px !important;
-        text-align: left;
-        border-radius: 20px;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+      padding: 70px 50px !important;
+      text-align: left;
+      border-radius: 20px;
+      margin-top: 30px;
+      margin-bottom: 50px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     }
 
     .rts__breadcrumb__content::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
-        z-index: 1;
-        border-radius: inherit;
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.75) 100%) !important;
+      z-index: 1;
+      border-radius: inherit;
     }
 
     .hero-top-title {
-        color: #d4af37;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-        position: relative;
-        z-index: 2;
+      color: #d4af37;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 2;
     }
 
     .hero-title-main {
-        color: #ffffff;
-        font-size: 55px;
-        font-weight: 800;
-        margin: 0;
-        line-height: 1.1;
-        position: relative;
-        z-index: 2;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      font-size: 55px;
+      font-weight: 800;
+      margin: 0;
+      line-height: 1.1;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     .hero-title-main span {
-        color: #d4af37;
+      color: #d4af37;
     }
 
     .hero-divider {
-        width: 60px;
-        height: 3px;
-        background-color: #d4af37;
-        margin: 25px 0;
-        position: relative;
-        z-index: 2;
+      width: 60px;
+      height: 3px;
+      background-color: #d4af37;
+      margin: 25px 0;
+      position: relative;
+      z-index: 2;
     }
 
     .hero-desc {
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 1.6;
-        max-width: 100%;
-        margin-bottom: 35px;
-        position: relative;
-        z-index: 2;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 100%;
+      margin-bottom: 35px;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     }
 
     .hero-features {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        margin-top: 30px;
-        position: relative;
-        z-index: 2;
-        flex-wrap: wrap;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+      position: relative;
+      z-index: 2;
+      flex-wrap: wrap;
     }
 
     .hero-feature-item {
-        display: flex;
-        align-items: center;
-        gap: 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
     }
 
     .hero-feature-icon {
-        color: #111;
-        background-color: #d4af37;
-        font-size: 20px;
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      color: #111;
+      background-color: #d4af37;
+      font-size: 20px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .hero-feature-text {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
 
     .hero-feature-text .ft-title {
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 2px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
     }
 
     .hero-feature-text .ft-desc {
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 12px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 12px;
     }
 
     .hero-feature-divider {
-        width: 1px;
-        height: 40px;
-        background-color: rgba(255, 255, 255, 0.15);
+      width: 1px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.15);
     }
 
     @media (max-width: 768px) {
-        .hero-title-main {
-            font-size: 35px;
-        }
-        .rts__breadcrumb__content {
-            padding: 60px 30px !important;
-        }
-        .hero-feature-divider {
-            display: none;
-        }
+      .hero-title-main {
+        font-size: 35px;
+      }
+
+      .rts__breadcrumb__content {
+        padding: 60px 30px !important;
+      }
+
+      .hero-feature-divider {
+        display: none;
+      }
     }
   </style>
 
   <section class="rts__breadcrumb__area">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="rts__breadcrumb__content" style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
-                      
-                      <div class="hero-top-title" data-aos="fade-up">CONTACT US</div>
-                      
-                      <h1 class="hero-title-main rts-text-anime">
-                          WE'RE HERE TO HELP
-                          <span>GET IN TOUCH TODAY</span>
-                      </h1>
-                      
-                      <div class="hero-divider" data-aos="fade-up" data-aos-delay="50"></div>
-                      
-                      <p class="hero-desc" data-aos="fade-up" data-aos-delay="100">
-                          Reach out for reliable security solutions tailored to your needs in Alberta. We are here to assist you with any inquiries.
-                      </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="rts__breadcrumb__content" style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
 
-                      <div class="hero-features" data-aos="fade-up" data-aos-delay="200">
-                          <div class="hero-feature-item">
-                              <div class="hero-feature-icon"><i class="fa-solid fa-phone-volume"></i></div>
-                              <div class="hero-feature-text">
-                                  <span class="ft-title">24/7 SUPPORT</span>
-                                  <span class="ft-desc">Always Available</span>
-                              </div>
-                          </div>
-                          <div class="hero-feature-divider d-none d-md-block"></div>
-                          <div class="hero-feature-item">
-                              <div class="hero-feature-icon"><i class="fa-solid fa-location-dot"></i></div>
-                              <div class="hero-feature-text">
-                                  <span class="ft-title">LOCAL</span>
-                                  <span class="ft-desc">Calgary & Alberta</span>
-                              </div>
-                          </div>
-                          <div class="hero-feature-divider d-none d-md-block"></div>
-                          <div class="hero-feature-item">
-                              <div class="hero-feature-icon"><i class="fa-solid fa-comments"></i></div>
-                              <div class="hero-feature-text">
-                                  <span class="ft-title">QUICK</span>
-                                  <span class="ft-desc">Fast Response</span>
-                              </div>
-                          </div>
-                          <div class="hero-feature-divider d-none d-md-block"></div>
-                          <div class="hero-feature-item">
-                              <div class="hero-feature-icon"><i class="fa-solid fa-handshake-angle"></i></div>
-                              <div class="hero-feature-text">
-                                  <span class="ft-title">HELPFUL</span>
-                                  <span class="ft-desc">Expert Advice</span>
-                              </div>
-                          </div>
-                      </div>
+            <div class="hero-top-title" data-aos="fade-up">CONTACT US</div>
 
-                  </div>
+            <h1 class="hero-title-main rts-text-anime">
+              WE'RE HERE TO HELP
+              <span>GET IN TOUCH TODAY</span>
+            </h1>
+
+            <div class="hero-divider" data-aos="fade-up" data-aos-delay="50"></div>
+
+            <p class="hero-desc" data-aos="fade-up" data-aos-delay="100">
+              Reach out for reliable security solutions tailored to your needs in Alberta. We are here to assist you with
+              any inquiries.
+            </p>
+
+            <div class="hero-features" data-aos="fade-up" data-aos-delay="200">
+              <div class="hero-feature-item">
+                <div class="hero-feature-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="hero-feature-text">
+                  <span class="ft-title">24/7 SUPPORT</span>
+                  <span class="ft-desc">Always Available</span>
+                </div>
               </div>
+              <div class="hero-feature-divider d-none d-md-block"></div>
+              <div class="hero-feature-item">
+                <div class="hero-feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="hero-feature-text">
+                  <span class="ft-title">LOCAL</span>
+                  <span class="ft-desc">Calgary & Alberta</span>
+                </div>
+              </div>
+              <div class="hero-feature-divider d-none d-md-block"></div>
+              <div class="hero-feature-item">
+                <div class="hero-feature-icon"><i class="fa-solid fa-comments"></i></div>
+                <div class="hero-feature-text">
+                  <span class="ft-title">QUICK</span>
+                  <span class="ft-desc">Fast Response</span>
+                </div>
+              </div>
+              <div class="hero-feature-divider d-none d-md-block"></div>
+              <div class="hero-feature-item">
+                <div class="hero-feature-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                <div class="hero-feature-text">
+                  <span class="ft-title">HELPFUL</span>
+                  <span class="ft-desc">Expert Advice</span>
+                </div>
+              </div>
+            </div>
+
           </div>
+        </div>
       </div>
+    </div>
   </section>
 
   <!-- Contact Section -->
@@ -318,7 +321,8 @@
               <div class="social-connect">
                 <h6>Connect With Us</h6>
                 <div class="social-links">
-                  <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/company/elite-guard-inc" class="social-link"><i
+                      class="bi bi-linkedin"></i></a>
                   <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
                   <a href="#" class="social-link"><i class="bi bi-github"></i></a>
                   <a href="#" class="social-link"><i class="bi bi-discord"></i></a>

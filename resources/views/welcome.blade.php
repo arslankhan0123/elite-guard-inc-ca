@@ -23,16 +23,18 @@
       background-color: transparent !important;
       box-shadow: none !important;
     }
-    
+
     #header.scrolled {
       background-color: rgba(15, 23, 42, 0.95) !important;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
     }
 
     .welcome-hero {
       position: relative;
-      margin-top: -120px; /* Pull banner under header */
-      padding: 220px 0 60px 0; /* Add padding to push text down */
+      margin-top: -120px;
+      /* Pull banner under header */
+      padding: 220px 0 60px 0;
+      /* Add padding to push text down */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -40,20 +42,20 @@
       display: flex;
       align-items: center;
     }
-    
+
     .welcome-hero::before {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.75) 100%);
+      background: linear-gradient(90deg, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.75) 100%);
       z-index: 1;
     }
-    
+
     .welcome-hero .container {
       position: relative;
       z-index: 2;
     }
-    
+
     .wh-top-title {
       color: #d4af37;
       font-size: 14px;
@@ -62,7 +64,7 @@
       text-transform: uppercase;
       margin-bottom: 20px;
     }
-    
+
     .wh-main-title {
       color: #ffffff;
       font-size: 75px;
@@ -71,11 +73,11 @@
       margin-bottom: 25px;
       text-transform: uppercase;
     }
-    
+
     .wh-main-title .gold-text {
       color: #d4af37;
     }
-    
+
     .wh-desc {
       color: #ffffff;
       font-size: 18px;
@@ -83,16 +85,16 @@
       max-width: 100%;
       margin-bottom: 25px;
       font-weight: 500;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     }
-    
+
     .wh-buttons {
       display: flex;
       gap: 20px;
       margin-bottom: 35px;
       flex-wrap: wrap;
     }
-    
+
     .wh-btn-quote {
       background-color: #d4af37;
       color: #111;
@@ -107,13 +109,13 @@
       transition: all 0.3s;
       border: 2px solid #d4af37;
     }
-    
+
     .wh-btn-quote:hover {
       background-color: #b8860b;
       color: #fff;
       border-color: #b8860b;
     }
-    
+
     .wh-btn-phone {
       background-color: transparent;
       color: #ffffff;
@@ -126,39 +128,39 @@
       border: 2px solid rgba(255, 255, 255, 0.3);
       transition: all 0.3s;
     }
-    
+
     .wh-btn-phone:hover {
       border-color: #d4af37;
       background: rgba(212, 175, 55, 0.1);
     }
-    
+
     .wh-btn-phone i {
       font-size: 24px;
     }
-    
+
     .wh-phone-text {
       display: flex;
       flex-direction: column;
     }
-    
+
     .wh-phone-text .number {
       font-size: 20px;
       font-weight: 800;
       line-height: 1.1;
     }
-    
+
     .wh-phone-text .label {
       font-size: 11px;
       font-weight: 600;
       color: rgba(255, 255, 255, 0.7);
     }
-    
+
     .wh-features {
       display: flex;
       align-items: center;
       gap: 40px;
     }
-    
+
     .wh-feature-item {
       display: flex;
       flex-direction: column;
@@ -166,7 +168,7 @@
       text-align: center;
       gap: 12px;
     }
-    
+
     .wh-feature-icon-wrapper {
       position: relative;
       display: flex;
@@ -188,27 +190,27 @@
       left: 50%;
       transform: translate(-50%, -50%) rotate(10deg);
     }
-    
+
     .wh-feature-icon {
       font-size: 32px;
       color: #111;
       z-index: 2;
       position: relative;
     }
-    
+
     .wh-feature-text {
       font-weight: 800;
       color: #ffffff;
       font-size: 14px;
       line-height: 1.3;
     }
-    
+
     .wh-feature-divider {
       width: 1px;
       height: 40px;
       background-color: rgba(255, 255, 255, 0.15);
     }
-    
+
     @media (max-width: 991px) {
       .wh-main-title {
         font-size: 55px;
@@ -219,20 +221,24 @@
       .wh-main-title {
         font-size: 40px;
       }
+
       .wh-features {
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
       }
+
       .wh-feature-item {
         flex-direction: row;
         text-align: left;
       }
+
       .wh-feature-divider {
         display: none;
       }
+
       .welcome-hero::before {
-        background: rgba(15,23,42,0.9);
+        background: rgba(15, 23, 42, 0.9);
       }
     }
   </style>
@@ -241,19 +247,20 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          
+
           <div class="wh-top-title" data-aos="fade-up">PROFESSIONAL SECURITY SOLUTIONS</div>
-          
+
           <h1 class="wh-main-title" data-aos="fade-up" data-aos-delay="100">
             SAFER PEOPLE
             <span class="gold-text">STRONGER</span>
             COMMUNITIES
           </h1>
-          
+
           <p class="wh-desc" data-aos="fade-up" data-aos-delay="200">
-            Elite Guard Inc. provides reliable and professional security solutions for businesses, properties and communities across Calgary and surrounding areas.
+            Elite Guard Inc. provides reliable and professional security solutions for businesses, properties and
+            communities across Calgary and surrounding areas.
           </p>
-          
+
           <div class="wh-buttons" data-aos="fade-up" data-aos-delay="300">
             <a href="{{ route('quote') }}" class="wh-btn-quote">
               REQUEST A QUOTE <i class="fa-solid fa-arrow-right"></i>
@@ -266,7 +273,7 @@
               </div>
             </a>
           </div>
-          
+
           <div class="wh-features" data-aos="fade-up" data-aos-delay="400">
             <div class="wh-feature-item" data-aos="zoom-in" data-aos-delay="500">
               <div class="wh-feature-icon-wrapper">
@@ -289,7 +296,7 @@
               <div class="wh-feature-text">Communities<br>Stronger</div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -650,31 +657,31 @@
 
       <div class="services-slider swiper init-swiper mb-5">
         <script type="application/json" class="swiper-config">
-                                      {
-                                        "loop": true,
-                                        "speed": 600,
-                                        "autoplay": {
-                                          "delay": 5000
-                                        },
-                                        "slidesPerView": 1,
-                                        "spaceBetween": 20,
-                                        "pagination": {
-                                          "el": ".swiper-pagination",
-                                          "type": "bullets",
-                                          "clickable": true
-                                        },
-                                        "breakpoints": {
-                                          "768": {
-                                            "slidesPerView": 2,
-                                            "spaceBetween": 30
+                                        {
+                                          "loop": true,
+                                          "speed": 600,
+                                          "autoplay": {
+                                            "delay": 5000
                                           },
-                                          "1200": {
-                                            "slidesPerView": 4,
-                                            "spaceBetween": 30
+                                          "slidesPerView": 1,
+                                          "spaceBetween": 20,
+                                          "pagination": {
+                                            "el": ".swiper-pagination",
+                                            "type": "bullets",
+                                            "clickable": true
+                                          },
+                                          "breakpoints": {
+                                            "768": {
+                                              "slidesPerView": 2,
+                                              "spaceBetween": 30
+                                            },
+                                            "1200": {
+                                              "slidesPerView": 4,
+                                              "spaceBetween": 30
+                                            }
                                           }
                                         }
-                                      }
-                                    </script>
+                                      </script>
         <div class="swiper-wrapper">
           @forelse($services as $service)
             @php
@@ -1229,32 +1236,32 @@
 
       <div class="testimonials-slider swiper init-swiper">
         <script type="application/json" class="swiper-config">
-                                                            {
-                                                              "loop": true,
-                                                              "speed": 600,
-                                                              "autoplay": {
-                                                                "delay": 4000
-                                                              },
-                                                              "slidesPerView": 1,
-                                                              "centeredSlides": true,
-                                                              "spaceBetween": 20,
-                                                              "pagination": {
-                                                                "el": ".swiper-pagination",
-                                                                "type": "bullets",
-                                                                "clickable": true
-                                                              },
-                                                              "breakpoints": {
-                                                                "768": {
-                                                                  "slidesPerView": 1.5,
-                                                                  "spaceBetween": 30
+                                                              {
+                                                                "loop": true,
+                                                                "speed": 600,
+                                                                "autoplay": {
+                                                                  "delay": 4000
                                                                 },
-                                                                "1200": {
-                                                                  "slidesPerView": 3,
-                                                                  "spaceBetween": 40
+                                                                "slidesPerView": 1,
+                                                                "centeredSlides": true,
+                                                                "spaceBetween": 20,
+                                                                "pagination": {
+                                                                  "el": ".swiper-pagination",
+                                                                  "type": "bullets",
+                                                                  "clickable": true
+                                                                },
+                                                                "breakpoints": {
+                                                                  "768": {
+                                                                    "slidesPerView": 1.5,
+                                                                    "spaceBetween": 30
+                                                                  },
+                                                                  "1200": {
+                                                                    "slidesPerView": 3,
+                                                                    "spaceBetween": 40
+                                                                  }
                                                                 }
                                                               }
-                                                            }
-                                                          </script>
+                                                            </script>
         <div class="swiper-wrapper">
           <!-- Testimonial 5: Access Control & Monitoring -->
           <div class="swiper-slide">
@@ -1482,28 +1489,28 @@
 
             <div class="leadership-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
-                                      {
-                                        "loop": true,
-                                        "speed": 600,
-                                        "autoplay": {
-                                          "delay": 4000
-                                        },
-                                        "slidesPerView": 1,
-                                        "spaceBetween": 0,
-                                        "pagination": {
-                                          "el": ".swiper-pagination",
-                                          "clickable": true
-                                        },
-                                        "breakpoints": {
-                                          "768": {
-                                            "slidesPerView": 2
+                                        {
+                                          "loop": true,
+                                          "speed": 600,
+                                          "autoplay": {
+                                            "delay": 4000
                                           },
-                                          "1024": {
-                                            "slidesPerView": 3
+                                          "slidesPerView": 1,
+                                          "spaceBetween": 0,
+                                          "pagination": {
+                                            "el": ".swiper-pagination",
+                                            "clickable": true
+                                          },
+                                          "breakpoints": {
+                                            "768": {
+                                              "slidesPerView": 2
+                                            },
+                                            "1024": {
+                                              "slidesPerView": 3
+                                            }
                                           }
                                         }
-                                      }
-                                    </script>
+                                      </script>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="leader-card">
@@ -1739,7 +1746,8 @@
               <div class="social-connect">
                 <h6>Connect With Us</h6>
                 <div class="social-links">
-                  <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/company/elite-guard-inc" class="social-link"><i
+                      class="bi bi-linkedin"></i></a>
                   <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
                   <a href="#" class="social-link"><i class="bi bi-github"></i></a>
                   <a href="#" class="social-link"><i class="bi bi-discord"></i></a>
