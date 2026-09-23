@@ -55,7 +55,7 @@
             <div class="hero-image">
               <img src="{{ asset('frontend/images/4.jpeg') }}" alt="Digital Agency Hero" class="img-fluid">
               <!-- <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/misc/misc-16.webp"
-                            alt="Digital Agency Hero" class="img-fluid"> -->
+                                          alt="Digital Agency Hero" class="img-fluid"> -->
             </div>
           </div>
         </div>
@@ -161,24 +161,117 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="row gy-4 mb-5">
-        @forelse($services as $service)
-          <div class="col-md-6">
-            <div style="border-left: 3px solid #d4af37; padding-left: 15px; height: 100%;">
-              <a href="{{ route('services.details', $service->id) }}" style="text-decoration: none;">
-                <h5 style="font-weight: 700; color: #fff; font-size: 16px; margin-bottom: 5px; transition: color 0.3s;"
-                  onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='#fff'">{{ $service->name }}</h5>
+      <style>
+        .service-slide-card {
+          background: #111;
+          border-radius: 8px;
+          overflow: hidden;
+          height: 100%;
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          transition: transform 0.3s;
+        }
+
+        .service-slide-card:hover {
+          transform: translateY(-5px);
+          border-color: #d4af37;
+        }
+
+        .service-slide-img {
+          height: 220px;
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .service-slide-content {
+          padding: 20px;
+        }
+
+        .service-slide-content h5 {
+          font-weight: 700;
+          color: #fff;
+          font-size: 18px;
+          margin-bottom: 10px;
+          transition: color 0.3s;
+        }
+
+        .service-slide-card:hover .service-slide-content h5 {
+          color: #d4af37;
+        }
+
+        .service-slide-content p {
+          color: #94a3b8;
+          font-size: 14px;
+          margin-bottom: 0;
+          line-height: 1.5;
+        }
+
+        .services-slider .swiper-pagination {
+          position: relative;
+          margin-top: 30px;
+        }
+
+        .services-slider .swiper-pagination-bullet {
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .services-slider .swiper-pagination-bullet-active {
+          background-color: #d4af37;
+        }
+      </style>
+
+      <div class="services-slider swiper init-swiper mb-5">
+        <script type="application/json" class="swiper-config">
+                        {
+                          "loop": true,
+                          "speed": 600,
+                          "autoplay": {
+                            "delay": 5000
+                          },
+                          "slidesPerView": 1,
+                          "spaceBetween": 20,
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                          },
+                          "breakpoints": {
+                            "768": {
+                              "slidesPerView": 2,
+                              "spaceBetween": 30
+                            },
+                            "1200": {
+                              "slidesPerView": 4,
+                              "spaceBetween": 30
+                            }
+                          }
+                        }
+                      </script>
+        <div class="swiper-wrapper">
+          @forelse($services as $service)
+            @php
+              $imagePath = $service->feature_image ? asset($service->feature_image) : 'https://images.unsplash.com/photo-1541888081622-1ca7b642277d?auto=format&fit=crop&q=80&w=800';
+            @endphp
+            <div class="swiper-slide" style="height: auto;">
+              <a href="{{ route('services.details', $service->id) }}"
+                style="text-decoration: none; display: block; height: 100%;">
+                <div class="service-slide-card">
+                  <img src="{{ $imagePath }}" alt="{{ $service->name }}" class="service-slide-img" loading="lazy">
+                  <div class="service-slide-content">
+                    <h5>{{ $service->name }}</h5>
+                    <p>
+                      {{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 80) }}
+                    </p>
+                  </div>
+                </div>
               </a>
-              <p style="color: #94a3b8; font-size: 14px; margin-bottom: 0;">
-                {{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}
-              </p>
             </div>
-          </div>
-        @empty
-          <div class="col-12 text-center">
-            <p class="text-white">No services found.</p>
-          </div>
-        @endforelse
+          @empty
+            <div class="col-12 text-center">
+              <p class="text-white">No services found.</p>
+            </div>
+          @endforelse
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
 
       <hr style="border-color: #ddd; margin: 40px 0;">
@@ -249,81 +342,81 @@
   <!-- Portfolio Section -->
   <!-- <section id="portfolio" class="portfolio section">
 
-                          <div class="container section-title" data-aos="fade-up">
-                            <h2>Services Gallery</h2>
-                            <p>At Elite Guard Inc., we offer a wide range of security services to protect your property, people, and assets. Our team comprises highly trained, licensed security officers who bring extensive experience in security management and risk mitigation. We utilize advanced technologies and proven industry practices to offer superior protection.</p>
-                          </div>
+                                        <div class="container section-title" data-aos="fade-up">
+                                          <h2>Services Gallery</h2>
+                                          <p>At Elite Guard Inc., we offer a wide range of security services to protect your property, people, and assets. Our team comprises highly trained, licensed security officers who bring extensive experience in security management and risk mitigation. We utilize advanced technologies and proven industry practices to offer superior protection.</p>
+                                        </div>
 
-                          <div class="container" data-aos="fade-up" data-aos-delay="100">
+                                        <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-                                <li data-filter="*" class="filter-active">All Services</li>
-                                @foreach($categories as $category)
-                                  <li data-filter=".filter-{{ $category->slug }}">{{ $category->name }}</li>
-                                @endforeach
-                              </ul>
+                                          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+                                            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+                                              <li data-filter="*" class="filter-active">All Services</li>
+                                              @foreach($categories as $category)
+                                                <li data-filter=".filter-{{ $category->slug }}">{{ $category->name }}</li>
+                                              @endforeach
+                                            </ul>
 
-                              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-                                @forelse($services as $service)
-                                  @php
-                                    $catSlug = $service->category->slug ?? 'uncategorized';
-                                    $imagePath = $service->feature_image ? asset($service->feature_image) : 'https://bootstrapmade.com/content/demo/Clarity/assets/img/portfolio/portfolio-7.webp';
-                                  @endphp
-                                  <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-{{ $catSlug }}">
-                                    <div class="portfolio-wrapper">
-                                      <div class="portfolio-image">
-                                        <img src="{{ $imagePath }}"
-                                          alt="{{ $service->name }}" class="img-fluid" loading="lazy" style="width: 100%; height: 280px; object-fit: cover;">
-                                        <div class="portfolio-hover">
-                                          <div class="portfolio-actions">
-                                            <a href="{{ $imagePath }}"
-                                              class="glightbox action-btn preview-btn" title="Preview Image">
-                                              <i class="bi bi-eye"></i>
-                                            </a>
-                                            <a href="{{ route('services.details', $service->id) }}" class="action-btn details-btn" title="View Details">
-                                              <i class="bi bi-arrow-up-right"></i>
-                                            </a>
+                                            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+                                              @forelse($services as $service)
+                                                @php
+                                                  $catSlug = $service->category->slug ?? 'uncategorized';
+                                                  $imagePath = $service->feature_image ? asset($service->feature_image) : 'https://bootstrapmade.com/content/demo/Clarity/assets/img/portfolio/portfolio-7.webp';
+                                                @endphp
+                                                <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-{{ $catSlug }}">
+                                                  <div class="portfolio-wrapper">
+                                                    <div class="portfolio-image">
+                                                      <img src="{{ $imagePath }}"
+                                                        alt="{{ $service->name }}" class="img-fluid" loading="lazy" style="width: 100%; height: 280px; object-fit: cover;">
+                                                      <div class="portfolio-hover">
+                                                        <div class="portfolio-actions">
+                                                          <a href="{{ $imagePath }}"
+                                                            class="glightbox action-btn preview-btn" title="Preview Image">
+                                                            <i class="bi bi-eye"></i>
+                                                          </a>
+                                                          <a href="{{ route('services.details', $service->id) }}" class="action-btn details-btn" title="View Details">
+                                                            <i class="bi bi-arrow-up-right"></i>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="portfolio-content">
+                                                      <div class="portfolio-meta">
+                                                        <span class="project-type">{{ $service->category->name ?? 'Service' }}</span>
+                                                      </div>
+                                                      <h3><a href="{{ route('services.details', $service->id) }}" style="color: inherit;">{{ $service->name }}</a></h3>
+                                                      <p>{{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}</p>
+
+                                                      @if($service->highlights->isNotEmpty())
+                                                        <div class="portfolio-tech">
+                                                          @foreach($service->highlights->take(3) as $highlight)
+                                                            <span class="tech-badge">{{ $highlight->title }}</span>
+                                                          @endforeach
+                                                        </div>
+                                                      @endif
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              @empty
+                                                <div class="col-12 text-center">
+                                                  <p>No services found.</p>
+                                                </div>
+                                              @endforelse
+                                            </div>
+
+                                          </div>
+
+                                          <div class="portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
+                                            <h4>Ready to get started?</h4>
+                                            <p>Let's work together to bring your vision to life</p>
+                                            <div class="cta-buttons">
+                                              <a href="#contact" class="btn btn-primary">Start a Project</a>
+                                              <a href="{{ route('services') }}" class="btn btn-outline">View All Services</a>
+                                            </div>
                                           </div>
                                         </div>
-                                      </div>
-                                      <div class="portfolio-content">
-                                        <div class="portfolio-meta">
-                                          <span class="project-type">{{ $service->category->name ?? 'Service' }}</span>
-                                        </div>
-                                        <h3><a href="{{ route('services.details', $service->id) }}" style="color: inherit;">{{ $service->name }}</a></h3>
-                                        <p>{{ $service->short_description ?? Str::limit(strip_tags($service->long_description), 100) }}</p>
 
-                                        @if($service->highlights->isNotEmpty())
-                                          <div class="portfolio-tech">
-                                            @foreach($service->highlights->take(3) as $highlight)
-                                              <span class="tech-badge">{{ $highlight->title }}</span>
-                                            @endforeach
-                                          </div>
-                                        @endif
-                                      </div>
-                                    </div>
-                                  </div>
-                                @empty
-                                  <div class="col-12 text-center">
-                                    <p>No services found.</p>
-                                  </div>
-                                @endforelse
-                              </div>
-
-                            </div>
-
-                            <div class="portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
-                              <h4>Ready to get started?</h4>
-                              <p>Let's work together to bring your vision to life</p>
-                              <div class="cta-buttons">
-                                <a href="#contact" class="btn btn-primary">Start a Project</a>
-                                <a href="{{ route('services') }}" class="btn btn-outline">View All Services</a>
-                              </div>
-                            </div>
-                          </div>
-
-                        </section> -->
+                                      </section> -->
 
   <style>
     .clients-new {
@@ -332,6 +425,7 @@
       border-top: 1px solid #ebebeb;
       border-bottom: 1px solid #ebebeb;
     }
+
     .client-logo {
       display: flex;
       align-items: center;
@@ -341,19 +435,22 @@
       background: #fff;
       border: 1px solid #ebebeb;
       border-radius: 4px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
       text-align: center;
     }
+
     .client-logo h6 {
       margin: 0;
       font-weight: 800;
       color: #111;
       font-size: 13px;
     }
+
     .locations-section {
       background: #fff;
       padding: 80px 0;
     }
+
     .location-card {
       display: flex;
       align-items: center;
@@ -362,6 +459,7 @@
       padding: 10px 20px;
       flex: 1;
     }
+
     @media (max-width: 768px) {
       .location-card {
         border-right: none;
@@ -369,47 +467,54 @@
         padding: 20px 0;
       }
     }
+
     .location-card:last-child {
       border-right: none;
       border-bottom: none;
     }
+
     .location-icon {
       color: #d4af37;
       font-size: 24px;
       margin-right: 15px;
     }
+
     .location-text h5 {
       font-size: 15px;
       font-weight: 800;
       color: #111;
       margin: 0 0 2px 0;
     }
+
     .location-text p {
       font-size: 12px;
       color: #666;
       margin: 0;
     }
-    
+
     .cta-footer-new {
       background: url('https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&q=80&w=1920') no-repeat center/cover;
       position: relative;
       padding: 60px 0;
       color: #fff;
     }
+
     .cta-footer-new::before {
       content: '';
       position: absolute;
       inset: 0;
       background: rgba(10, 15, 20, 0.9);
     }
+
     .cta-footer-content {
       position: relative;
       z-index: 2;
     }
+
     .cta-btn-outline {
       background: transparent;
       color: #fff;
-      border: 2px solid rgba(255,255,255,0.3);
+      border: 2px solid rgba(255, 255, 255, 0.3);
       font-weight: 800;
       padding: 10px 25px;
       border-radius: 4px;
@@ -420,38 +525,55 @@
       transition: all 0.3s;
       margin-left: 15px;
     }
+
     .cta-btn-outline:hover {
       border-color: #fff;
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       color: #fff;
     }
-    .cta-btn-outline i { margin-right: 8px; }
+
+    .cta-btn-outline i {
+      margin-right: 8px;
+    }
   </style>
 
   <section class="clients-new">
     <div class="container">
       <div class="section-header" data-aos="fade-up" style="margin-bottom: 40px;">
         <h2>TRUSTED BY <span>LEADING ORGANIZATIONS</span></h2>
-        <p>We are proud to work with a diverse range of clients in commercial, residential, construction and public sector environments.</p>
+        <p>We are proud to work with a diverse range of clients in commercial, residential, construction and public sector
+          environments.</p>
       </div>
       <div class="row g-3 justify-content-center" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo"><h6>Killam Apartment REIT</h6></div>
+          <div class="client-logo">
+            <h6>Killam Apartment REIT</h6>
+          </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo"><h6>20 Avenue Living</h6></div>
+          <div class="client-logo">
+            <h6>20 Avenue Living</h6>
+          </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo"><h6>Bloom Investment Group</h6></div>
+          <div class="client-logo">
+            <h6>Bloom Investment Group</h6>
+          </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo"><h6>Mini Mall Storage</h6></div>
+          <div class="client-logo">
+            <h6>Mini Mall Storage</h6>
+          </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo"><h6>Emerald Hotel & Suites</h6></div>
+          <div class="client-logo">
+            <h6>Emerald Hotel & Suites</h6>
+          </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
-          <div class="client-logo"><h6>Strategic Group</h6></div>
+          <div class="client-logo">
+            <h6>Strategic Group</h6>
+          </div>
         </div>
       </div>
     </div>
@@ -510,9 +632,9 @@
           <p style="color: #e2e8f0; font-size: 15px; margin-bottom: 25px;">
             Contact us today for a customized security solution.
           </p>
-          <div class="d-flex align-items-center flex-wrap gap-2">
-            <a href="{{ route('quote') }}" class="btn-gold" style="border: none;">
-              REQUEST A QUOTE <i class="fa-solid fa-arrow-right"></i>
+          <div class="d-flex align-items-stretch flex-wrap gap-2">
+            <a href="{{ route('quote') }}" class="d-flex align-items-center justify-content-center cta-btn-outline" style="margin-left: 0;">
+              REQUEST A QUOTE <i class="fa-solid fa-arrow-right" style="margin-left: 8px; margin-right: 0;"></i>
             </a>
             <div class="d-flex align-items-center cta-btn-outline" style="margin-left: 0;">
               <i class="fa-solid fa-phone"></i>
@@ -602,10 +724,12 @@
       background: #fff;
       padding: 80px 0;
     }
+
     .section-header {
       text-align: center;
       margin-bottom: 50px;
     }
+
     .section-header h2 {
       font-size: 28px;
       font-weight: 800;
@@ -613,14 +737,17 @@
       text-transform: uppercase;
       margin-bottom: 5px;
     }
+
     .section-header h2 span {
       color: #d4af37;
     }
+
     .section-header p {
       color: #666;
       font-size: 15px;
       margin: 0;
     }
+
     .why-card {
       text-align: center;
       padding: 30px 15px;
@@ -628,13 +755,15 @@
       border: 1px solid #f0f0f0;
       border-radius: 8px;
       height: 100%;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
       transition: all 0.3s;
     }
+
     .why-card:hover {
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
       transform: translateY(-5px);
     }
+
     .why-card .icon-wrapper {
       width: 60px;
       height: 60px;
@@ -645,16 +774,19 @@
       justify-content: center;
       margin-bottom: 15px;
     }
+
     .why-card .icon-wrapper i {
       font-size: 24px;
       color: #111;
     }
+
     .why-card h5 {
       font-size: 15px;
       font-weight: 800;
       color: #111;
       margin-bottom: 10px;
     }
+
     .why-card p {
       font-size: 13px;
       color: #555;
@@ -699,7 +831,7 @@
             <p>Real-time reporting, GPS tracking and digital records for complete transparency.</p>
           </div>
         </div>
-        
+
         <div class="col-lg-3 col-md-6">
           <div class="why-card">
             <div class="icon-wrapper"><i class="fa-solid fa-clipboard-list"></i></div>
@@ -744,32 +876,32 @@
 
       <div class="testimonials-slider swiper init-swiper">
         <script type="application/json" class="swiper-config">
-                                {
-                                  "loop": true,
-                                  "speed": 600,
-                                  "autoplay": {
-                                    "delay": 4000
-                                  },
-                                  "slidesPerView": 1,
-                                  "centeredSlides": true,
-                                  "spaceBetween": 20,
-                                  "pagination": {
-                                    "el": ".swiper-pagination",
-                                    "type": "bullets",
-                                    "clickable": true
-                                  },
-                                  "breakpoints": {
-                                    "768": {
-                                      "slidesPerView": 1.5,
-                                      "spaceBetween": 30
-                                    },
-                                    "1200": {
-                                      "slidesPerView": 3,
-                                      "spaceBetween": 40
-                                    }
-                                  }
-                                }
-                              </script>
+                                              {
+                                                "loop": true,
+                                                "speed": 600,
+                                                "autoplay": {
+                                                  "delay": 4000
+                                                },
+                                                "slidesPerView": 1,
+                                                "centeredSlides": true,
+                                                "spaceBetween": 20,
+                                                "pagination": {
+                                                  "el": ".swiper-pagination",
+                                                  "type": "bullets",
+                                                  "clickable": true
+                                                },
+                                                "breakpoints": {
+                                                  "768": {
+                                                    "slidesPerView": 1.5,
+                                                    "spaceBetween": 30
+                                                  },
+                                                  "1200": {
+                                                    "slidesPerView": 3,
+                                                    "spaceBetween": 40
+                                                  }
+                                                }
+                                              }
+                                            </script>
         <div class="swiper-wrapper">
           <!-- Testimonial 5: Access Control & Monitoring -->
           <div class="swiper-slide">
@@ -987,105 +1119,7 @@
   <!-- Team Section -->
   <section id="team" class="team section">
 
-    <!-- Section Title -->
-    <!-- <div class="container section-title" data-aos="fade-up">
-                            <h2>Team</h2>
-                            <p>Meet the dedicated security professionals guiding our training, patrol, and response operations across Alberta.</p>
-                          </div> -->
-
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <!-- <div class="row g-4">
-
-                              <div class="col-lg-6">
-                                <div class="team-intro" data-aos="fade-right" data-aos-delay="150">
-                                  <div class="intro-content">
-                                    <h3>Meet Our Security Leadership</h3>
-                                    <p>Elite Guard is managed by experienced law enforcement veterans and corporate security specialists committed to your protection.</p>
-                                    <div class="stats-row">
-                                      <div class="stat-item">
-                                        <span class="stat-number">120+</span>
-                                        <span class="stat-label">Licensed Guards</span>
-                                      </div>
-                                      <div class="stat-item">
-                                        <span class="stat-number">4</span>
-                                        <span class="stat-label">Core Services</span>
-                                      </div>
-                                      <div class="stat-item">
-                                        <span class="stat-number">24/7</span>
-                                        <span class="stat-label">Dispatch Support</span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="col-lg-6">
-                                <div class="team-grid" data-aos="fade-left" data-aos-delay="200">
-                                  <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="250">
-                                    <div class="hexagon-inner">
-                                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-3.webp"
-                                        alt="Team member">
-                                      <div class="member-overlay">
-                                        <h5>Sarah Chen</h5>
-                                        <span>Operations Coordinator</span>
-                                        <div class="social-icons">
-                                          <a href="#"><i class="bi bi-linkedin"></i></a>
-                                          <a href="#"><i class="bi bi-twitter"></i></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="300">
-                                    <div class="hexagon-inner">
-                                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-4.webp"
-                                        alt="Team member">
-                                      <div class="member-overlay">
-                                        <h5>Marcus Johnson</h5>
-                                        <span>Patrol Supervisor</span>
-                                        <div class="social-icons">
-                                          <a href="#"><i class="bi bi-github"></i></a>
-                                          <a href="#"><i class="bi bi-linkedin"></i></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="350">
-                                    <div class="hexagon-inner">
-                                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-8.webp"
-                                        alt="Team member">
-                                      <div class="member-overlay">
-                                        <h5>Emma Rodriguez</h5>
-                                        <span>HR & Compliance</span>
-                                        <div class="social-icons">
-                                          <a href="#"><i class="bi bi-instagram"></i></a>
-                                          <a href="#"><i class="bi bi-dribbble"></i></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-                                  <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="400">
-                                    <div class="hexagon-inner">
-                                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-6.webp"
-                                        alt="Team member">
-                                      <div class="member-overlay">
-                                        <h5>David Kim</h5>
-                                        <span>Tactical Advisor</span>
-                                        <div class="social-icons">
-                                          <a href="#"><i class="bi bi-behance"></i></a>
-                                          <a href="#"><i class="bi bi-linkedin"></i></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                            </div> -->
-
       <div class="row mt-5">
         <div class="col-12">
           <div class="team-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
@@ -1095,28 +1129,28 @@
 
             <div class="leadership-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
-                                      {
-                                        "loop": true,
-                                        "speed": 600,
-                                        "autoplay": {
-                                          "delay": 4000
-                                        },
-                                        "slidesPerView": 1,
-                                        "spaceBetween": 0,
-                                        "pagination": {
-                                          "el": ".swiper-pagination",
-                                          "clickable": true
-                                        },
-                                        "breakpoints": {
-                                          "768": {
-                                            "slidesPerView": 2
-                                          },
-                                          "1024": {
-                                            "slidesPerView": 3
-                                          }
-                                        }
-                                      }
-                                    </script>
+                        {
+                          "loop": true,
+                          "speed": 600,
+                          "autoplay": {
+                            "delay": 4000
+                          },
+                          "slidesPerView": 1,
+                          "spaceBetween": 0,
+                          "pagination": {
+                            "el": ".swiper-pagination",
+                            "clickable": true
+                          },
+                          "breakpoints": {
+                            "768": {
+                              "slidesPerView": 2
+                            },
+                            "1024": {
+                              "slidesPerView": 3
+                            }
+                          }
+                        }
+                      </script>
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="leader-card">
@@ -1326,7 +1360,8 @@
                 </div>
                 <div class="card-content">
                   <h5>Visit Our Office</h5>
-                  <p><a href="https://maps.app.goo.gl/HchLa4W9ooqHE58w8?g_st=iwb" target="_blank" style="color: inherit; text-decoration: none;">3961 52 Ave NE #2104, Calgary, AB T3J 0J7</a></p>
+                  <p><a href="https://maps.app.goo.gl/HchLa4W9ooqHE58w8?g_st=iwb" target="_blank"
+                      style="color: inherit; text-decoration: none;">3961 52 Ave NE #2104, Calgary, AB T3J 0J7</a></p>
                   <span class="response-time">Open Monday - Friday</span>
                 </div>
               </div>
@@ -1365,63 +1400,63 @@
   </section><!-- /Contact Section -->
 
   @push('scripts')
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      $('#contactForm').on('submit', function (e) {
-        e.preventDefault();
-        e.stopImmediatePropagation();
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        $('#contactForm').on('submit', function (e) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
 
-        let form = $(this);
-        let submitBtn = form.find('.submit-btn');
-        let submitBtnText = submitBtn.find('span');
-        let submitIcon = submitBtn.find('i');
-        let formData = form.serialize();
+          let form = $(this);
+          let submitBtn = form.find('.submit-btn');
+          let submitBtnText = submitBtn.find('span');
+          let submitIcon = submitBtn.find('i');
+          let formData = form.serialize();
 
-        submitBtn.prop('disabled', true);
-        submitBtnText.text('Sending...');
-        if (submitIcon.length) {
-          submitIcon.attr('class', 'fa-solid fa-spinner fa-spin ms-2');
-        }
-
-        $.ajax({
-          url: form.attr('action'),
-          type: 'POST',
-          data: formData,
-          success: function (response) {
-            Swal.fire({
-              icon: 'success',
-              title: 'Success!',
-              text: response.message,
-              confirmButtonColor: '#34A853'
-            });
-            form[0].reset();
-            submitBtn.prop('disabled', false);
-            submitBtnText.text('Send Message');
-            if (submitIcon.length) {
-              submitIcon.attr('class', 'bi bi-send-fill');
-            }
-          },
-          error: function (xhr) {
-            let errorMessage = 'Something went wrong. Please try again.';
-            if (xhr.responseJSON && xhr.responseJSON.message) {
-              errorMessage = xhr.responseJSON.message;
-            }
-
-            Swal.fire({
-              icon: 'error',
-              title: 'Oops...',
-              text: errorMessage,
-              confirmButtonColor: '#d33'
-            });
-            submitBtn.prop('disabled', false);
-            submitBtnText.text('Send Message');
-            if (submitIcon.length) {
-              submitIcon.attr('class', 'bi bi-send-fill');
-            }
+          submitBtn.prop('disabled', true);
+          submitBtnText.text('Sending...');
+          if (submitIcon.length) {
+            submitIcon.attr('class', 'fa-solid fa-spinner fa-spin ms-2');
           }
+
+          $.ajax({
+            url: form.attr('action'),
+            type: 'POST',
+            data: formData,
+            success: function (response) {
+              Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: response.message,
+                confirmButtonColor: '#34A853'
+              });
+              form[0].reset();
+              submitBtn.prop('disabled', false);
+              submitBtnText.text('Send Message');
+              if (submitIcon.length) {
+                submitIcon.attr('class', 'bi bi-send-fill');
+              }
+            },
+            error: function (xhr) {
+              let errorMessage = 'Something went wrong. Please try again.';
+              if (xhr.responseJSON && xhr.responseJSON.message) {
+                errorMessage = xhr.responseJSON.message;
+              }
+
+              Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: errorMessage,
+                confirmButtonColor: '#d33'
+              });
+              submitBtn.prop('disabled', false);
+              submitBtnText.text('Send Message');
+              if (submitIcon.length) {
+                submitIcon.attr('class', 'bi bi-send-fill');
+              }
+            }
+          });
         });
       });
-    });
-  </script>
+    </script>
   @endpush
 @endsection
