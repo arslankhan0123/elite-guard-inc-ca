@@ -231,13 +231,34 @@
 
         /* App Screenshots Slider */
         .app-screenshots-area {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            padding: 100px 0;
+            background: #090e17; /* Very dark blue/black */
+            padding: 120px 0;
             position: relative;
+            overflow: hidden;
+        }
+
+        /* Abstract glowing orb in the background */
+        .app-screenshots-area::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1000px;
+            height: 1000px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0) 70%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .app-screenshots-area .container {
+            position: relative;
+            z-index: 2;
         }
 
         .app-screenshots-area .section-heading {
             color: #ffffff !important;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
 
         .app-screenshots-area .section-heading::after {
@@ -251,8 +272,8 @@
         .app-screenshot-slide {
             border-radius: 45px;
             overflow: hidden;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-            border: 10px solid #1a1a1a;
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(212, 175, 55, 0.1);
+            border: 8px solid #141414;
             height: 100%;
             display: flex;
             align-items: center;
@@ -704,9 +725,19 @@
                 <script type="application/json" class="swiper-config">
                     {
                         "loop": true,
-                        "speed": 600,
+                        "speed": 800,
+                        "effect": "coverflow",
+                        "grabCursor": true,
+                        "centeredSlides": true,
+                        "coverflowEffect": {
+                            "rotate": 10,
+                            "stretch": 0,
+                            "depth": 150,
+                            "modifier": 1.2,
+                            "slideShadows": false
+                        },
                         "autoplay": {
-                            "delay": 3000,
+                            "delay": 3500,
                             "disableOnInteraction": false
                         },
                         "slidesPerView": 1,
