@@ -71,126 +71,167 @@
     }
 
     /* Page Specific Overrides */
-    .industries-section {
-        background-color: #f8f9fa;
-        padding: 80px 0;
+    .industries-new-section {
+        background-color: #fdfdfd;
+        padding: 60px 0 0 0;
     }
     
-    /* Fix global white text issue on headings */
-    .industries-section h2, 
-    .industries-section h3, 
-    .industries-section h4 {
-        color: #111 !important;
-    }
-
-    /* Modern Industry Card Design */
-    .modern-industry-card {
+    .industry-card {
         background: #fff;
-        border-radius: 15px;
+        border-radius: 6px;
         overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        transition: all 0.4s ease;
         height: 100%;
         display: flex;
         flex-direction: column;
-        border: 1px solid rgba(0,0,0,0.03);
+        border: 1px solid #f0f0f0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .modern-industry-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    .industry-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
 
-    .card-img-wrapper {
+    .industry-image {
         position: relative;
-        height: 240px;
-        overflow: hidden;
+        height: 160px;
+        width: 100%;
     }
 
-    .card-img-wrapper img {
+    .industry-image img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.6s ease;
     }
 
-    .modern-industry-card:hover .card-img-wrapper img {
-        transform: scale(1.08);
-    }
-
-    .card-img-overlay-custom {
+    .industry-icon {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 20px;
-        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+        bottom: -25px;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        z-index: 2;
     }
-
-    .card-img-overlay-custom h3 {
-        color: #fff !important; /* Force white over the dark image gradient */
-        margin: 0;
-        font-size: 1.5rem;
+    
+    .industry-icon-inner {
+        width: 38px;
+        height: 38px;
+        background: #fdf6e3;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .industry-icon-inner i {
+        color: #111;
+        font-size: 16px;
+    }
+    
+    .industry-icon-inner span {
+        color: #111;
+        font-size: 16px;
         font-weight: 800;
-        letter-spacing: 0.5px;
+        font-family: sans-serif;
     }
 
-    .card-content {
-        padding: 30px 25px;
+    .industry-content {
+        padding: 35px 15px 20px 15px;
         flex-grow: 1;
         display: flex;
         flex-direction: column;
     }
 
-    .card-content p {
-        color: #555;
-        font-size: 0.95rem;
-        line-height: 1.6;
-        margin-bottom: 25px;
+    .industry-content h4 {
+        font-size: 14px;
+        font-weight: 800;
+        color: #111;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
 
-    .service-checklist {
+    .industry-content p {
+        font-size: 12px;
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .industry-list {
         list-style: none;
         padding: 0;
-        margin: 0 0 25px 0;
+        margin: 0;
         flex-grow: 1;
     }
 
-    .service-checklist li {
-        display: flex;
-        align-items: flex-start;
+    .industry-list li {
+        position: relative;
+        padding-left: 20px;
+        font-size: 11.5px;
         color: #444;
-        font-size: 0.9rem;
-        margin-bottom: 12px;
-        font-weight: 500;
+        margin-bottom: 6px;
+        line-height: 1.4;
     }
 
-    .service-checklist li i {
-        color: #b8860b;
-        margin-top: 3px;
-        margin-right: 12px;
-        font-size: 1.1rem;
+    .industry-list li i {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        color: #d4af37;
+        font-size: 12px;
     }
 
-    .btn-quote-outline {
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        padding: 12px 20px;
-        border: 2px solid #b8860b;
-        color: #b8860b;
-        font-weight: 700;
-        border-radius: 8px;
-        text-decoration: none;
+    .bottom-features {
+        background: #fafafa;
+        border-top: 1px solid #ebebeb;
+        padding: 30px 0;
+        margin-top: 50px;
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .feature-icon {
+        font-size: 32px;
+        color: #111;
+        margin-right: 15px;
+    }
+    
+    .feature-icon.gold {
+        color: #d4af37;
+    }
+
+    .feature-text h5 {
+        font-size: 13px;
+        font-weight: 800;
+        color: #111;
+        margin: 0 0 3px 0;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 0.9rem;
-        transition: all 0.3s ease;
     }
 
-    .btn-quote-outline:hover {
-        background-color: #b8860b;
-        color: #fff !important;
+    .feature-text p {
+        font-size: 11px;
+        color: #666;
+        margin: 0;
+        line-height: 1.4;
+    }
+    
+    .header-divider {
+        border-left: 3px solid #d4af37;
+        padding-left: 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 </style>
 
@@ -211,73 +252,187 @@
     </div>
 </section>
 
-<section class="industries-section">
+<section class="industries-new-section">
     <div class="container">
         <!-- Header -->
-        <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-lg-8 text-center">
-                <p class="text-uppercase mb-2" style="font-weight: 700; letter-spacing: 2px; color: #b8860b;">Our Coverage Areas</p>
-                <h2 class="title text-dark" style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 20px; font-weight: 800;">
-                    Securing Calgary's <span style="color: #b8860b;">Essential Industries</span>
+        <div class="row align-items-center mb-5 pb-2">
+            <div class="col-lg-9 pr-lg-5 mb-4 mb-lg-0">
+                <h6 style="color: #d4af37; font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; margin-bottom: 10px;">OUR INDUSTRIES</h6>
+                <h2 style="font-size: 32px; font-weight: 800; color: #111; margin-bottom: 15px; text-transform: uppercase;">
+                    SECURITY SOLUTIONS TAILORED TO YOUR WORLD
                 </h2>
-                <p class="text-muted mx-auto" style="font-size: 1.1rem; max-width: 800px;">
-                    Elite Guard Inc. provides specialized, highly-trained security personnel and comprehensive protection plans tailored to the unique challenges of diverse industries across Alberta.
+                <p style="color: #555; font-size: 15px; line-height: 1.6; margin: 0; max-width: 95%;">
+                    From construction sites to commercial spaces, our trained professionals and advanced technology deliver reliable security solutions designed for the unique needs of every industry.
                 </p>
+            </div>
+            <div class="col-lg-3">
+                <div class="header-divider">
+                    <h4 style="font-size: 18px; font-weight: 800; color: #555; margin: 0; line-height: 1.4; letter-spacing: 1px;">
+                        DIFFERENT<br>INDUSTRIES.<br>A SAFER<br>TOMORROW.
+                    </h4>
+                </div>
             </div>
         </div>
 
         @php
-            $industries = [
+            $industriesList = [
                 [
-                    'title' => 'Commercial & Corporate',
-                    'image' => asset('frontend/images/industries/commercial.png'),
-                    'description' => 'We provide professional, highly-trained security personnel to protect corporate offices, business parks, and commercial facilities against unauthorized access and security breaches.',
-                    'items' => ['Access Control', 'Concierge Security', 'CCTV Monitoring', 'After-Hours Patrols', 'Emergency Response'],
+                    'title' => 'CONSTRUCTION SITES',
+                    'icon' => '<i class="fa-solid fa-helmet-safety"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Monitor site access, equipment and materials during active work and after hours.',
+                    'list' => ['Access control and perimeter checks', 'Equipment & material monitoring', 'After-hours security', 'Theft and vandalism deterrence']
                 ],
                 [
-                    'title' => 'Construction Sites',
-                    'image' => asset('frontend/images/industries/construction.png'),
-                    'description' => 'Construction sites are vulnerable to theft, vandalism, and safety hazards. Elite Guard Inc. offers specialized security solutions to keep your site, equipment, and materials safe 24/7.',
-                    'items' => ['Equipment Protection', 'Perimeter Security', 'Gate House Operations', 'Mobile Patrols', 'Fire Watch'],
+                    'title' => 'COMMERCIAL PROPERTIES',
+                    'icon' => '<i class="fa-regular fa-building"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Security for office buildings, business parks and commercial plazas.',
+                    'list' => ['On-site security guards', 'Access control and visitor management', 'Regular patrols and inspections', 'Incident reporting and risk management']
                 ],
                 [
-                    'title' => 'Residential Communities',
-                    'image' => asset('frontend/images/industries/residential.png'),
-                    'description' => 'Ensure the safety and peace of mind of your residents. We offer tailored security services for condominiums, gated communities, and residential complexes.',
-                    'items' => ['Concierge & Front Desk', 'Parking Enforcement', 'Property Patrols', 'Amenity Lock-ups', 'Visitor Management'],
+                    'title' => 'RESIDENTIAL COMMUNITIES',
+                    'icon' => '<i class="fa-solid fa-house-chimney"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Safe and secure living for condos, apartments and gated communities.',
+                    'list' => ['Front desk and mobile patrols', 'Access control and visitor verification', 'After-hours monitoring', 'Support for residents and property managers']
                 ],
                 [
-                    'title' => 'Events & Entertainment',
-                    'image' => asset('frontend/images/industries/event.png'),
-                    'description' => 'From private functions to large-scale public events, our event security teams are trained in crowd control, VIP protection, and emergency management to ensure your event runs smoothly.',
-                    'items' => ['Crowd Management', 'Bag Checks & Screening', 'VIP Protection', 'Traffic Control', 'Alcohol Management'],
+                    'title' => 'RETAIL STORES',
+                    'icon' => '<i class="fa-solid fa-cart-shopping"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Loss prevention, asset protection and a visible security presence to deter crime.',
+                    'list' => ['On-site security and mobile patrols', 'Theft and shoplifting deterrence', 'Customer and staff safety', 'Incident reporting and evidence collection']
                 ],
+                [
+                    'title' => 'WAREHOUSES & INDUSTRIAL',
+                    'icon' => '<i class="fa-solid fa-truck-fast"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Protect inventory, assets and access points.',
+                    'list' => ['Perimeter and access control', 'Regular patrols', 'Monitoring of high-risk areas', 'Reporting of suspicious activity']
+                ],
+                [
+                    'title' => 'PARKING FACILITIES',
+                    'icon' => '<span>P</span>',
+                    'image' => 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Patrol lots and parkades, monitor parking concerns and report suspicious activity.',
+                    'list' => ['Regular patrols (scheduled & random)', 'Monitor parking violations', 'Deter theft and vandalism', 'Report suspicious activity']
+                ],
+                [
+                    'title' => 'EVENT VENUES',
+                    'icon' => '<i class="fa-solid fa-users"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Support entry screening, guest access and crowd monitoring throughout your event.',
+                    'list' => ['Entry screening and access control', 'Crowd monitoring and guest assistance', 'Trained event security staff', 'Incident response and communication']
+                ],
+                [
+                    'title' => 'HEALTHCARE FACILITIES',
+                    'icon' => '<i class="fa-solid fa-plus"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'A safer environment for patients, staff and visitors.',
+                    'list' => ['Access control and visitor management', 'On-site and mobile patrols', 'Support for staff and patient safety', 'Incident reporting and response']
+                ],
+                [
+                    'title' => 'SCHOOLS & EDUCATIONAL',
+                    'icon' => '<i class="fa-solid fa-graduation-cap"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Support for a safe learning environment.',
+                    'list' => ['Access control and visitor screening', 'On-site security and patrols', 'Safety for students, staff and visitors', 'Incident reporting and emergency support']
+                ],
+                [
+                    'title' => 'GOVERNMENT & MUNICIPAL',
+                    'icon' => '<i class="fa-solid fa-building-columns"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1555819206-7b30da4f1506?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Security for civic buildings and public infrastructure.',
+                    'list' => ['Access control and screening', 'On-site and mobile patrols', 'Protection of public assets', 'Incident reporting and emergency response']
+                ],
+                [
+                    'title' => 'HOSPITALITY & HOTELS',
+                    'icon' => '<i class="fa-solid fa-bed"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Guest safety, access control and a welcoming environment.',
+                    'list' => ['Front desk and lobby security', 'Access control and key management', 'Guest and staff assistance', 'Incident response and reporting']
+                ],
+                [
+                    'title' => 'VACANT PROPERTIES',
+                    'icon' => '<i class="fa-solid fa-key"></i>',
+                    'image' => 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=800',
+                    'desc' => 'Regular checks to deter trespassing, vandalism and theft.',
+                    'list' => ['Scheduled lock & unlock services', 'Perimeter checks and inspections', 'Monitor for unauthorized access', 'Detailed reporting with photos']
+                ]
             ];
         @endphp
 
         <!-- Grid -->
         <div class="row g-4">
-            @foreach($industries as $industry)
-                <div class="col-lg-6 col-md-6">
-                    <div class="modern-industry-card">
-                        <div class="card-img-wrapper">
-                            <img src="{{ $industry['image'] }}" alt="{{ $industry['title'] }}">
-                            <div class="card-img-overlay-custom">
-                                <h3>{{ $industry['title'] }}</h3>
+            @foreach($industriesList as $item)
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="industry-card">
+                        <div class="industry-image">
+                            <!-- Placeholder image, will need actual industry images -->
+                            <img src="{{ $item['image'] }}" alt="{{ $item['title'] }}">
+                            <div class="industry-icon">
+                                <div class="industry-icon-inner">
+                                    {!! $item['icon'] !!}
+                                </div>
                             </div>
                         </div>
-                        <div class="card-content">
-                            <p>{{ $industry['description'] }}</p>
-                            <ul class="service-checklist">
-                                @foreach($industry['items'] as $item)
-                                    <li><i class="fa-solid fa-shield-halved"></i> {{ $item }}</li>
+                        <div class="industry-content">
+                            <h4>{{ $item['title'] }}</h4>
+                            <p>{{ $item['desc'] }}</p>
+                            <ul class="industry-list">
+                                @foreach($item['list'] as $listItem)
+                                    <li><i class="fa-solid fa-circle-check"></i> {{ $listItem }}</li>
                                 @endforeach
                             </ul>
-                            <a href="{{ route('quote') }}" class="btn-quote-outline">Request a Quote</a>
                         </div>
                     </div>
                 </div>
             @endforeach
+        </div>
+    </div>
+    
+    <!-- Bottom Features -->
+    <div class="bottom-features">
+        <div class="container">
+            <div class="row gx-2 gy-4 align-items-center justify-content-between">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="feature-text">
+                            <h5>TRAINED PROFESSIONALS</h5>
+                            <p>Licensed, experienced and reliable.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                        <div class="feature-text">
+                            <h5>TECHNOLOGY DRIVEN</h5>
+                            <p>NFC checkpoints, real-time reporting and digital records.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon gold"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="feature-text">
+                            <h5>FULLY INSURED</h5>
+                            <p>Licensed security agency, liability insurance and WCB coverage.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon gold"><i class="fa-solid fa-clock"></i></div>
+                        <div class="feature-text">
+                            <h5>24/7 SUPPORT</h5>
+                            <p>Always available when you need us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
