@@ -17,55 +17,282 @@
     </div>
   @endif
   <!-- Hero Section -->
-  <section id="home" class="hero section">
+  <style>
+    /* Transparent Header for Home Page */
+    #header {
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
+    
+    #header.scrolled {
+      background-color: rgba(15, 23, 42, 0.95) !important;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+    }
 
+    .welcome-hero {
+      position: relative;
+      margin-top: -120px; /* Pull banner under header */
+      padding: 220px 0 60px 0; /* Add padding to push text down */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+    }
+    
+    .welcome-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.75) 100%);
+      z-index: 1;
+    }
+    
+    .welcome-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .wh-top-title {
+      color: #d4af37;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    
+    .wh-main-title {
+      color: #ffffff;
+      font-size: 75px;
+      font-weight: 900;
+      line-height: 1.05;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+    
+    .wh-main-title .gold-text {
+      color: #d4af37;
+    }
+    
+    .wh-desc {
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 100%;
+      margin-bottom: 25px;
+      font-weight: 500;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+    
+    .wh-buttons {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 35px;
+      flex-wrap: wrap;
+    }
+    
+    .wh-btn-quote {
+      background-color: #d4af37;
+      color: #111;
+      font-weight: 800;
+      padding: 15px 35px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 15px;
+      transition: all 0.3s;
+      border: 2px solid #d4af37;
+    }
+    
+    .wh-btn-quote:hover {
+      background-color: #b8860b;
+      color: #fff;
+      border-color: #b8860b;
+    }
+    
+    .wh-btn-phone {
+      background-color: transparent;
+      color: #ffffff;
+      padding: 10px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.3s;
+    }
+    
+    .wh-btn-phone:hover {
+      border-color: #d4af37;
+      background: rgba(212, 175, 55, 0.1);
+    }
+    
+    .wh-btn-phone i {
+      font-size: 24px;
+    }
+    
+    .wh-phone-text {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .wh-phone-text .number {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+    
+    .wh-phone-text .label {
+      font-size: 11px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .wh-features {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    
+    .wh-feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
+    }
+    
+    .wh-feature-icon-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+    }
+
+    .wh-feature-icon-wrapper::before {
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background-color: #d4af37;
+      border-radius: 4px;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(10deg);
+    }
+    
+    .wh-feature-icon {
+      font-size: 32px;
+      color: #111;
+      z-index: 2;
+      position: relative;
+    }
+    
+    .wh-feature-text {
+      font-weight: 800;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+    
+    .wh-feature-divider {
+      width: 1px;
+      height: 40px;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+    
+    @media (max-width: 991px) {
+      .wh-main-title {
+        font-size: 55px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .wh-main-title {
+        font-size: 40px;
+      }
+      .wh-features {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .wh-feature-item {
+        flex-direction: row;
+        text-align: left;
+      }
+      .wh-feature-divider {
+        display: none;
+      }
+      .welcome-hero::before {
+        background: rgba(15,23,42,0.9);
+      }
+    }
+  </style>
+
+  <section id="home" class="welcome-hero" style="background-image: url('{{ asset('frontend/images/29.jpg') }}');">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-          <div class="hero-content">
-            <h1>SECURITY YOU CAN TRUST</h1>
-            <p>Elite Guard Inc. provides professional, technology-supported security for businesses, properties and
-              communities. We combine trained personnel, mobile patrols, responsive supervision and digital reporting to
-              deliver dependable protection and greater accountability.</p>
-            <div class="hero-buttons">
-              <a href="{{ route('home') }}#contact" class="btn btn-primary">Get Started</a>
-              <a href="{{ route('home') }}#services" class="btn btn-outline">Our Services</a>
+      <div class="row">
+        <div class="col-lg-12">
+          
+          <div class="wh-top-title" data-aos="fade-up">PROFESSIONAL SECURITY SOLUTIONS</div>
+          
+          <h1 class="wh-main-title" data-aos="fade-up" data-aos-delay="100">
+            SAFER PEOPLE
+            <span class="gold-text">STRONGER</span>
+            COMMUNITIES
+          </h1>
+          
+          <p class="wh-desc" data-aos="fade-up" data-aos-delay="200">
+            Elite Guard Inc. provides reliable and professional security solutions for businesses, properties and communities across Calgary and surrounding areas.
+          </p>
+          
+          <div class="wh-buttons" data-aos="fade-up" data-aos-delay="300">
+            <a href="{{ route('quote') }}" class="wh-btn-quote">
+              REQUEST A QUOTE <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="tel:4034277773" class="wh-btn-phone">
+              <i class="fa-solid fa-phone"></i>
+              <div class="wh-phone-text">
+                <span class="number">403.427.7773</span>
+                <span class="label">24/7 SECURITY LINE</span>
+              </div>
+            </a>
+          </div>
+          
+          <div class="wh-features" data-aos="fade-up" data-aos-delay="400">
+            <div class="wh-feature-item" data-aos="zoom-in" data-aos-delay="500">
+              <div class="wh-feature-icon-wrapper">
+                <i class="fa-solid fa-users wh-feature-icon"></i>
+              </div>
+              <div class="wh-feature-text">People<br>Protected</div>
             </div>
-            <div class="hero-stats">
-              <div class="stat-item">
-                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="150"
-                  data-purecounter-duration="1"></span>
-                <span class="stat-label">Projects Completed</span>
+            <div class="wh-feature-divider d-none d-md-block"></div>
+            <div class="wh-feature-item" data-aos="zoom-in" data-aos-delay="600">
+              <div class="wh-feature-icon-wrapper">
+                <i class="fa-solid fa-city wh-feature-icon"></i>
               </div>
-              <div class="stat-item">
-                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="95"
-                  data-purecounter-duration="1"></span>
-                <span class="stat-label">Client Satisfaction</span>
+              <div class="wh-feature-text">Properties<br>Secured</div>
+            </div>
+            <div class="wh-feature-divider d-none d-md-block"></div>
+            <div class="wh-feature-item" data-aos="zoom-in" data-aos-delay="700">
+              <div class="wh-feature-icon-wrapper">
+                <i class="fa-solid fa-handshake-angle wh-feature-icon"></i>
               </div>
-              <div class="stat-item">
-                <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="24"
-                  data-purecounter-duration="1"></span>
-                <span class="stat-label">Team Members</span>
-              </div>
+              <div class="wh-feature-text">Communities<br>Stronger</div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-          <div class="hero-visual">
-            <div class="hero-image">
-              <img src="{{ asset('frontend/images/4.jpeg') }}" alt="Digital Agency Hero" class="img-fluid">
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
-
-    <div class="hero-bg-elements">
-      <div class="bg-shape shape-1"></div>
-      <div class="bg-shape shape-2"></div>
-      <div class="bg-particles"></div>
-    </div>
-
   </section><!-- /Hero Section -->
 
   <!-- About Section -->
