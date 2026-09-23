@@ -89,6 +89,39 @@
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
 
+        .tech-hero-tags {
+            position: relative;
+            z-index: 2;
+            margin-top: 10px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tech-hero-tags .gold-line {
+            width: 100px;
+            height: 3px;
+            background-color: #d4af37;
+            margin-bottom: 10px;
+        }
+
+        .tech-hero-tags .tags-text {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .tech-hero-tags .tags-text .divider {
+            color: #d4af37;
+            font-weight: 300;
+            font-size: 16px;
+        }
+
         /* Technology Page Specific Styles */
         .tech-content-area {
             background-color: #f8f9fa;
@@ -355,6 +388,17 @@
                             increase accountability
                             and deliver high quality security services. Our custom mobile app, digital reporting and
                             real-time coordination keep our guards connected and our clients informed.</p>
+
+                        <div class="tech-hero-tags">
+                            <div class="gold-line"></div>
+                            <div class="tags-text">
+                                <span>TECHNOLOGY</span>
+                                <span class="divider">|</span>
+                                <span>PEOPLE</span>
+                                <span class="divider">|</span>
+                                <span>SAFER COMMUNITIES</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -740,50 +784,50 @@
 
             <div class="app-slider swiper init-swiper">
                 <script type="application/json" class="swiper-config">
-                                        {
-                                            "loop": true,
-                                            "speed": 800,
-                                            "effect": "coverflow",
-                                            "grabCursor": true,
-                                            "centeredSlides": true,
-                                            "coverflowEffect": {
-                                                "rotate": 10,
-                                                "stretch": 0,
-                                                "depth": 150,
-                                                "modifier": 1.2,
-                                                "slideShadows": false
-                                            },
-                                            "autoplay": {
-                                                "delay": 3500,
-                                                "disableOnInteraction": false
-                                            },
-                                            "slidesPerView": 1,
-                                            "spaceBetween": 20,
-                                            "pagination": {
-                                                "el": ".swiper-pagination",
-                                                "type": "bullets",
-                                                "clickable": true
-                                            },
-                                            "breakpoints": {
-                                                "576": {
-                                                    "slidesPerView": 2,
-                                                    "spaceBetween": 20
-                                                },
-                                                "768": {
-                                                    "slidesPerView": 3,
-                                                    "spaceBetween": 30
-                                                },
-                                                "992": {
-                                                    "slidesPerView": 4,
-                                                    "spaceBetween": 30
-                                                },
-                                                "1200": {
-                                                    "slidesPerView": 5,
-                                                    "spaceBetween": 30
-                                                }
-                                            }
-                                        }
-                                    </script>
+                                                    {
+                                                        "loop": true,
+                                                        "speed": 800,
+                                                        "effect": "coverflow",
+                                                        "grabCursor": true,
+                                                        "centeredSlides": true,
+                                                        "coverflowEffect": {
+                                                            "rotate": 10,
+                                                            "stretch": 0,
+                                                            "depth": 150,
+                                                            "modifier": 1.2,
+                                                            "slideShadows": false
+                                                        },
+                                                        "autoplay": {
+                                                            "delay": 3500,
+                                                            "disableOnInteraction": false
+                                                        },
+                                                        "slidesPerView": 1,
+                                                        "spaceBetween": 20,
+                                                        "pagination": {
+                                                            "el": ".swiper-pagination",
+                                                            "type": "bullets",
+                                                            "clickable": true
+                                                        },
+                                                        "breakpoints": {
+                                                            "576": {
+                                                                "slidesPerView": 2,
+                                                                "spaceBetween": 20
+                                                            },
+                                                            "768": {
+                                                                "slidesPerView": 3,
+                                                                "spaceBetween": 30
+                                                            },
+                                                            "992": {
+                                                                "slidesPerView": 4,
+                                                                "spaceBetween": 30
+                                                            },
+                                                            "1200": {
+                                                                "slidesPerView": 5,
+                                                                "spaceBetween": 30
+                                                            }
+                                                        }
+                                                    }
+                                                </script>
                 <div class="swiper-wrapper">
                     @for ($i = 18; $i <= 27; $i++)
                         <div class="swiper-slide">
