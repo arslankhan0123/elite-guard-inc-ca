@@ -787,43 +787,40 @@
 
     .client-logo {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
-      padding: 15px 10px 10px;
-      height: 110px;
+      gap: 10px;
+      padding: 12px 15px;
+      height: 75px;
       background: #fff;
-      border: 1px solid #ebebeb;
-      border-radius: 4px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
-      text-align: center;
-      transition: box-shadow 0.3s, transform 0.3s;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      text-align: left;
+      transition: all 0.3s ease;
     }
 
     .client-logo:hover {
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.15);
+      border-color: #d4af37;
       transform: translateY(-3px);
     }
 
     .client-logo img {
-      max-height: 55px;
-      max-width: 100%;
+      width: 36px;
+      height: 36px;
       object-fit: contain;
-      margin-bottom: 6px;
-      filter: grayscale(20%);
-      transition: filter 0.3s;
-    }
-
-    .client-logo:hover img {
-      filter: grayscale(0%);
+      flex-shrink: 0;
+      border-radius: 4px;
     }
 
     .client-logo h6 {
       margin: 0;
       font-weight: 700;
-      color: #555;
-      font-size: 11px;
-      line-height: 1.2;
+      color: #1a202c;
+      font-size: 12px;
+      line-height: 1.3;
     }
 
     .locations-section {
