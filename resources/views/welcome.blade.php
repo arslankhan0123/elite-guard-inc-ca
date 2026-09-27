@@ -657,31 +657,31 @@
 
       <div class="services-slider swiper init-swiper mb-5">
         <script type="application/json" class="swiper-config">
-                                          {
-                                            "loop": true,
-                                            "speed": 600,
-                                            "autoplay": {
-                                              "delay": 5000
-                                            },
-                                            "slidesPerView": 1,
-                                            "spaceBetween": 20,
-                                            "pagination": {
-                                              "el": ".swiper-pagination",
-                                              "type": "bullets",
-                                              "clickable": true
-                                            },
-                                            "breakpoints": {
-                                              "768": {
-                                                "slidesPerView": 2,
-                                                "spaceBetween": 30
+                                            {
+                                              "loop": true,
+                                              "speed": 600,
+                                              "autoplay": {
+                                                "delay": 5000
                                               },
-                                              "1200": {
-                                                "slidesPerView": 4,
-                                                "spaceBetween": 30
+                                              "slidesPerView": 1,
+                                              "spaceBetween": 20,
+                                              "pagination": {
+                                                "el": ".swiper-pagination",
+                                                "type": "bullets",
+                                                "clickable": true
+                                              },
+                                              "breakpoints": {
+                                                "768": {
+                                                  "slidesPerView": 2,
+                                                  "spaceBetween": 30
+                                                },
+                                                "1200": {
+                                                  "slidesPerView": 4,
+                                                  "spaceBetween": 30
+                                                }
                                               }
                                             }
-                                          }
-                                        </script>
+                                          </script>
         <div class="swiper-wrapper">
           @forelse($services as $service)
             @php
@@ -936,19 +936,22 @@
         </div>
         <div class="col-lg-2 col-md-4 col-6">
           <div class="client-logo">
-            <img src="{{ asset('frontend/images/clients/bloom-investment.png') }}" alt="Bloom Investment Group" loading="lazy">
+            <img src="{{ asset('frontend/images/clients/bloom-investment.png') }}" alt="Bloom Investment Group"
+              loading="lazy">
             <h6>Bloom Investment Group</h6>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
           <div class="client-logo">
-            <img src="{{ asset('frontend/images/clients/mini-mall-storage.png') }}" alt="Mini Mall Storage" loading="lazy">
+            <img src="{{ asset('frontend/images/clients/mini-mall-storage.png') }}" alt="Mini Mall Storage"
+              loading="lazy">
             <h6>Mini Mall Storage</h6>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
           <div class="client-logo">
-            <img src="{{ asset('frontend/images/clients/emerald-hotel.png') }}" alt="Emerald Hotel &amp; Suites" loading="lazy">
+            <img src="{{ asset('frontend/images/clients/emerald-hotel.png') }}" alt="Emerald Hotel &amp; Suites"
+              loading="lazy">
             <h6>Emerald Hotel &amp; Suites</h6>
           </div>
         </div>
@@ -1260,32 +1263,32 @@
 
       <div class="testimonials-slider swiper init-swiper">
         <script type="application/json" class="swiper-config">
-                                                                {
-                                                                  "loop": true,
-                                                                  "speed": 600,
-                                                                  "autoplay": {
-                                                                    "delay": 4000
-                                                                  },
-                                                                  "slidesPerView": 1,
-                                                                  "centeredSlides": true,
-                                                                  "spaceBetween": 20,
-                                                                  "pagination": {
-                                                                    "el": ".swiper-pagination",
-                                                                    "type": "bullets",
-                                                                    "clickable": true
-                                                                  },
-                                                                  "breakpoints": {
-                                                                    "768": {
-                                                                      "slidesPerView": 1.5,
-                                                                      "spaceBetween": 30
+                                                                  {
+                                                                    "loop": true,
+                                                                    "speed": 600,
+                                                                    "autoplay": {
+                                                                      "delay": 4000
                                                                     },
-                                                                    "1200": {
-                                                                      "slidesPerView": 3,
-                                                                      "spaceBetween": 40
+                                                                    "slidesPerView": 1,
+                                                                    "centeredSlides": true,
+                                                                    "spaceBetween": 20,
+                                                                    "pagination": {
+                                                                      "el": ".swiper-pagination",
+                                                                      "type": "bullets",
+                                                                      "clickable": true
+                                                                    },
+                                                                    "breakpoints": {
+                                                                      "768": {
+                                                                        "slidesPerView": 1.5,
+                                                                        "spaceBetween": 30
+                                                                      },
+                                                                      "1200": {
+                                                                        "slidesPerView": 3,
+                                                                        "spaceBetween": 40
+                                                                      }
                                                                     }
                                                                   }
-                                                                }
-                                                              </script>
+                                                                </script>
         <div class="swiper-wrapper">
           <!-- Testimonial 5: Access Control & Monitoring -->
           <div class="swiper-slide">
@@ -1501,161 +1504,161 @@
   </section><!-- /Testimonials Section -->
 
   <!-- Team Section -->
-  <section id="team" class="team section">
+  <!-- <section id="team" class="team section">
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="team-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
-            <h4 class="carousel-title">Leadership Team</h4>
-            <p style="text-align: center;">Meet the dedicated security professionals guiding our training, patrol, and
-              response operations across Alberta.</p>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="team-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
+              <h4 class="carousel-title">Leadership Team</h4>
+              <p style="text-align: center;">Meet the dedicated security professionals guiding our training, patrol, and
+                response operations across Alberta.</p>
 
-            <div class="leadership-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                                          {
-                                            "loop": true,
-                                            "speed": 600,
-                                            "autoplay": {
-                                              "delay": 4000
-                                            },
-                                            "slidesPerView": 1,
-                                            "spaceBetween": 0,
-                                            "pagination": {
-                                              "el": ".swiper-pagination",
-                                              "clickable": true
-                                            },
-                                            "breakpoints": {
-                                              "768": {
-                                                "slidesPerView": 2
+              <div class="leadership-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                                            {
+                                              "loop": true,
+                                              "speed": 600,
+                                              "autoplay": {
+                                                "delay": 4000
                                               },
-                                              "1024": {
-                                                "slidesPerView": 3
+                                              "slidesPerView": 1,
+                                              "spaceBetween": 0,
+                                              "pagination": {
+                                                "el": ".swiper-pagination",
+                                                "clickable": true
+                                              },
+                                              "breakpoints": {
+                                                "768": {
+                                                  "slidesPerView": 2
+                                                },
+                                                "1024": {
+                                                  "slidesPerView": 3
+                                                }
                                               }
                                             }
-                                          }
-                                        </script>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="leader-card">
-                    <div class="leader-image">
-                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-14.webp"
-                        alt="Leader">
+                                          </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-14.webp"
+                          alt="Leader">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Jennifer Walsh</h5>
+                        <span class="position">Chief Executive Officer & Founder</span>
+                        <p>With over 20 years in law enforcement and private security management, Jennifer leads Elite Guard
+                          Inc. with a mission to deliver elite protection services across Alberta.</p>
+                        <div class="leader-contact">
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-envelope"></i>
+                          </a>
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-linkedin"></i>
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="leader-info">
-                      <h5>Jennifer Walsh</h5>
-                      <span class="position">Chief Executive Officer & Founder</span>
-                      <p>With over 20 years in law enforcement and private security management, Jennifer leads Elite Guard
-                        Inc. with a mission to deliver elite protection services across Alberta.</p>
-                      <div class="leader-contact">
-                        <a href="#" class="contact-btn">
-                          <i class="bi bi-envelope"></i>
-                        </a>
-                        <a href="#" class="contact-btn">
-                          <i class="bi bi-linkedin"></i>
-                        </a>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-13.webp"
+                          alt="Leader">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Robert Martinez</h5>
+                        <span class="position">Director of Operations & Tactical Lead</span>
+                        <p>Robert oversees our field guard operations, quality compliance, and tactical response strategies,
+                          ensuring all deployed officers meet strict SSIA regulations.</p>
+                        <div class="leader-contact">
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-envelope"></i>
+                          </a>
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-github"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-5.webp"
+                          alt="Leader">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Lisa Thompson</h5>
+                        <span class="position">Head of Client Relations & Risk Assessment</span>
+                        <p>Lisa acts as the primary contact for our corporate and industrial clients, conducting thorough
+                          security audits and tailoring customized guard schedules.</p>
+                        <div class="leader-contact">
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-envelope"></i>
+                          </a>
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-twitter"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-9.webp"
+                          alt="Leader">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Alex Garcia</h5>
+                        <span class="position">Field Supervisor & Guard Training Coordinator</span>
+                        <p>Alex directs our recruit background checks, field officer inspections, and continuous emergency
+                          response drills to keep our teams fully prepared.</p>
+                        <div class="leader-contact">
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-envelope"></i>
+                          </a>
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-instagram"></i>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <div class="swiper-slide">
-                  <div class="leader-card">
-                    <div class="leader-image">
-                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-13.webp"
-                        alt="Leader">
-                    </div>
-                    <div class="leader-info">
-                      <h5>Robert Martinez</h5>
-                      <span class="position">Director of Operations & Tactical Lead</span>
-                      <p>Robert oversees our field guard operations, quality compliance, and tactical response strategies,
-                        ensuring all deployed officers meet strict SSIA regulations.</p>
-                      <div class="leader-contact">
-                        <a href="#" class="contact-btn">
-                          <i class="bi bi-envelope"></i>
-                        </a>
-                        <a href="#" class="contact-btn">
-                          <i class="bi bi-github"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="leader-card">
-                    <div class="leader-image">
-                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-f-5.webp"
-                        alt="Leader">
-                    </div>
-                    <div class="leader-info">
-                      <h5>Lisa Thompson</h5>
-                      <span class="position">Head of Client Relations & Risk Assessment</span>
-                      <p>Lisa acts as the primary contact for our corporate and industrial clients, conducting thorough
-                        security audits and tailoring customized guard schedules.</p>
-                      <div class="leader-contact">
-                        <a href="#" class="contact-btn">
-                          <i class="bi bi-envelope"></i>
-                        </a>
-                        <a href="#" class="contact-btn">
-                          <i class="bi bi-twitter"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="leader-card">
-                    <div class="leader-image">
-                      <img src="https://bootstrapmade.com/content/demo/Clarity/assets/img/person/person-m-9.webp"
-                        alt="Leader">
-                    </div>
-                    <div class="leader-info">
-                      <h5>Alex Garcia</h5>
-                      <span class="position">Field Supervisor & Guard Training Coordinator</span>
-                      <p>Alex directs our recruit background checks, field officer inspections, and continuous emergency
-                        response drills to keep our teams fully prepared.</p>
-                      <div class="leader-contact">
-                        <a href="#" class="contact-btn">
-                          <i class="bi bi-envelope"></i>
-                        </a>
-                        <a href="#" class="contact-btn">
-                          <i class="bi bi-instagram"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="join-team-cta" data-aos="fade-up" data-aos-delay="300">
-            <div class="cta-icon">
-              <i class="bi bi-rocket-takeoff"></i>
-            </div>
-            <div class="cta-content">
-              <h4>Ready to Join Our Mission?</h4>
-              <p>We are always looking for talented and motivated individuals to join our team. If you are interested in a
-                rewarding career in the security industry, we would love to hear from you.</p>
-              <div class="cta-actions">
-                <a href="{{ route('home') }}#contact" class="btn btn-primary">Contact Us</a>
-                <a href="{{ route('home') }}#services" class="btn btn-outline">Our Services</a>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="join-team-cta" data-aos="fade-up" data-aos-delay="300">
+              <div class="cta-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+              <div class="cta-content">
+                <h4>Ready to Join Our Mission?</h4>
+                <p>We are always looking for talented and motivated individuals to join our team. If you are interested in a
+                  rewarding career in the security industry, we would love to hear from you.</p>
+                <div class="cta-actions">
+                  <a href="{{ route('home') }}#contact" class="btn btn-primary">Contact Us</a>
+                  <a href="{{ route('home') }}#services" class="btn btn-outline">Our Services</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-    </div>
-
-  </section><!-- /Team Section -->
+    </section> -->
 
   <!-- Contact Section -->
   <section id="contact" class="contact section">
