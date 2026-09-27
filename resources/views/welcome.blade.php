@@ -787,22 +787,43 @@
 
     .client-logo {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 15px;
-      height: 80px;
+      padding: 15px 10px 10px;
+      height: 110px;
       background: #fff;
       border: 1px solid #ebebeb;
       border-radius: 4px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
       text-align: center;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .client-logo:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transform: translateY(-3px);
+    }
+
+    .client-logo img {
+      max-height: 55px;
+      max-width: 100%;
+      object-fit: contain;
+      margin-bottom: 6px;
+      filter: grayscale(20%);
+      transition: filter 0.3s;
+    }
+
+    .client-logo:hover img {
+      filter: grayscale(0%);
     }
 
     .client-logo h6 {
       margin: 0;
-      font-weight: 800;
-      color: #111;
-      font-size: 13px;
+      font-weight: 700;
+      color: #555;
+      font-size: 11px;
+      line-height: 1.2;
     }
 
     .locations-section {
@@ -906,31 +927,37 @@
       <div class="row g-3 justify-content-center" data-aos="fade-up" data-aos-delay="100">
         <div class="col-lg-2 col-md-4 col-6">
           <div class="client-logo">
+            <img src="{{ asset('frontend/images/clients/killam.png') }}" alt="Killam Apartment REIT" loading="lazy">
             <h6>Killam Apartment REIT</h6>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
           <div class="client-logo">
-            <h6>20 Avenue Living</h6>
+            <img src="{{ asset('frontend/images/clients/avenue-living.png') }}" alt="Avenue Living" loading="lazy">
+            <h6>Avenue Living</h6>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
           <div class="client-logo">
+            <img src="{{ asset('frontend/images/clients/bloom-investment.png') }}" alt="Bloom Investment Group" loading="lazy">
             <h6>Bloom Investment Group</h6>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
           <div class="client-logo">
+            <img src="{{ asset('frontend/images/clients/mini-mall-storage.png') }}" alt="Mini Mall Storage" loading="lazy">
             <h6>Mini Mall Storage</h6>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
           <div class="client-logo">
-            <h6>Emerald Hotel & Suites</h6>
+            <img src="{{ asset('frontend/images/clients/emerald-hotel.png') }}" alt="Emerald Hotel &amp; Suites" loading="lazy">
+            <h6>Emerald Hotel &amp; Suites</h6>
           </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6">
           <div class="client-logo">
+            <img src="{{ asset('frontend/images/clients/strategic-group.png') }}" alt="Strategic Group" loading="lazy">
             <h6>Strategic Group</h6>
           </div>
         </div>
