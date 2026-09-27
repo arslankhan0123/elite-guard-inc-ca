@@ -217,10 +217,10 @@
           <ul class="mb-0 ps-0 list-unstyled">
             <li><a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">Home</a></li>
             <li><a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'active' : '' }}">About</a></li>
-            <li class="dropdown"><a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'active' : '' }}"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a></li>
-            <li class="dropdown"><a href="{{ route('industries') }}" class="{{ request()->routeIs('industries') ? 'active' : '' }}"><span>Industries</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a></li>
+            <li><a href="{{ route('services') }}" class="{{ request()->routeIs('services') ? 'active' : '' }}">Services</a></li>
+            <li><a href="{{ route('industries') }}" class="{{ request()->routeIs('industries') ? 'active' : '' }}">Industries</a></li>
             <li><a href="{{ route('mobile-patrol') }}" class="{{ request()->routeIs('mobile-patrol') ? 'active' : '' }}">Mobile Patrol</a></li>
-            <li class="dropdown"><a href="{{ route('technology') }}" class="{{ request()->routeIs('technology') ? 'active' : '' }}"><span>Technology</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a></li>
+            <li><a href="{{ route('technology') }}" class="{{ request()->routeIs('technology') ? 'active' : '' }}">Technology</a></li>
             <li><a href="{{ route('careers') }}" class="{{ request()->routeIs('careers') ? 'active' : '' }}">Careers</a></li>
             <li><a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'active' : '' }}">Contact</a></li>
             
