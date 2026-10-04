@@ -4,11 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>@yield('title', 'Home')</title>
-  <meta name="description" content="">
+  <title>@yield('title', 'Security Guard Services Calgary | Elite Guard Inc.')</title>
+  <meta name="description" content="Trained security guards, mobile patrol, fire watch and event security in Calgary. Call Elite Guard Inc. for a free quote.">
   <meta name="keywords" content="">
-
-  <meta name="robots" content="noindex, nofollow">
 
   <!-- Favicons -->
   <link href="{{asset('frontend/assets/img/logo.png')}}" rel="icon" type="image/png">
@@ -33,6 +31,19 @@
 
   <!-- Main CSS File -->
   <link href="{{asset('frontend/assets/css/main.css')}}" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18490221472"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18490221472');
+  </script>
 
   <!-- =======================================================
   * Template Name: Clarity
