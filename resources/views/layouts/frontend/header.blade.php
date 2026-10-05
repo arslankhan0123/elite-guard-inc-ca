@@ -78,6 +78,31 @@
       box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
     }
 
+    .btn-contact-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 13px;
+      border: 1px solid #d4af37;
+      border-radius: 50px;
+      color: #1a202c !important;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.2;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn-contact-call i {
+      color: #b8860b;
+    }
+
+    .btn-contact-call:hover {
+      background: #fff8e6;
+      border-color: #b8860b;
+    }
+
     .search-icon-btn {
       color: #2d3748;
       font-size: 16px;
@@ -117,6 +142,10 @@
       .btn-contact-quote {
         font-size: 11px;
         padding: 5px 14px;
+      }
+      .btn-contact-call {
+        font-size: 11px;
+        padding: 5px 10px;
       }
       .mobile-nav-toggle {
         font-size: 24px;
@@ -248,6 +277,10 @@
 
         <!-- Right Action Items & Mobile Menu Toggle -->
         <div class="d-flex align-items-center gap-2">
+          <a href="tel:4034277773" class="btn-contact-call" aria-label="Call 24/7 Security at 403.427.7773">
+            <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+            <span>Call 24/7</span>
+          </a>
           <a href="{{ route('quote') }}" class="btn-contact-quote">
             Get a Quote
           </a>

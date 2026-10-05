@@ -44,6 +44,21 @@
 
     gtag('config', 'AW-18490221472');
   </script>
+  <!-- Event snippet for Contact conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function() {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18490221472/FXt2CLuVsZEdEKDH6fBE',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 
   <!-- =======================================================
   * Template Name: Clarity
@@ -98,7 +113,7 @@
     data-cf-beacon='{"version":"2024.11.0","token":"68c5ca450bae485a842ff76066d69420"}'
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  
+
   @stack('scripts')
 </body>
 
