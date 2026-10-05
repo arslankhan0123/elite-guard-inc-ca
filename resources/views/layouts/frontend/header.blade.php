@@ -210,7 +210,7 @@
           <i class="fa-solid fa-phone-volume" style="font-size: 18px; color: #d4af37;"></i>
           <div>
             <div style="font-size: 9px; font-weight: 800; color: #4a5568; text-transform: uppercase; letter-spacing: 0.4px;">24/7 SECURITY</div>
-            <a href="tel:4034277773" style="font-size: 14px; font-weight: 900; color: #111; text-decoration: none; line-height: 1; display: block;">403.427.7773</a>
+            <a href="tel:+14034277773" onclick="return gtag_report_conversion('tel:+14034277773');" style="font-size: 14px; font-weight: 900; color: #111; text-decoration: none; line-height: 1; display: block;">403.427.7773</a>
           </div>
         </div>
 
@@ -221,7 +221,7 @@
           <i class="fa-solid fa-phone" style="font-size: 18px; color: #d4af37;"></i>
           <div>
             <div style="font-size: 9px; font-weight: 800; color: #4a5568; text-transform: uppercase; letter-spacing: 0.4px;">OFFICE</div>
-            <a href="tel:4038307772" style="font-size: 14px; font-weight: 900; color: #111; text-decoration: none; line-height: 1; display: block;">403.830.7772</a>
+            <a href="tel:+14038307772" onclick="return gtag_report_conversion('tel:+14038307772');" style="font-size: 14px; font-weight: 900; color: #111; text-decoration: none; line-height: 1; display: block;">403.830.7772</a>
           </div>
         </div>
       </div>
@@ -235,7 +235,7 @@
       <div class="bottom-nav-container d-flex align-items-center justify-content-between">
         
         <!-- Mobile Quick Phone Call Link (Visible on Mobile) -->
-        <a href="tel:4034277773" class="d-flex d-xl-none align-items-center gap-2 text-decoration-none me-auto" style="font-size: 12px; font-weight: 800; color: #111;">
+        <a href="tel:+14034277773" onclick="return gtag_report_conversion('tel:+14034277773');" class="d-flex d-xl-none align-items-center gap-2 text-decoration-none me-auto" style="font-size: 12px; font-weight: 800; color: #111;">
           <div style="background: #fff8e6; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid #f6e09e;">
             <i class="fa-solid fa-phone-volume" style="font-size: 12px; color: #d4af37;"></i>
           </div>
@@ -260,14 +260,14 @@
                   <i class="fa-solid fa-phone-volume" style="color: #d4af37; font-size: 14px;"></i>
                   <div>
                     <span style="display: block; font-size: 9px; font-weight: 800; color: #718096; text-transform: uppercase;">24/7 Security Line</span>
-                    <a href="tel:4034277773" style="font-size: 14px; font-weight: 900; color: #111; text-decoration: none;">403.427.7773</a>
+                    <a href="tel:+14034277773" onclick="return gtag_report_conversion('tel:+14034277773');" style="font-size: 14px; font-weight: 900; color: #111; text-decoration: none;">403.427.7773</a>
                   </div>
                 </div>
                 <div class="d-flex align-items-center gap-2">
                   <i class="fa-solid fa-phone" style="color: #d4af37; font-size: 14px;"></i>
                   <div>
                     <span style="display: block; font-size: 9px; font-weight: 800; color: #718096; text-transform: uppercase;">Office Line</span>
-                    <a href="tel:4038307772" style="font-size: 14px; font-weight: 900; color: #111; text-decoration: none;">403.830.7772</a>
+                    <a href="tel:+14038307772" onclick="return gtag_report_conversion('tel:+14038307772');" style="font-size: 14px; font-weight: 900; color: #111; text-decoration: none;">403.830.7772</a>
                   </div>
                 </div>
               </div>
@@ -277,7 +277,7 @@
 
         <!-- Right Action Items & Mobile Menu Toggle -->
         <div class="d-flex align-items-center gap-2">
-          <a href="tel:4034277773" class="btn-contact-call" aria-label="Call 24/7 Security at 403.427.7773">
+          <a href="tel:+14034277773" onclick="return gtag_report_conversion('tel:+14034277773');" class="btn-contact-call" aria-label="Call 24/7 Security at 403.427.7773">
             <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
             <span>Call 24/7</span>
           </a>

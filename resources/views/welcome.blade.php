@@ -265,11 +265,11 @@
             <a href="{{ route('quote') }}" class="wh-btn-quote">
               REQUEST A QUOTE <i class="fa-solid fa-arrow-right"></i>
             </a>
-            <a href="tel:4038307772" class="wh-btn-phone">
-              <i class="fa-solid fa-phone"></i>
+            <a href="tel:+14038307772" onclick="return gtag_report_conversion('tel:+14038307772');" class="wh-btn-phone">
+              <i class="fa-solid fa-phone-volume"></i>
               <div class="wh-phone-text">
                 <span class="number">403.830.7772</span>
-                <span class="label">24/7 OFFICE LINE</span>
+                <span class="label">OFFICE LINE</span>
               </div>
             </a>
           </div>
